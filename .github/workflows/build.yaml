@@ -12,9 +12,9 @@ permissions:
 
 on:
   pull_request:
-    branches: [main, ci-test]
+    branches: ['**']
     paths:
-     - 'SPECS/**'
+      - '**/*.spec'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
@@ -33,7 +33,7 @@ jobs:
       with:
         files_yaml: |
           specs:
-            - SPECS/**
+            - '**/*.spec'
     - name: cache
       id:   cache
       uses: actions/cache@v4
@@ -63,7 +63,16 @@ jobs:
          echo "BuildFlags: onlybuild:$p" >> ./.github/build/_config
         done
     - name: Build package(s)
-      run: (cp .github/build/* SPECS && cd SPECS && (sudo pbuild --vm-type=chroot --preset x86_64 --showlog --root=/tmp/b || (sudo pbuild --preset x86_64 --result && exit 1)))
+      run: |
+        set -euo pipefail
+        rm -rf SPECS
+        mkdir -p SPECS
+        while IFS= read -r dir; do
+          cp -a "$dir" "SPECS/"
+        done < <(find . -mindepth 2 -maxdepth 2 -name '*.spec' -printf '%h\n' | sed 's|^\./||' | sort -u)
+        cp .github/build/* SPECS
+        cd SPECS
+        sudo pbuild --vm-type=chroot --preset x86_64 --showlog --root=/tmp/b || (sudo pbuild --preset x86_64 --result && exit 1)
     - name: get result
       id: result
       if: steps.changed-files.outputs.specs_any_changed == 'true'
