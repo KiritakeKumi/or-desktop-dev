@@ -124,6 +124,7 @@ to provide additional image format plugins for QtGui.
 %{_kf6_plugindir}/imageformats/kimg_raw.so
 %{_kf6_plugindir}/imageformats/kimg_rgb.so
 %{_kf6_plugindir}/imageformats/kimg_sct.so
+%{_kf6_plugindir}/imageformats/kimg_tim.so
 %{_kf6_plugindir}/imageformats/kimg_tga.so
 %{_kf6_plugindir}/imageformats/kimg_xcf.so
 

@@ -46,6 +46,10 @@ BuildRequires:  cmake(Qt6Widgets) >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
+BuildRequires:  cmake(KF6Declarative) >= %{_kf6_version}
+BuildRequires:  cmake(KF6Prison) >= %{_kf6_version}
+BuildRequires:  kf6-kitemmodels
+BuildRequires:  qt6qml(org.kde.kitemmodels)
 
 Requires:       accounts-qml-module
 Requires:       kf6-kdeclarative >= %{_kf6_version}

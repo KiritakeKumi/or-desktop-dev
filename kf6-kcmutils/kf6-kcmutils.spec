@@ -46,6 +46,7 @@ BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
+BuildRequires:  qt6qml(org.kde.kirigami)
 
 %description
 KCMUtils provides various classes to work with KCModules. KCModules can be
