@@ -18,7 +18,7 @@ Summary:        Utilities for core application functionality and accessing the O
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kcoreaddons
-#!RemoteAsset:  sha256:843d27cd76ca890c4f352d6f29d2e2b8747883602b63119106b1eb229b95e649
+#!RemoteAsset:  sha256:92fdbfab68e52d9eacf44a992f01cb364d6395c24441e2fd47dd48a23b3281f6
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

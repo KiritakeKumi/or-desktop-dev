@@ -17,7 +17,7 @@ Summary:        Plugin framework for desktop services
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kservice
-#!RemoteAsset
+#!RemoteAsset:  sha256:f8528524ccafb6a495962dd3260c442377920169f1c444f11657ea42558a53b6
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
 BuildRequires:  bison

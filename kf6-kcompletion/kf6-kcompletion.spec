@@ -17,7 +17,7 @@ Summary:        Widgets with advanced completion support
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcompletion
-#!RemoteAsset
+#!RemoteAsset:  sha256:95f71eb807e4de40ecdfe7234c9c3d844423171ac52588aecca642f78d904e48
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
 BuildRequires:  fdupes

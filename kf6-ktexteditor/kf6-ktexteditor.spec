@@ -17,7 +17,7 @@ Summary:        Embeddable text editor component
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ktexteditor.git
-#!RemoteAsset:  sha256:1d9b336a2b26ecc6a1c5b8133eacea69ed786b3eb6f1ec2ad6705c2bea62e1c5
+#!RemoteAsset:  sha256:ec7bc094f93d514b5f675ae95c274dd24acc47769d971606d8708cc88f811341
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
