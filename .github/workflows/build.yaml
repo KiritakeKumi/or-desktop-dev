@@ -1,0 +1,85 @@
+# SPDX-FileCopyrightText: (C) 2025 Institute of Software, Chinese Academy of Sciences (ISCAS)
+# SPDX-FileCopyrightText: (C) 2025 openRuyi Project Contributors
+# SPDX-FileContributor: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+#
+# SPDX-License-Identifier: MulanPSL-2.0
+
+name: build test
+
+permissions:
+  contents: read
+  pull-requests: read
+
+on:
+  pull_request:
+    branches: [main, ci-test]
+    paths:
+     - 'SPECS/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@e0021407031f5be11a464abee9a0776171c79891 # v47.0.1
+      with:
+        files_yaml: |
+          specs:
+            - SPECS/**
+    - name: cache
+      id:   cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          SPECS/.pbuild
+          SPECS/_build.x86_64
+        key: ${{ runner.os }}-${{ hashFiles('.github/build/_config') }}
+        restore-keys: |
+          ${{ runner.os }}-
+    - name: Install tools
+      run: |
+        echo "deb http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.04/ /" | sudo tee /etc/apt/sources.list.d/obs.list
+        wget -qO - http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.04/Release.key | sudo apt-key add -
+        sudo apt update && sudo apt install osc obs-build libwww-perl libxml-parser-perl -y
+    - name: apply pbuild patch
+      run: |
+        sudo patch --directory=/usr/lib/build --strip=1 -i $(pwd)/.github/build/pbuild.patch
+    - name: Limit the number of compilations
+      if: steps.changed-files.outputs.specs_any_changed == 'true'
+      run: |
+        set -x
+        all_file="${{ steps.changed-files.outputs.specs_all_changed_files }}"
+        for i in $all_file; do
+         p=$(basename $(dirname $i))
+         echo $p
+         echo "BuildFlags: onlybuild:$p" >> ./.github/build/_config
+        done
+    - name: Build package(s)
+      run: (cp .github/build/* SPECS && cd SPECS && (sudo pbuild --vm-type=chroot --preset x86_64 --showlog --root=/tmp/b || (sudo pbuild --preset x86_64 --result && exit 1)))
+    - name: get result
+      id: result
+      if: steps.changed-files.outputs.specs_any_changed == 'true'
+      run: |
+        set -x
+        all_file="${{ steps.changed-files.outputs.specs_all_changed_files }}"
+        {
+          echo 'paths<<EOF'
+          for i in $all_file; do
+           p=$(basename $(dirname $i))
+           echo "SPECS/_build.x86_64/$p"
+          done
+          echo 'EOF'
+        } >> "$GITHUB_OUTPUT"
+    - uses: actions/upload-artifact@v4
+      with:
+       name: PR${{ github.event.pull_request.number }}-build-packages-results
+       path: ${{ steps.result.outputs.paths }}
+       if-no-files-found: error
