@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname networkmanager-qt
-# Full KF6 version (e.g. 6.22.0)
+# Full KF6 version (e.g. 6.26.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-networkmanager-qt
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        A Qt wrapper for NetworkManager DBus API
 License:        LGPL-2.1-only OR LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/networkmanager-qt.git
 #!RemoteAsset:  sha256:707ac2d5dc96496dcc9966ef2100c336e07a9b6cf3ad07d83e03c6d76c380e6e
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

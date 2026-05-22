@@ -10,18 +10,18 @@
 %define qt6_version 6.8.0
 
 %define rname purpose
-# Full KF6 version (e.g. 6.22.0)
+# Full KF6 version (e.g. 6.26.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-purpose
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        Framework to integrate services and actions in applications
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/purpose.git
 #!RemoteAsset:  sha256:a2912583948f423e4d666f9cbf1cf1ac463a246e10e717078b4831f60cc2198c
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

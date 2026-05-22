@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname modemmanager-qt
-# Full KF6 version (e.g. 6.22.0)
+# Full KF6 version (e.g. 6.26.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-modemmanager-qt
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        Qt wrapper for ModemManager DBus API
 License:        LGPL-2.1-only OR LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/modemmanager-qtt.git
 #!RemoteAsset:  sha256:04263688fdb9f92eb13c3a07d1a0a2f62d0579b23fdd380582f4fd28e3738772
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

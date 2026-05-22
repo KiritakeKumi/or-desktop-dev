@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kpty
-# Full KF6 version (e.g. 6.22.0)
+# Full KF6 version (e.g. 6.26.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kpty
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        Primitives to interface with pseudo terminal devices
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kpty.git
 #!RemoteAsset:  sha256:e974ae36e609d1fb485782139f8c6aa260fcee8f651da3dd0d175dad1c0b9663
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

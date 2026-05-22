@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kholidays
-# Full KF6 version (e.g. 6.22.0)
+# Full KF6 version (e.g. 6.26.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kholidays
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        Holiday calculation library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kholidays.git
 #!RemoteAsset:  sha256:39b7f1c713d6c5ae225bfa18a6dece20ff7a7f4c325a0c6fc4a48cf3e4e0a690
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

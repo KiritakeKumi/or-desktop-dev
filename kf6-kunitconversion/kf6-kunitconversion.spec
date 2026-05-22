@@ -8,18 +8,18 @@
 
 %define rname kunitconversion
 
-# Full KF6 version (e.g. 6.22.0)
+# Full KF6 version (e.g. 6.26.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kunitconversion
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        Tool for converting physical units
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kunitconversion.git
 #!RemoteAsset:  sha256:580357277fad7659d33555f25783a6cd27286b73cdd74c781b4989e4f6247b91
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

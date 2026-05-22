@@ -11,14 +11,14 @@
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kdnssd
-Version:        6.22.0
+Version:        6.26.0
 Release:        %autorelease
 Summary:        Network service discovery using Zeroconf
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdnssd.git
 #!RemoteAsset:  sha256:5bedf0c89cd9d4152580af76dd7db27df8563fef217e8b66c7a1947c1d6295a9
-Source:         https://download.kde.org/stable/frameworks/6.22/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
