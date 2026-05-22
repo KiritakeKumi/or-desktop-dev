@@ -11,13 +11,13 @@ permissions:
   pull-requests: read
 
 on:
+  push:
+    branches: ['**']
   pull_request:
     branches: ['**']
-    paths:
-      - '**/*.spec'
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -89,6 +89,6 @@ jobs:
         } >> "$GITHUB_OUTPUT"
     - uses: actions/upload-artifact@v4
       with:
-       name: PR${{ github.event.pull_request.number }}-build-packages-results
+       name: PR${{ github.event.pull_request.number || github.run_id }}-build-packages-results
        path: ${{ steps.result.outputs.paths }}
        if-no-files-found: error
