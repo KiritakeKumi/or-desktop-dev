@@ -83,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_includedir}/KArchive/
 %{_kf6_cmakedir}/KF6Archive/
 %{_kf6_libdir}/libKF6Archive.so
+%{_kf6_pkgconfigdir}/KF6Archive.pc
 
 %changelog
 %{?autochangelog}

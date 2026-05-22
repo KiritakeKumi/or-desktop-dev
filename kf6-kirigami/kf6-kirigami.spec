@@ -80,8 +80,13 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # This is actually a plugin
 %{_kf6_libdir}/libKirigamiPrivate.so.*
 %{_kf6_libdir}/libKirigami.so.*
+%{_kf6_libdir}/libKirigamiControls.so.*
 %{_kf6_libdir}/libKirigamiDelegates.so.*
 %{_kf6_libdir}/libKirigamiDialogs.so.*
+%{_kf6_libdir}/libKirigamiForms.so.*
+%{_kf6_libdir}/libKirigamiFormsPrivateCards.so.*
+%{_kf6_libdir}/libKirigamiFormsPrivateFlat.so.*
+%{_kf6_libdir}/libKirigamiFormsPrivateTemplates.so.*
 %{_kf6_libdir}/libKirigamiLayouts.so.*
 %{_kf6_libdir}/libKirigamiLayoutsPrivate.so.*
 %{_kf6_libdir}/libKirigamiPlatform.so.*
@@ -96,8 +101,13 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %dir %{_kf6_includedir}/Kirigami/
 %{_kf6_includedir}/Kirigami/Platform/
 %{_kf6_libdir}/libKirigami.so
+%{_kf6_libdir}/libKirigamiControls.so
 %{_kf6_libdir}/libKirigamiDelegates.so
 %{_kf6_libdir}/libKirigamiDialogs.so
+%{_kf6_libdir}/libKirigamiForms.so
+%{_kf6_libdir}/libKirigamiFormsPrivateCards.so
+%{_kf6_libdir}/libKirigamiFormsPrivateFlat.so
+%{_kf6_libdir}/libKirigamiFormsPrivateTemplates.so
 %{_kf6_libdir}/libKirigamiLayouts.so
 %{_kf6_libdir}/libKirigamiLayoutsPrivate.so
 %{_kf6_libdir}/libKirigamiPlatform.so
