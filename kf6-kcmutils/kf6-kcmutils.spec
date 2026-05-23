@@ -27,6 +27,7 @@ BuildSystem:    cmake
 BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
+BuildRequires:  kf6-kirigami >= %{_kf6_version}
 BuildRequires:  cmake(KF6ConfigWidgets) >= %{_kf6_version}
 BuildRequires:  cmake(KF6CoreAddons) >= %{_kf6_version}
 BuildRequires:  cmake(KF6GuiAddons) >= %{_kf6_version}
@@ -46,7 +47,6 @@ BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
-BuildRequires:  qt6qml(org.kde.kirigami)
 
 %description
 KCMUtils provides various classes to work with KCModules. KCModules can be
