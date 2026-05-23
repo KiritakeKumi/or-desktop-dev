@@ -13,7 +13,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           plasma-systemmonitor
-Version:        6.5.5
+Version:        6.6.5
 Release:        %autorelease
 Summary:        An application for monitoring system resources
 License:        GPL-3.0-only
