@@ -52,7 +52,10 @@ jobs:
         mkdir -p SPECS
         while IFS= read -r dir; do
           cp -a "$dir" "SPECS/"
-        done < <(find . -mindepth 2 -maxdepth 2 -name '*.spec' -printf '%h\n' | sed 's|^\./||' | sort -u)
+        done < <(find . \
+          -path './.git' -prune -o \
+          -path './SPECS' -prune -o \
+          -type f -name '*.spec' -printf '%h\n' | sed 's|^\./||' | sort -u)
         cp .github/build/* SPECS
         cd SPECS
         sudo pbuild --vm-type=chroot --preset x86_64 --showlog --root=/tmp/b || (sudo pbuild --preset x86_64 --result && exit 1)
