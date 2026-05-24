@@ -22,7 +22,6 @@ VCS:            git:https://invent.kde.org/frameworks/breeze-icons
 #!RemoteAsset:  sha256:4e123fac511dfab2b7c505857849a5cecfac2ce6194e3230c51ceec31676b06e
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  libxml2
 # Skip 24px icons generation (saves ~30MB and installs dangling symlinks)
@@ -65,8 +64,6 @@ the Breeze icons are available at build time.
 
 # yast2-theme uses these, but it got renamed in 5.55.0
 ln -s yast-software-group.svg %{buildroot}%{_kf6_iconsdir}/breeze/preferences/32/yast-software.svg
-
-%fdupes %{buildroot}%{_kf6_iconsdir}
 
 %files
 %license COPYING*

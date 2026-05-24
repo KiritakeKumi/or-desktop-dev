@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kbookmarks
 #!RemoteAsset:  sha256:82e8794281870686da9e7e7b5ddc0839f50b15d919357490d508faccb2635030
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
 BuildRequires:  cmake(KF6ConfigWidgets) >= %{_kf6_version}
@@ -59,8 +58,6 @@ manipulating bookmarks using the XBEL format
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 # todo: fix the name error.
 # Avoid illegal package names

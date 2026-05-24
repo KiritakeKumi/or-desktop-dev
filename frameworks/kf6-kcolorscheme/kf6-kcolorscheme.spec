@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kcolorscheme
 #!RemoteAsset:  sha256:74149a0379bd8bf6590d3c1f7f8c503665e0f3adafc2adbd44fc6bb764c969f1
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 BuildRequires:  cmake(KF6Codecs) >= %{_kf6_version}
@@ -56,8 +55,6 @@ Classes to read and interact with KColorScheme. Development files.
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 # todo: fix the name error.
 # Avoid illegal package names

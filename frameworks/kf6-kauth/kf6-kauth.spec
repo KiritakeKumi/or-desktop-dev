@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kauth
 #!RemoteAsset:  sha256:e6b6562114c2cb71db6ca48fdf0ebed2df70e164c48295b35433a80b03385847
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  kf6-kcoreaddons-devel >= %{_kf6_version}
 BuildRequires:  qt6-qttools
@@ -57,8 +56,6 @@ Development files.
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 # todo: fix the name error.
 # Avoid illegal package names

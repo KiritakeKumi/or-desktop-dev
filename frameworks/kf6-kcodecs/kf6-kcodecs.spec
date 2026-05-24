@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kcodecs
 #!RemoteAsset:  sha256:ee1fe3bd8bcd93a84d44186a5fc50395b6bf43dd2bf8972338a7aad72aa0bcb4
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  gperf
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
@@ -53,8 +52,6 @@ strings using various encodings.
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 # todo: fix the name error.
 # Avoid illegal package names

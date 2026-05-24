@@ -20,7 +20,6 @@ VCS:            https://invent.kde.org/frameworks/kconfig
 #!RemoteAsset:  sha256:8bb5aa918d8e60ec140a33db3c329414d2319dc97a1644b368da5576125c92b5
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
@@ -90,8 +89,6 @@ their changes to their respective configuration files. Development files.
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 %files
 %license LICENSES/*

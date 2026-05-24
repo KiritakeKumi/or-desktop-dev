@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/karchive
 #!RemoteAsset:  sha256:a7fdf6d0b8db88d60aa52bcc87d8e00d95391a1ad39a4b2a8e9f3027b8ff4035
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
@@ -63,8 +62,6 @@ GZip format, via a subclass of QIODevice. Development files
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 # todo: fix the name error.
 # Avoid illegal package names

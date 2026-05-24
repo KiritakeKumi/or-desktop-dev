@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kcompletion
 #!RemoteAsset:  sha256:95f71eb807e4de40ecdfe7234c9c3d844423171ac52588aecca642f78d904e48
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Codecs) >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
@@ -57,8 +56,6 @@ can be used with own widgets.
 
 %install
 %kf6_install
-
-%fdupes %{buildroot}
 
 # todo: fix the name error.
 # Avoid illegal package names

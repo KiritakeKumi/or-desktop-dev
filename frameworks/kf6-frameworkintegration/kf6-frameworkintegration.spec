@@ -23,7 +23,6 @@ BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(AppStreamQt) >= 1.0
 BuildRequires:  cmake(KF6ColorScheme) >= %{_kf6_version}
