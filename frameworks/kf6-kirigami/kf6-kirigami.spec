@@ -19,6 +19,10 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kirigami
 #!RemoteAsset:  sha256:b268785b271198acec7fe4b6177eafdee890e180245c7168916da3ccff1425ff
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
+BuildOption(conf):  -DQT_QML_NO_CACHEGEN:BOOL=TRUE
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
@@ -53,26 +57,14 @@ Requires:       cmake(Qt6Quick) >= %{qt6_version}
 QtQuick plugins to build user interfaces based on the KDE UX guidelines.
 Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-
-%cmake_kf6 \
-  -DQT_QML_NO_CACHEGEN:BOOL=TRUE
-
-%kf6_build
-
-%install
-%kf6_install
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/kirigami.categories
@@ -118,4 +110,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_sharedir}/kdevappwizard/templates/kirigami6.tar.bz2
 
 %changelog
-%{?autochangelog}
+%autochangelog

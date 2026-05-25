@@ -19,6 +19,9 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kauth
 #!RemoteAsset:  sha256:e6b6562114c2cb71db6ca48fdf0ebed2df70e164c48295b35433a80b03385847
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  kf6-kcoreaddons-devel >= %{_kf6_version}
@@ -46,24 +49,14 @@ Requires:       cmake(KF6CoreAddons) >= %{_kf6_version}
 KAuth is a framework to let applications perform actions as a privileged user.
 Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %dir %{_kf6_plugindir}/kf6/kauth
@@ -85,4 +78,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_libdir}/libKF6AuthCore.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

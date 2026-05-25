@@ -19,8 +19,10 @@ URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kdbusaddons
 #!RemoteAsset:  sha256:894bb2e032c6f6d9b4a58b8b24678692a9f4e70e953ff4dabda2ed4e9b5431e2
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
@@ -54,19 +56,6 @@ Requires:       cmake(Qt6DBus) >= %{qt6_version}
 KDBusAddons provides convenience classes on top of QtDBus, as well as an API to
 create KDED modules. Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
 %files
 %license LICENSES/*
 %doc README.md
@@ -84,4 +73,4 @@ create KDED modules. Development files.
 %{_kf6_libdir}/libKF6DBusAddons.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

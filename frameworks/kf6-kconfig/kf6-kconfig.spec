@@ -19,6 +19,9 @@ URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kconfig
 #!RemoteAsset:  sha256:8bb5aa918d8e60ec140a33db3c329414d2319dc97a1644b368da5576125c92b5
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
@@ -50,13 +53,6 @@ their changes to their respective configuration files.
 
 KConfigQml provides QtQuick bindings to KConfig, allowing it to be used with QML.
 
-%package        imports
-Summary:        QML imports for kconfig
-Requires:       %{name}%{?_isa} = %{version}-%{release}
-
-%description    imports
-QML imports for kconfig.
-
 %package        devel
 Summary:        KConfig Development files
 Requires:       %{name}%{?_isa} = %{version}-%{release}
@@ -79,17 +75,6 @@ KConfigGui provides a way to hook widgets to the configuration so that they are
 automatically initialized from the configuration and automatically propagate
 their changes to their respective configuration files. Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
 %files
 %license LICENSES/*
 %doc README.md
@@ -102,8 +87,6 @@ their changes to their respective configuration files. Development files.
 %{_kf6_libdir}/libKF6ConfigQml.so.*
 %{_datadir}/locale/*/LC_MESSAGES/kconfig6_qt.qm
 %{_kf6_libexecdir}/kconf_update
-
-%files imports
 %{_kf6_qmldir}/org/kde/config/
 
 %files devel
@@ -118,4 +101,4 @@ their changes to their respective configuration files. Development files.
 %{_kf6_libexecdir}/kconfig_compiler_kf6
 
 %changelog
-%{?autochangelog}
+%autochangelog

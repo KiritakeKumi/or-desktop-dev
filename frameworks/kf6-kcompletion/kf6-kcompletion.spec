@@ -19,6 +19,9 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcompletion
 #!RemoteAsset:  sha256:95f71eb807e4de40ecdfe7234c9c3d844423171ac52588aecca642f78d904e48
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Codecs) >= %{_kf6_version}
@@ -46,24 +49,14 @@ Development files for KCompletion, a widget collection with advanced
 completion support as well as a lower-level completion class which
 can be used with own widgets.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/kcompletion.categories
@@ -76,4 +69,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_plugindir}/designer/kcompletion6widgets.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

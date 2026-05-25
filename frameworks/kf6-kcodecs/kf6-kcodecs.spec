@@ -19,6 +19,9 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcodecs
 #!RemoteAsset:  sha256:ee1fe3bd8bcd93a84d44186a5fc50395b6bf43dd2bf8972338a7aad72aa0bcb4
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  gperf
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
@@ -42,24 +45,14 @@ Requires:       cmake(Qt6Core) >= %{qt6_version}
 Development files for KCodecs, a method collection to manipulate
 strings using various encodings.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/*.categories
@@ -72,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_libdir}/libKF6Codecs.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

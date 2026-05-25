@@ -21,6 +21,11 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/breeze-icons
 #!RemoteAsset:  sha256:4e123fac511dfab2b7c505857849a5cecfac2ce6194e3230c51ceec31676b06e
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
+BuildOption(conf):  -DBINARY_ICONS_RESOURCE:BOOL=TRUE
+BuildOption(conf):  -DWITH_ICON_GENERATION:BOOL=FALSE
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  libxml2
@@ -47,21 +52,7 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 This package provides CMake config files for projects that wish to ensure
 the Breeze icons are available at build time.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-
-# kexi needs the icons resource
-%cmake_kf6 \
-  -DBINARY_ICONS_RESOURCE:BOOL=TRUE \
-  -DWITH_ICON_GENERATION:BOOL=FALSE
-
-%kf6_build
-
-%install
-%kf6_install
-
+%install -a
 # yast2-theme uses these, but it got renamed in 5.55.0
 ln -s yast-software-group.svg %{buildroot}%{_kf6_iconsdir}/breeze/preferences/32/yast-software.svg
 
@@ -87,4 +78,4 @@ ln -s yast-software-group.svg %{buildroot}%{_kf6_iconsdir}/breeze/preferences/32
 %{_kf6_libdir}/libKF6BreezeIcons.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

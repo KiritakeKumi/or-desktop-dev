@@ -19,8 +19,10 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kitemviews
 #!RemoteAsset:  sha256:e76cc9d7561d0aae22b07a77552fbcddf61c8066bac5cfac9958ac065b617e74
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(Qt6LinguistTools) >= %{qt6_version}
 BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
@@ -44,26 +46,14 @@ KItemViews includes a set of views, which can be used with item models. It
 includes views for categorizing lists and to add search filters to flat and
 hierarchical lists. Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/kitemviews.categories
@@ -76,4 +66,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_plugindir}/designer/kitemviews6widgets.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

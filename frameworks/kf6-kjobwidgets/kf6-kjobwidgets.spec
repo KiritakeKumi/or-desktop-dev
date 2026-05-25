@@ -20,8 +20,11 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kjobwidgets
 #!RemoteAsset:  sha256:8057b7bd132cc2b469ac406f95ba22bc3cfc240c1031485f19fa072ab942f71e
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+BuildOption(conf):  -DBUILD_PYTHON_BINDINGS=OFF
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
@@ -50,19 +53,6 @@ Requires:       cmake(Qt6Widgets) >= %{qt6_version}
 KJobWIdgets provides widgets for showing progress of asynchronous jobs.
 Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6 -DBUILD_PYTHON_BINDINGS=OFF
-
-%kf6_build
-
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
 %files
 %license LICENSES/*
 %doc README.md
@@ -80,4 +70,4 @@ Development files.
 %{_kf6_libdir}/libKF6JobWidgets.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

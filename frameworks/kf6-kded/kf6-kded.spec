@@ -19,8 +19,10 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kded
 #!RemoteAsset:  sha256:4265d1162cbd7febf16d103bf1bd9fab858fa3f54f52797ed0938436bee347af
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  systemd-rpm-macros
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
@@ -51,19 +53,6 @@ KDED runs in the background and performs a number of small tasks.
 Some of these tasks are built in, others are started on demand.
 Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
 %preun
 %systemd_user_preun plasma-kded6.service
 
@@ -91,4 +80,4 @@ Development files.
 %{_kf6_dbusinterfacesdir}/org.kde.kded6.xml
 
 %changelog
-%{?autochangelog}
+%autochangelog

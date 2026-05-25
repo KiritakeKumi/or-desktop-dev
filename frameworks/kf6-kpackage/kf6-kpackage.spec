@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kpackage
 #!RemoteAsset:  sha256:313cda4a335ecdb67bb8e2fcc15bdeb5970db17d5597282ca655bf97a98abab5
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Archive) >= %{_kf6_version}
 BuildRequires:  cmake(KF6CoreAddons) >= %{_kf6_version}
@@ -83,4 +82,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_libdir}/libKF6Package.so
 
 %changelog
-%{?autochangelog}
+%autochangelog

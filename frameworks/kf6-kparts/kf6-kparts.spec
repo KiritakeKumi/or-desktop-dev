@@ -20,7 +20,6 @@ VCS:            git:https://invent.kde.org/frameworks/kparts
 #!RemoteAsset:  sha256:049c2cf048b4cbbffe0bea9357bd9ab53b8be672ba509b2bb058f764d21b3f5b
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
 
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
 BuildRequires:  cmake(KF6CoreAddons) >= %{_kf6_version}
@@ -69,8 +68,6 @@ elaborate widgets with a user-interface defined in terms of actions
 %install
 %kf6_install
 
-%fdupes %{buildroot}
-
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
@@ -90,4 +87,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_sharedir}/kdevappwizard/templates/
 
 %changelog
-%{?autochangelog}
+%autochangelog
