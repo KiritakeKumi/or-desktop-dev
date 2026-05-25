@@ -11,28 +11,18 @@ Summary:        Wayland protocols used by Plasma
 License:        BSD-3-Clause AND LGPL-2.1-only AND LGPL-2.1-or-later AND MIT
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/libraries/plasma-wayland-protocols
-#!RemoteAsset
+#!RemoteAsset:  sha256:3a
 Source0:        https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+
 BuildRequires:  kf6-extra-cmake-modules
 BuildRequires:  pkgconfig(wayland-scanner)
 
 %description
 This package contains the non-standard Wayland protocol definitions used by
 KDE Plasma.
-
-%prep
-%autosetup -p1
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-%fdupes %{buildroot}
 
 %files
 %license COPYING* LICENSES/*.txt

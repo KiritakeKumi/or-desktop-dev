@@ -16,11 +16,14 @@ Summary:        KDE Wayland library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kwayland
-#!RemoteAsset
+#!RemoteAsset:  sha256:3a
 Source:         https://download.kde.org/stable/plasma/%{version}/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
+BuildOption(conf):  -DBUILD_QCH:BOOL=TRUE
 
 BuildRequires:  doxygen
-BuildRequires:  fdupes
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  xcb-util
@@ -50,17 +53,6 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 %description    devel
 KWayland provides a Qt-style Client and Server library wrapper for the Wayland
 libraries.
-
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6 -DBUILD_QCH:BOOL=TRUE
-
-%kf6_build
-
-%install
-%kf6_install
 
 %files
 %license LICENSES/*

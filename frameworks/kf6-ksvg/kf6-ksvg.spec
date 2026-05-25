@@ -19,8 +19,11 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ksvg
 #!RemoteAsset:  sha256:f3a7412e227d13b1cafec91c1b58dd3f86980abefc08b2535b46bef362b4c07e
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
 Patch0:         0001-Revert-Support-for-fractional-scaling.patch
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Archive) >= %{_kf6_version}
@@ -50,17 +53,6 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 
 %description    devel
 Development Files for the ksvg framework.
-
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
 
 %files
 %license LICENSES/*

@@ -19,6 +19,9 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kparts
 #!RemoteAsset:  sha256:049c2cf048b4cbbffe0bea9357bd9ab53b8be672ba509b2bb058f764d21b3f5b
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
@@ -57,24 +60,14 @@ This library implements the framework for KDE parts, which are
 elaborate widgets with a user-interface defined in terms of actions
 (menu items, toolbar icons). Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/kparts.categories

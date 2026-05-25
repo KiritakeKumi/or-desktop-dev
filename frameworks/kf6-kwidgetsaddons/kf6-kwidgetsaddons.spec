@@ -20,8 +20,11 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwidgetsaddons
 #!RemoteAsset:  sha256:65044882e30b305fe9fb20331a354cd811ca9d80b5c7f9fa722639f3334fe630
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+BuildOption(conf):  -DBUILD_PYTHON_BINDINGS=OFF
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(Qt6LinguistTools) >= %{qt6_version}
 BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
@@ -51,27 +54,14 @@ Requires:       cmake(Qt6Widgets) >= %{qt6_version}
 This repository contains add-on widgets and classes for applications
 that use the Qt Widgets module.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6 \
-  -DBUILD_PYTHON_BINDINGS=OFF
-
-%kf6_build
-
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/kwidgetsaddons.categories

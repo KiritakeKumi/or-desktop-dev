@@ -19,9 +19,11 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kservice
 #!RemoteAsset:  sha256:f8528524ccafb6a495962dd3260c442377920169f1c444f11657ea42558a53b6
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
+
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  bison
-BuildRequires:  fdupes
 BuildRequires:  flex
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
@@ -35,7 +37,7 @@ BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  docbook-dtds
 
-Recommends:     kded6 >= %{_kf6_version}
+Recommends:     kded >= %{_kf6_version}
 
 %description
 Provides a plugin framework for handling desktop services. Services can
@@ -61,18 +63,14 @@ application specific code. Development files
 
 %kf6_build
 
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %doc %lang(en) %{_kf6_mandir}/*/kbuildsycoca6.*

@@ -19,8 +19,10 @@ URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwallet
 #!RemoteAsset:  sha256:2321f8591f1f225d3d7253fae9ee61d0789db231b3eeae6a5f8a14c013531389
 Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+BuildSystem:    cmake
 
-BuildRequires:  fdupes
+BuildOption(conf):  -DBUILD_TESTING=OFF
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  libgcrypt-devel >= 1.5.0
 BuildRequires:  gpgmepp-devel
@@ -59,11 +61,7 @@ This framework contains two main components:
 Summary:        Safe desktop-wide storage for passwords
 Requires:       kf6-kwallet >= %{version}
 Recommends:     kf6-kwallet-tools
-# kwalletd6 ships a compat org.kde.kwalletd5.service file. It needs to replace
-# kwalletd5 to keep using plasma5 with KF6-based apps
-Provides:       kwalletd5 = %{version}-%{release}
-Obsoletes:      kwalletd5 < %{version}
-Obsoletes:      kwalletd5-lang < %{version}
+Provides:       kwalletd = %{version}-%{release}
 
 %description -n kwalletd6
 This framework contains two main components:
@@ -81,26 +79,14 @@ This framework contains two main components:
 * The kwalletd used to safely store the passwords on KDE work spaces.
 Development files.
 
-%prep
-%autosetup -p1 -n %{rname}-%{version}
-
-%build
-%cmake_kf6
-
-%kf6_build
-
-%install
-%kf6_install
-
-%fdupes %{buildroot}
-
+%install -a
 # todo: fix the name error.
 # Avoid illegal package names
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 # Use langpacks macro to auto-split translations
-%find_lang %{name}6 --with-qt --all-name --generate-subpackages
+%find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%files -f %{name}6.lang
+%files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
 %{_kf6_debugdir}/kwallet.categories
