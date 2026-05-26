@@ -11,13 +11,13 @@
 %bcond flatpak 0
 
 Name:           discover
-Version:        6.5.5
+Version:        6.6.5
 Release:        %autorelease
 Summary:        Software store for the KDE Plasma desktop
 License:        GPL-2.0-only AND GPL-3.0-only AND GPL-3.0-or-later
 URL:            https://apps.kde.org/discover/
 VCS:            git:https://invent.kde.org/plasma/discover.git
-#!RemoteAsset:  sha256:t
+#!RemoteAsset:  sha256:tar
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
