@@ -23,7 +23,7 @@ License:        GPL-2.0-or-later AND GPL-3.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kwin.git
 #!RemoteAsset:  sha256:8c4aab73edd7b289468e52beac34e490bc43187476d8621cdde8701e6c7d5640
-Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
+Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -20,7 +20,7 @@ License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-integration.git
 #!RemoteAsset:  sha256:8fe9eefe9ca8c1957c4bf8a2a3986b56ea2f15d6c5b49b190cb8bde385ed3256
-Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
+Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

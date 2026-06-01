@@ -20,7 +20,7 @@ License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kglobalacceld.git
 #!RemoteAsset:  sha256:8127e9171e84437536e3a20ab889d33d72238ba61de9babddc1a59ce8dafe795
-Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
+Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

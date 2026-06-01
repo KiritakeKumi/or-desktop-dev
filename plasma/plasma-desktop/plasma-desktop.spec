@@ -26,7 +26,7 @@ License:        GPL-2.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-desktop.git
 #!RemoteAsset:  sha256:db3fc69388f752aa18d62f449880d7f75a2f65fab5d4bffec3d8a896459d3a4d
-Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
+Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
 Patch0:         0001-Apply-branding-to-default-favorites.patch

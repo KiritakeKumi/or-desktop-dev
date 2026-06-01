@@ -22,7 +22,7 @@ License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kscreenlocker.git
 #!RemoteAsset:  sha256:dfb84f4fe0bee107dfbd81be3873ecb7c545b1beeaa68e059caa97ef9845769d
-Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
+Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 Source1:        kde
 Source2:        kde-fingerprint
 Source3:        kde-smartcard
