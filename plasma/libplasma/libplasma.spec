@@ -19,7 +19,7 @@ Summary:        Plasma library and runtime components based upon KF6 and Qt6
 License:        GPL-2.0-or-later AND LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/libplasma
-#!RemoteAsset:  sha256:f19128fd9b96edebf44fbf9995bd1afa33ec817dfc6c52edc3b2d3f600b61fee
+#!RemoteAsset:  sha256:82e02b2098f4bac90f28cdd4f9d3a4da4557440ec8347220d8fee293c1f98d8b
 Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 

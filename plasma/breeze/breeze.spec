@@ -19,7 +19,7 @@ Summary:        Plasma Desktop artwork, styles and assets
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/breeze
-#!RemoteAsset:  sha256:33c69d10454e1eb1c5908bb7b50a955eabf3264d836bd82dc02f3ba8d97692b0
+#!RemoteAsset:  sha256:06c4c3e466cd03a8c1e411a38b04756b6e145879a560534b2fc44666d41330f4
 Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
