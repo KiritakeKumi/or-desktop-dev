@@ -317,25 +317,43 @@ install -Dm 0644 %{SOURCE1} %{buildroot}%{_prefix}/lib/sddm/sddm.conf.d/10-plasm
 install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.service.d/waitforkded.conf
 
 %post
-%systemd_user_post plasma-gmenudbusmenuproxy.service plasma-kcminit-phase1.service plasma-kcminit.service \
-  plasma-krunner.service plasma-ksmserver.service plasma-plasmashell.service \
-  plasma-baloorunner.service plasma-restoresession.service plasma-ksplash.service
+%systemd_user_post plasma-gmenudbusmenuproxy.service
+%systemd_user_post plasma-kcminit-phase1.service
+%systemd_user_post plasma-kcminit.service
+%systemd_user_post plasma-krunner.service
+%systemd_user_post plasma-ksmserver.service
+%systemd_user_post plasma-plasmashell.service
+%systemd_user_post plasma-baloorunner.service
+%systemd_user_post plasma-restoresession.service
+%systemd_user_post plasma-ksplash.service
 %if %{with x11}
 %systemd_user_post plasma-xembedsniproxy.service
 %endif
 
 %preun
-%systemd_user_preun plasma-gmenudbusmenuproxy.service plasma-kcminit-phase1.service plasma-kcminit.service \
-  plasma-krunner.service plasma-ksmserver.service plasma-plasmashell.service \
-  plasma-baloorunner.service plasma-restoresession.service plasma-ksplash.service
+%systemd_user_preun plasma-gmenudbusmenuproxy.service
+%systemd_user_preun plasma-kcminit-phase1.service
+%systemd_user_preun plasma-kcminit.service
+%systemd_user_preun plasma-krunner.service
+%systemd_user_preun plasma-ksmserver.service
+%systemd_user_preun plasma-plasmashell.service
+%systemd_user_preun plasma-baloorunner.service
+%systemd_user_preun plasma-restoresession.service
+%systemd_user_preun plasma-ksplash.service
 %if %{with x11}
 %systemd_user_preun plasma-xembedsniproxy.service
 %endif
 
 %postun
-%systemd_user_postun plasma-gmenudbusmenuproxy.service plasma-kcminit-phase1.service plasma-kcminit.service \
-  plasma-krunner.service plasma-ksmserver.service plasma-plasmashell.service \
-  plasma-baloorunner.service plasma-restoresession.service plasma-ksplash.service
+%systemd_user_postun plasma-gmenudbusmenuproxy.service
+%systemd_user_postun plasma-kcminit-phase1.service
+%systemd_user_postun plasma-kcminit.service
+%systemd_user_postun plasma-krunner.service
+%systemd_user_postun plasma-ksmserver.service
+%systemd_user_postun plasma-plasmashell.service
+%systemd_user_postun plasma-baloorunner.service
+%systemd_user_postun plasma-restoresession.service
+%systemd_user_postun plasma-ksplash.service
 %if %{with x11}
 %systemd_user_postun plasma-xembedsniproxy.service
 %endif
