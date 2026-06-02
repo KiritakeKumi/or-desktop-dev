@@ -23,7 +23,6 @@ BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  cmake
-BuildRequires:  meson
 BuildRequires:  xz
 BuildRequires:  doxygen
 BuildRequires:  graphviz
