@@ -400,6 +400,8 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_applicationsdir}/kcm_style.desktop
 %{_kf6_applicationsdir}/kcm_users.desktop
 %{_kf6_applicationsdir}/kcm_wallpaper.desktop
+%{_kf6_applicationsdir}/org.kde.baloorunner.desktop
+%{_kf6_applicationsdir}/org.kde.secretprompter.desktop
 %{_kf6_applicationsdir}/org.kde.plasma-interactiveconsole.desktop
 %{_kf6_applicationsdir}/org.kde.kcolorschemeeditor.desktop
 %{_kf6_applicationsdir}/org.kde.kfontinst.desktop
@@ -505,6 +507,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_sharedir}/dbus-1/services/org.kde.krunner.service
 %{_kf6_sharedir}/dbus-1/services/org.kde.plasma.Notifications.service
 %{_kf6_sharedir}/dbus-1/services/org.kde.runners.baloo.service
+%{_kf6_sharedir}/dbus-1/services/org.kde.secretprompter.service
 %{_kf6_sharedir}/dbus-1/system-services/org.kde.fontinst.service
 %{_kf6_sharedir}/dbus-1/system.d/org.kde.fontinst.conf
 %{_kf6_sharedir}/desktop-directories/
@@ -525,6 +528,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %dir %{_kf6_sharedir}/xdg-desktop-portal/
 %{_kf6_sharedir}/xdg-desktop-portal/kde-portals.conf
 %{_libexecdir}/baloorunner
+%{_libexecdir}/ksecretprompter
 %{_kf6_libexecdir}/kauth/fontinst
 %{_kf6_libexecdir}/kauth/fontinst_helper
 %if %{with x11}
