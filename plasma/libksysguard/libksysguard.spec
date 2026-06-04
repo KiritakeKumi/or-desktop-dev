@@ -7,8 +7,6 @@
 %define kf6_version 6.18.0
 %define qt6_version 6.9.0
 
-%define rname libksysguard
-
 # Full Plasma 5 version (e.g. 5.8.95)
 %{!?_plasma6_bugfix: %define _plasma6_bugfix %{version}}
 # Latest ABI-stable Plasma (e.g. 5.8 in KF6, but 5.8.95 in KUF)
@@ -22,7 +20,7 @@ License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/libksysguard.git
 #!RemoteAsset:  sha256:22b8e4812b1dfa6aef18f27d2ba66d6d7702b3e4db250cae48ab946196da734d
-Source:         https://download.kde.org/stable/plasma/%{version}/%{rname}-%{version}.tar.xz
+Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
