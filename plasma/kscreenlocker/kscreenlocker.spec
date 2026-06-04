@@ -21,8 +21,8 @@ Summary:        Library and components for secure lock screen architecture
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kscreenlocker.git
-#!RemoteAsset:  sha256:dfb84f4fe0bee107dfbd81be3873ecb7c545b1beeaa68e059caa97ef9845769d
-Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
+#!RemoteAsset:  sha256:212613c8104f9bb3837dfbdb0f3890168681783236e69b9c04939966e1724f49
+Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 Source1:        kde
 Source2:        kde-fingerprint
 Source3:        kde-smartcard
@@ -32,6 +32,7 @@ BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  cmake >= 3.16
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
+BuildRequires:  cmake(KF6KirigamiPlatform) >= %{kf6_version}
 BuildRequires:  pkgconfig(pam)
 BuildRequires:  pkgconfig
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}

@@ -46,6 +46,7 @@ BuildRequires:  cmake(Qt6WaylandClient) >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
+BuildRequires:  python
 BuildRequires:  pkgconfig(wayland-client) >= 1.9
 BuildRequires:  pkgconfig(xcb)
 BuildRequires:  pkgconfig(xcb-randr)

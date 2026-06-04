@@ -19,8 +19,8 @@ Summary:        An application for monitoring system resources
 License:        GPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-systemmonitor.git
-#!RemoteAsset:  sha256:311bc4434b57869da0ae4f737697d73327172729da8eb4d9947f5aa9400c0f39
-Source0:        https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
+#!RemoteAsset:  sha256:beb5a0cbcb877fcbfb57c95c963574c2465b810350e6d517f69128e7fb54670a
+Source0:        https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

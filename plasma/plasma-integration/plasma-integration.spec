@@ -19,8 +19,8 @@ Summary:        Plugins responsible for better integration of Qt applications in
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-integration.git
-#!RemoteAsset:  sha256:8fe9eefe9ca8c1957c4bf8a2a3986b56ea2f15d6c5b49b190cb8bde385ed3256
-Source:         https://download.kde.org/stable/plasma/%{version}/%{name}-%{version}.tar.xz
+#!RemoteAsset:  sha256:7a5220f2bb40f4dc3e4dad8945563aa88bf045b918fd784a7445612c697e73ed
+Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
