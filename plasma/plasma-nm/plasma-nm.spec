@@ -227,6 +227,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %endif
 %{_kf6_applicationsdir}/kcm_cellular_network.desktop
 %{_kf6_applicationsdir}/kcm_mobile_hotspot.desktop
+%{_kf6_applicationsdir}/kcm_mobile_wired.desktop
 %{_kf6_applicationsdir}/kcm_mobile_wifi.desktop
 %{_kf6_applicationsdir}/kcm_networkmanagement.desktop
 %{_kf6_applicationsdir}/org.kde.vpnimport.desktop
@@ -237,6 +238,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_plugindir}/kf6/kded/networkmanagement.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_cellular_network.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_mobile_hotspot.so
+%{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_mobile_wired.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_mobile_wifi.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings_qwidgets/kcm_networkmanagement.so
 %dir %{_kf6_plugindir}/plasma/applets/
