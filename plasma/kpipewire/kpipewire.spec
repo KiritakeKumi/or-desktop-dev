@@ -32,7 +32,7 @@ BuildRequires:  pkgconfig
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 BuildRequires:  cmake(KF6CoreAddons) >= %{kf6_version}
 BuildRequires:  cmake(KF6I18n) >= %{kf6_version}
-BuildRequires:  cmake(KWayland) >= %{_plasma6_version}
+BuildRequires:  cmake(KWayland) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaWaylandProtocols)
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
 BuildRequires:  cmake(Qt6OpenGL) >= %{qt6_version}
