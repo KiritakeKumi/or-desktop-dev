@@ -32,10 +32,10 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Find changed remote assets
+    - name: Find specs with remote assets
       id: find-changed
       run: |
-        git diff --name-only HEAD^1...HEAD '**/*.spec' > changed-files
+        git ls-files '*.spec' > spec-files
 
         touch changed-remoteassets
 
@@ -43,24 +43,18 @@ jobs:
           [ -f "$file" ] || continue
 
           echo "::group::Processing $file" >&2
-          if git cat-file -e "HEAD^1:$file" 2>/dev/null ; then
-            # Changed file
-            git cat-file blob "HEAD^1:$file" | python3 scripts/remoteassetify.py --unsafe-optional-enosys --dry-run > old.tmp
-            python3 scripts/remoteassetify.py --unsafe-optional-enosys --dry-run "$file" > new.tmp
-            diff -u old.tmp new.tmp >&2 || echo "$file" >> changed-remoteassets
-          else
-            # New file
-            python3 scripts/remoteassetify.py --unsafe-optional-enosys --dry-run "$file" > new.tmp
-            diff -u /dev/null new.tmp >&2 || true
+          python3 scripts/remoteassetify.py --unsafe-optional-enosys --dry-run "$file" > remoteassets.tmp
+          if [ -s remoteassets.tmp ]; then
+            cat remoteassets.tmp >&2
             echo "$file" >> changed-remoteassets
           fi
           echo "::endgroup::" >&2
-        done < changed-files
+        done < spec-files
 
         num_changed="$(wc -l < changed-remoteassets)"
         echo "num=$num_changed" > "$GITHUB_OUTPUT"
 
-        echo "# Specs with changed remote assets" >> "$GITHUB_STEP_SUMMARY"
+        echo "# Specs with remote assets" >> "$GITHUB_STEP_SUMMARY"
         echo "" >> "$GITHUB_STEP_SUMMARY"
         sed -e 's/^/    /' changed-remoteassets >> "$GITHUB_STEP_SUMMARY"
         if [ "$num_changed" -eq 0 ]; then

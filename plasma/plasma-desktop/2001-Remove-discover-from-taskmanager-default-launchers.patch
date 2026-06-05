@@ -5,13 +5,13 @@ Subject: [PATCH] Remove Discover from taskmanager default launchers
 
 Avoid pinning Discover by default in taskmanager launcher list.
 ---
- applets/taskmanager/package/contents/config/main.xml | 2 +-
+ applets/taskmanager/main.xml | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/applets/taskmanager/package/contents/config/main.xml b/applets/taskmanager/package/contents/config/main.xml
+diff --git a/applets/taskmanager/main.xml b/applets/taskmanager/main.xml
 index 022f6d6..88caa7e 100644
---- a/applets/taskmanager/package/contents/config/main.xml
-+++ b/applets/taskmanager/package/contents/config/main.xml
+--- a/applets/taskmanager/main.xml
++++ b/applets/taskmanager/main.xml
 @@ -103,7 +103,7 @@
      </entry>
      <entry name="launchers" type="StringList">
