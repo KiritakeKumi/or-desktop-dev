@@ -271,8 +271,15 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %{_kf6_plugindir}/kf6/kded/kded_touchpad.so
 %{_kf6_plugindir}/kf6/krunner/
 %{_kf6_plugindir}/plasma/applets/org.kde.panel.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.keyboardlayout.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kicker.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kickoff.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.kimpanel.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.marginsseparator.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.pager.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.showActivityManager.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.showdesktop.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.taskmanager.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.trash.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.windowlist.so
 %dir %{_kf6_plugindir}/plasma/kcms/desktop/
