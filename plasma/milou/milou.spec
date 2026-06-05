@@ -19,7 +19,7 @@ Summary:        Dedicated search application built on top of Baloo
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/milou.git
-#!RemoteAsset:  sha256:15bbb74ec3f7a64e02c1e881ee25025c0b738fbfc387e225c8064e94faecf6ae
+#!RemoteAsset:  sha256:700c77213622e9f914f407e6c5e42dad28846b6704d40cfc8cbdfb8f316ba96f
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

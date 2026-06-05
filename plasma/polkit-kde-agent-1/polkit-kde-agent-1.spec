@@ -14,7 +14,7 @@ Summary:        PolicyKit authentication agent for Plasma
 License:        GPL-2.0-only AND LGPL-2.1-or-later
 URL:            https://www.kde.org/
 VCS:            git:https://invent.kde.org/plasma/polkit-kde-agent-1.git
-#!RemoteAsset:  sha256:bd6f23462478e11808591eff698b8c026779379ffcc7fc68f3769d060d16ca4a
+#!RemoteAsset:  sha256:a5d80462970bd987fc386f1445c6451e13786edaab6ad7741b44dabce7e387a1
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

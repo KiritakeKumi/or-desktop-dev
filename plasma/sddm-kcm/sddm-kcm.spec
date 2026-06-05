@@ -14,7 +14,7 @@ Summary:        A sddm control module for KDE
 License:        GPL-2.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/sddm-kcm.git
-#!RemoteAsset:  sha256:4026abbbba4ebaa654bca2a52dbc5f07519f69684e5c94f7d91644888f307570
+#!RemoteAsset:  sha256:e94ff27dd0a3a701eb04b5a87041795137f5624d3bea986f950403af79f0370b
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
