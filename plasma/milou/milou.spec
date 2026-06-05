@@ -53,6 +53,7 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %files -f %{name}.lang
 %license LICENSES/*
 %{_kf6_qmldir}/org/kde/milou/
+%{_kf6_plugindir}/plasma/applets/org.kde.milou.so
 
 %changelog
 %autochangelog
