@@ -53,7 +53,6 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %files -f %{name}.lang
 %license LICENSES/*
 %{_kf6_qmldir}/org/kde/milou/
-%{_kf6_plasmadir}/plasmoids/org.kde.milou/
 
 %changelog
 %autochangelog
