@@ -29,7 +29,8 @@ VCS:            git:https://invent.kde.org/plasma/plasma-desktop.git
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
-Patch0:         0001-Apply-branding-to-default-favorites.patch
+Patch2000:      2000-Apply-branding-to-default-favorites.patch
+Patch2001:      2001-Remove-discover-from-taskmanager-default-launchers.patch
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildOption(conf):  -DBUILD_KCM_MOUSE_X11=OFF
