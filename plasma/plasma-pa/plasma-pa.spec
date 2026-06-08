@@ -19,7 +19,7 @@ Summary:        The Plasma Volume Manager
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-pa.git
-#!RemoteAsset:  sha256:801a84442404bbadb4f36ae0843ec995e662194ddecb075e5490605bc4554190
+#!RemoteAsset:  sha256:caa7828ca80e6671bd491ad5d443cc72257ff4b2538de2e800b71dd0b8dc53a9
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
@@ -29,6 +29,7 @@ BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  docbook-xsl
 BuildRequires:  docbook-dtds
+BuildRequires:  cmake(KF6KirigamiPlatform) >= %{kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{kf6_version}
 BuildRequires:  cmake(KF6CoreAddons) >= %{kf6_version}
 BuildRequires:  cmake(KF6DBusAddons) >= %{kf6_version}
