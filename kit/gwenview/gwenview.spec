@@ -15,7 +15,7 @@ Summary:        Image Viewer by KDE
 License:        GPL-2.0-or-later
 URL:            https://apps.kde.org/gwenview
 VCS:            git:https://invent.kde.org/graphics/gwenview.git
-#!RemoteAsset:  sha256:s
+#!RemoteAsset:  sha256:150b601741f1fcf3aae5e8fa6dbd28ae83afe3e0914a1e91c84efa55312d9a69
 Source0:        https://download.kde.org/stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
@@ -23,7 +23,7 @@ BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  cfitsio-devel
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
-BuildRequires:  libjpeg-devel
+BuildRequires:  libjpeg-turbo
 BuildRequires:  liblcms2-devel
 BuildRequires:  libpng-devel
 BuildRequires:  pkgconfig
