@@ -36,6 +36,9 @@ BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  cmake(Qt6Xml) >= %{qt6_version}
 
+Provides:       kf6-kconfig-imports = %{version}-%{release}
+Obsoletes:      kf6-kconfig-imports < %{version}-%{release}
+
 %description
 KConfig provides an advanced configuration system. It is made of three parts:
 KConfigCore, KConfigGui and KConfigQml.

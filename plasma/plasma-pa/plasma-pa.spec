@@ -69,8 +69,8 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %find_lang %{name} --with-qt --all-name --with-html --generate-subpackages
 
 %files -f %{name}.lang
-%license LICENSES/*
 %doc %{_kf6_htmldir}/en/kcontrol/
+%license LICENSES/*
 %{_kf6_applicationsdir}/kcm_pulseaudio.desktop
 %{_kf6_debugdir}/plasmapa.categories
 %{_kf6_libdir}/libplasma-volume.so.*

@@ -53,6 +53,8 @@ BuildRequires:  cmake(PySide6)
 # https://community.kde.org/Plasma/Plasma_6#Coinstallability
 Provides:       kguiaddons = %{version}-%{release}
 Obsoletes:      kguiaddons < %{version}-%{release}
+Provides:       kf6-kguiaddons-imports = %{version}-%{release}
+Obsoletes:      kf6-kguiaddons-imports < %{version}-%{release}
 
 %description
 The KDE GUI addons provide utilities for graphical user interfaces in the areas

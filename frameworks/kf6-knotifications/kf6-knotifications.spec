@@ -46,6 +46,9 @@ BuildRequires:  clang-devel
 BuildRequires:  cmake(Shiboken6)
 BuildRequires:  cmake(PySide6)
 
+Provides:       kf6-knotifications-imports = %{version}-%{release}
+Obsoletes:      kf6-knotifications-imports < %{version}-%{release}
+
 %description
 KNotification is used to notify the user of an event. It covers feedback and
 persistent events.
