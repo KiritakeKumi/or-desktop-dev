@@ -18,6 +18,7 @@ Source1:        https://github.com/Tencent/ncnn/archive/e54f7b1f88434e1d844ea055
 #!RemoteAsset:  sha256:dc78c7f2c479779db66c60582bf8c4173b75b89f689b7edaff3a97d8820dbecd
 Source2:        https://github.com/nihui/glslang/archive/fe88f421038e1bb0a25cd5c1b2dfe505db82d08f.tar.gz
 BuildSystem:    cmake
+BuildOption(conf):  -DNCNN_INSTALL_SDK=OFF
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
@@ -34,13 +35,23 @@ does not represent a real-world use case.
 %prep -a
 tar -xf %{SOURCE1} --strip-components=1 -C ncnn
 tar -xf %{SOURCE2} --strip-components=1 -C ncnn/glslang
+cp -a ncnn/LICENSE.txt LICENSE.ncnn.txt
+cp -a ncnn/glslang/LICENSE.txt LICENSE.glslang.txt
 echo 'install(TARGETS vkpeak RUNTIME DESTINATION bin)' >> CMakeLists.txt
+
+%install -a
+# vkpeak vendors glslang through ncnn; only ship the vkpeak binary.
+rm -rf $RPM_BUILD_ROOT%{_includedir}/glslang
+rm -rf $RPM_BUILD_ROOT%{_libdir}/cmake/glslang
+rm -f $RPM_BUILD_ROOT%{_libdir}/libSPIRV.so*
+rm -f $RPM_BUILD_ROOT%{_libdir}/libglslang.so*
+rm -f $RPM_BUILD_ROOT%{_libdir}/libglslang-default-resource-limits.so*
 
 %files
 %doc README.md
 %license LICENSE
-%license ncnn/LICENSE.txt
-%license ncnn/glslang/LICENSE.txt
+%license LICENSE.ncnn.txt
+%license LICENSE.glslang.txt
 %{_bindir}/vkpeak
 
 %changelog
