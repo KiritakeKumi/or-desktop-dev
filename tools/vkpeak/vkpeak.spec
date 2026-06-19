@@ -18,6 +18,7 @@ Source1:        https://github.com/Tencent/ncnn/archive/e54f7b1f88434e1d844ea055
 #!RemoteAsset:  sha256:dc78c7f2c479779db66c60582bf8c4173b75b89f689b7edaff3a97d8820dbecd
 Source2:        https://github.com/nihui/glslang/archive/fe88f421038e1bb0a25cd5c1b2dfe505db82d08f.tar.gz
 BuildSystem:    cmake
+
 BuildOption(conf):  -DNCNN_INSTALL_SDK=OFF
 
 BuildRequires:  cmake
