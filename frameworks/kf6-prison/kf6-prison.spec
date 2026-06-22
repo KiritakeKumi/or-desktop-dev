@@ -17,7 +17,7 @@ Summary:        Barcode abstraction layer library
 License:        MIT
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/prison.git
-#!RemoteAsset:  sha256:0414ddc310bca5eecfc1a6f9d4463b8a6d81894db4128ac43b4f8c1e14b73b5b
+#!RemoteAsset:  sha256:760903e9ae401f8bcdb9efc9ad6548982642e7411a223c8ceb41e5491a6b1135
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

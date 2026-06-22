@@ -17,7 +17,7 @@ Summary:        RSS/Atom parsing library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/syndication.git
-#!RemoteAsset:  sha256:6130b8bc976cb078eda34b833ecd558a156b4e6bc4cb55e57ac362cb2998ba47
+#!RemoteAsset:  sha256:e28036eba9bf94f62466eaff66f49305fff9dd576a317df2474d6bfe5bfbc759
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

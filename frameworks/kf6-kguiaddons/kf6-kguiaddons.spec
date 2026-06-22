@@ -19,7 +19,7 @@ Summary:        Utilities for graphical user interfaces
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kguiaddons
-#!RemoteAsset:  sha256:8375342f852104f36fd72a6870eb9795183af4516592cd6fa73445ea6b813172
+#!RemoteAsset:  sha256:29b043480c45d3e51c57cac74fd83589cc7729c907a6585b72880cbf07feaf82
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

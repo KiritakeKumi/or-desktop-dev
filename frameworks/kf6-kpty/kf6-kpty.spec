@@ -17,7 +17,7 @@ Summary:        Primitives to interface with pseudo terminal devices
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kpty.git
-#!RemoteAsset:  sha256:7613c26cfaa7465a2fe28a22762ceb38266414e7f4a94a127c09dc0628625553
+#!RemoteAsset:  sha256:ad06bfda8df019bb2b33567ce3df539bcc107e0dfe004281e5ff9ae4617c6ecc
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

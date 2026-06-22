@@ -17,7 +17,7 @@ Summary:        Configuration dialog for desktop notifications
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/knotifyconfig.git
-#!RemoteAsset:  sha256:062e22f48a1da485d42ef56b37db1fc502f5f9305871483627d218f357560a28
+#!RemoteAsset:  sha256:81861316d615e7e5ff07143c1d58d9b52cadc5e02ab38c8f2677c01f71e51f26
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

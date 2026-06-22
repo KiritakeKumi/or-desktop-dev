@@ -17,7 +17,7 @@ Summary:        Framework for downloading and sharing additional application dat
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://github.com/KDE/knewstuff.git
-#!RemoteAsset:  sha256:94ef39077ba53a72f4e555b6f94a2762cba79730619cb80a31c5435642ebe1aa
+#!RemoteAsset:  sha256:8c19df7ba5940c36ff15051703acd3a16c664b4a570817b6770fafc7ab59d6de
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

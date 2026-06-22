@@ -17,7 +17,7 @@ Summary:        Syntax highlighting engine and library
 License:        LGPL-2.1-or-later AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND MIT AND BSD-3-Clause AND Artistic-1.0
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/syntax-highlighting.git
-#!RemoteAsset:  sha256:a4e86d167cd5f3c4318584119451f891551c24cd4a0ff1f7ef95e2476a39c5ac
+#!RemoteAsset:  sha256:cbff001b9f00d032feb254313ecfee9a6e0a0b3c5a8c82a7e0806c5f1915a545
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

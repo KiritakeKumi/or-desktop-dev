@@ -17,7 +17,7 @@ Summary:        KDE Framework for providing different actions given a string que
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/krunner.git
-#!RemoteAsset:  sha256:3519c7fe170be1359a4c38dd5269de64c0208ccfeb950661002ddfa4e92f2bf0
+#!RemoteAsset:  sha256:46d06321bbccadb8f3fbb948ffaac5eff18dad9552fde677761ddddb9470202f
 Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
