@@ -7,11 +7,11 @@
 %define qt6_version 6.8.0
 
 %define rname kconfig
-# Full KF6 version (e.g. 6.26.0)
+# Full KF6 version (e.g. 6.27.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kconfig
-Version:        6.26.0
+Version:        6.27.0
 Release:        %autorelease
 Summary:        Advanced configuration system
 License:        LGPL-2.1-or-later AND GPL-2.0-or-later

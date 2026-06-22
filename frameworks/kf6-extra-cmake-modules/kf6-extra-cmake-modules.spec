@@ -7,7 +7,7 @@
 # SPDX-License-Identifier: MulanPSL-2.0
 
 Name:           kf6-extra-cmake-modules
-Version:        6.26.0
+Version:        6.27.0
 Release:        %autorelease
 Summary:        CMake modules
 License:        BSD-3-Clause

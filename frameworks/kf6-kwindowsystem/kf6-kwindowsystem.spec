@@ -8,7 +8,7 @@
 %define qt6_version 6.8.0
 
 Name:           kf6-kwindowsystem
-Version:        6.26.0
+Version:        6.27.0
 Release:        %autorelease
 Summary:        KDE Access to window manager
 License:        LGPL-2.1-or-later
@@ -28,7 +28,7 @@ BuildRequires:  doxygen
 BuildRequires:  graphviz
 BuildRequires:  xmlto
 BuildRequires:  pkgconfig
-BuildRequires:  kf6-extra-cmake-modules >= 6.26.0
+BuildRequires:  kf6-extra-cmake-modules >= 6.27.0
 BuildRequires:  qt6-qtbase-private-devel >= 6.8.0
 BuildRequires:  cmake(Qt6GuiPrivate)
 BuildRequires:  cmake(Qt6LinguistTools)

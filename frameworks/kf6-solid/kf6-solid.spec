@@ -9,7 +9,7 @@
 %define rname solid
 
 Name:           kf6-solid
-Version:        6.26.0
+Version:        6.27.0
 Release:        %autorelease
 Summary:        KDE Desktop hardware abstraction
 License:        LGPL-2.1-or-later
