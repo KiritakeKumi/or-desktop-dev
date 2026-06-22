@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kauth
 #!RemoteAsset:  sha256:e6b6562114c2cb71db6ca48fdf0ebed2df70e164c48295b35433a80b03385847
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -21,7 +21,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/purpose.git
 #!RemoteAsset:  sha256:cc7b7599d1ac7ce7ed07351a35d742fac1b7e554b208a7b1c92e859b3b4add30
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

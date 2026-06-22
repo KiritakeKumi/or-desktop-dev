@@ -20,7 +20,7 @@ License:        LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/breeze-icons
 #!RemoteAsset:  sha256:4e123fac511dfab2b7c505857849a5cecfac2ce6194e3230c51ceec31676b06e
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

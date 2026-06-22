@@ -18,7 +18,7 @@ License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/baloo.git
 #!RemoteAsset:  sha256:702f5b868aaef48153c6c3828111b3b335403079491a8f37043ebd89c6995b30
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

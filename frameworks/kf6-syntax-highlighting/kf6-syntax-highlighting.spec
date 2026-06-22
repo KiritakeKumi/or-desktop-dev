@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/syntax-highlighting.git
 #!RemoteAsset:  sha256:a4e86d167cd5f3c4318584119451f891551c24cd4a0ff1f7ef95e2476a39c5ac
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

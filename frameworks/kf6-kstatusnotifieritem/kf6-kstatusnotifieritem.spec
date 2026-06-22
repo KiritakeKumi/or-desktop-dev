@@ -19,7 +19,7 @@ License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kstatusnotifieritem.git
 #!RemoteAsset:  sha256:898914c94820f99889d879f33cabbb5fbe7b9f4e24a6a1d9a9b4439489bc3266
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

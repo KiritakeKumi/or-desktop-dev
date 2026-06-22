@@ -15,7 +15,7 @@ License:        LGPL-2.1-or-later
 URL:            https://kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwindowsystem
 #!RemoteAsset:  sha256:5f7962b7c986e77c5d25fa4f7d09cd89144b8781e57ebc37fd45eaec1961bb02
-Source0:        https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source0:        https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

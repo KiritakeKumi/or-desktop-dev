@@ -18,7 +18,7 @@ License:        MIT
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kuserfeedback.git
 #!RemoteAsset:  sha256:6cc18dca65a24af2ac262cb9c8761991701c8081a7133487b4ec936003f3f864
-Source:         https://download.kde.org/stable/frameworks/6.26/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DQT_MAJOR_VERSION:STRING=6
