@@ -84,6 +84,7 @@ The package contains the PySide6 bindings library for %{name}.
 %{_kf6_debugdir}/kcoreaddons.categories
 %{_kf6_debugdir}/kcoreaddons.renamecategories
 %{_kf6_libdir}/libKF6CoreAddons.so.*
+%{_kf6_libdir}/qt6/metatypes/qt6kf6coreaddons_metatypes.json
 %{_datadir}/locale/*/LC_MESSAGES/kcoreaddons6_qt.qm
 %{_kf6_qmldir}/org/kde/coreaddons/
 

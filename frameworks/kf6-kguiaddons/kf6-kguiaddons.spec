@@ -77,6 +77,7 @@ of colors, fonts, text, images, keyboard input. Development files.
 %{_kf6_bindir}/kde-geo-uri-handler
 %{_kf6_debugdir}/kguiaddons.categories
 %{_kf6_libdir}/libKF6GuiAddons.so.*
+%{_kf6_libdir}/qt6/metatypes/qt6kf6guiaddons_metatypes.json
 %{_kf6_qmldir}/org/kde/guiaddons/
 
 %files devel

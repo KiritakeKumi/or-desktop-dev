@@ -82,6 +82,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_libdir}/libKirigamiLayouts.so.*
 %{_kf6_libdir}/libKirigamiLayoutsPrivate.so.*
 %{_kf6_libdir}/libKirigamiPlatform.so.*
+%{_kf6_libdir}/qt6/metatypes/qt6kirigamiplatform_metatypes.json
 %{_kf6_libdir}/libKirigamiPrimitives.so.*
 %{_kf6_libdir}/libKirigamiPolyfill.so.*
 %{_kf6_libdir}/libKirigamiTemplates.so.*

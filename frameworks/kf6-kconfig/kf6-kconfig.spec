@@ -88,6 +88,8 @@ their changes to their respective configuration files. Development files.
 %{_kf6_libdir}/libKF6ConfigCore.so.*
 %{_kf6_libdir}/libKF6ConfigGui.so.*
 %{_kf6_libdir}/libKF6ConfigQml.so.*
+%{_kf6_libdir}/qt6/metatypes/qt6kf6configcore_metatypes.json
+%{_kf6_libdir}/qt6/metatypes/qt6kf6configgui_metatypes.json
 %{_datadir}/locale/*/LC_MESSAGES/kconfig6_qt.qm
 %{_kf6_libexecdir}/kconf_update
 %{_kf6_qmldir}/org/kde/config/

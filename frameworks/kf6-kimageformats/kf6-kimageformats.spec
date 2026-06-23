@@ -101,6 +101,7 @@ to provide additional image format plugins for QtGui.
 %if %{with exr}
 %{_kf6_plugindir}/imageformats/kimg_exr.so
 %endif
+%{_kf6_plugindir}/imageformats/kimg_ff.so
 %{_kf6_plugindir}/imageformats/kimg_hdr.so
 %if %{with heif}
 %{_kf6_plugindir}/imageformats/kimg_heif.so
