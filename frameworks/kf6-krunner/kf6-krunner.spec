@@ -53,6 +53,7 @@ Files needed for developing custom runners or frontends.
 %doc README.md
 %license LICENSES/*
 %{_kf6_libdir}/libKF6Runner.so.*
+%{_kf6_libdir}/qt6/metatypes/qt6kf6runner_metatypes.json
 %{_kf6_debugdir}/krunner.categories
 %{_kf6_debugdir}/krunner.renamecategories
 
