@@ -50,7 +50,7 @@ KDE Telemetry Policy, which forbids the usage of unique identification.
 
 %package        server
 Summary:        Server component of kf6-kuserfeedback
-Requires:       (php-sqlite or php-mysql or php-pgsql)
+Recommends:     (php-sqlite or php-mysql or php-pgsql)
 Requires:       kf6-kuserfeedback >= %{version}
 Requires:       php
 

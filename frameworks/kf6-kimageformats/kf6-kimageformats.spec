@@ -75,7 +75,7 @@ image formats.
 
 %package        eps
 Summary:        EPS image format plugin for Qt
-Requires:       ghostscript
+Recommends:     ghostscript
 
 %description    eps
 This plugin provides support for the EPS document format for QtGui. As
