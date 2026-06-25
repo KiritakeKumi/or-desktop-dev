@@ -167,7 +167,7 @@ Requires:       kde-cli-tools >= %{_plasma6_bugfix}
 Requires:       kf6-kded
 Requires:       kf6-kquickcharts
 Requires:       kglobalacceld >= %{_plasma6_bugfix}
-Requires:       kirigami-addons >= 0.10.0
+Requires:       kirigami-addons >= 1.12.1
 Requires:       kscreen >= %{_plasma6_bugfix}
 Requires:       kscreenlocker >= %{_plasma6_bugfix}
 Requires:       kwin >= %{_plasma6_bugfix}

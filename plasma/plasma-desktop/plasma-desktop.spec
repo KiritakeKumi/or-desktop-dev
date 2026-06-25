@@ -141,7 +141,7 @@ Requires:       qt6-qtbase >= %{qt6_version}
 # Various KCMs use it
 Requires:       kinfocenter
 Requires:       kf6-kirigami >= %{kf6_version}
-Requires:       kirigami-addons >= 1.0.0
+Requires:       kirigami-addons >= 1.12.1
 Requires:       kmenuedit
 # Needed for sensors
 Requires:       libksysguard >= %{_plasma6_bugfix}
