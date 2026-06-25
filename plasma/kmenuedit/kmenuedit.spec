@@ -13,7 +13,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           kmenuedit
-Version:        6.6.5
+Version:        6.7.0
 Release:        %autorelease
 Summary:        Provides the interface and basic tools for the KDE workspace
 License:        GPL-2.0-only

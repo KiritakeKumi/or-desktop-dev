@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           sddm-kcm
-Version:        6.6.5
+Version:        6.7.0
 Release:        %autorelease
 Summary:        A sddm control module for KDE
 License:        GPL-2.0-only

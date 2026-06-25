@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           plasma-disks
-Version:        6.6.5
+Version:        6.7.0
 Release:        %autorelease
 Summary:        Plasma service for monitoring disk health
 License:        GPL-2.0-only OR GPL-3.0-only

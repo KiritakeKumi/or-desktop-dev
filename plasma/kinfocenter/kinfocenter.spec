@@ -15,7 +15,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           kinfocenter
-Version:        6.6.5
+Version:        6.7.0
 Release:        %autorelease
 Summary:        Utility that provides information about a computer system
 License:        GPL-2.0-or-later

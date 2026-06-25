@@ -9,7 +9,7 @@
 %define sover 7
 
 Name:           plasma-activities
-Version:        6.6.5
+Version:        6.7.0
 Release:        %autorelease
 Summary:        Plasma Activities support
 License:        GPL-2.0-or-later
