@@ -19,7 +19,7 @@ Summary:        Plugin based system monitoring daemon
 License:        BSD-2-Clause AND BSD-3-Clause AND CC0-1.0 AND GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/ksystemstats.git
-#!RemoteAsset:  sha256:8f01446bd157ae20ae392c272d9a6a7465cd7d5e48e27536981d1be9826280a6
+#!RemoteAsset:  sha256:866f8b1e1efea353156a92eeab1b703d52668b23b509e831c82a605cb06d5786
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

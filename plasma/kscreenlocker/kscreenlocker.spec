@@ -21,7 +21,7 @@ Summary:        Library and components for secure lock screen architecture
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kscreenlocker.git
-#!RemoteAsset:  sha256:212613c8104f9bb3837dfbdb0f3890168681783236e69b9c04939966e1724f49
+#!RemoteAsset:  sha256:2b064214d2a3ebd96f166683690381f2c6e96222496996958ab314fc92d8825e
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 Source1:        kde
 Source2:        kde-fingerprint

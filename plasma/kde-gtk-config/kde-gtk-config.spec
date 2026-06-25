@@ -19,7 +19,7 @@ Summary:        Daemon for GTK2 and GTK3 Applications Appearance Under KDE
 License:        GPL-3.0-or-later AND LGPL-3.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kde-gtk-config.git
-#!RemoteAsset:  sha256:32da534b0d1fe1e2d677fc3116baf78c47b1e7937601e4c6637d825c6f33afe7
+#!RemoteAsset:  sha256:aff8a284bde90c814ab9eedab3c6bb13ad90763cbb3039fab8720bf6092c8091
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

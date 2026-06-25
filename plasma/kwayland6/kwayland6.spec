@@ -16,7 +16,7 @@ Summary:        KDE Wayland library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kwayland
-#!RemoteAsset:  sha256:afbcd53ca8a5fb501038415f1473c3d11556eb56ed8f653ece03f77d799cad01
+#!RemoteAsset:  sha256:8621d17e9100be60ea340235208d044fd02931dbef76a32d9a477de31c8e33f4
 Source:         https://download.kde.org/stable/plasma/%{version}/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

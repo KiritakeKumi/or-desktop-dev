@@ -19,7 +19,7 @@ Summary:        KDE Power Management module
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/powerdevil.git
-#!RemoteAsset:  sha256:5682eeb597cf67783e188096ac600a95d32d8002fd7eda5e268c234c4f0d29c6
+#!RemoteAsset:  sha256:dc97ec9a67923739aa013b29b81a7029b831eeb990527ea8490df1182ab821b1
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

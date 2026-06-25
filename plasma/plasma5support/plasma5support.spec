@@ -20,7 +20,7 @@ Summary:        KF6 Porting aid
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma5support
-#!RemoteAsset:  sha256:f954f2a8f80d977d96ead252da31054f01adfff0a5fcd9f15e13b0cfc37aa93c
+#!RemoteAsset:  sha256:fa3e290389bf129ac7c602655832f4ff7a3f7ad9d82d9aaf27ede2745f154460
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

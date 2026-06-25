@@ -14,7 +14,7 @@ Summary:        Plasma service for monitoring disk health
 License:        GPL-2.0-only OR GPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-disks.git
-#!RemoteAsset:  sha256:46fa1b1944f862c2d39ad6eefd7ac7038a0472b10dba8c30ea900ad6470d9f30
+#!RemoteAsset:  sha256:70ecea48c41db2292091c60afe608facab7437fa336e942c77952838fe519751
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
