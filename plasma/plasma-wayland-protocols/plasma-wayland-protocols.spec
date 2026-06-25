@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: MulanPSL-2.0
 
 Name:           plasma-wayland-protocols
-Version:        1.20.0
+Version:        1.21.0
 Release:        %autorelease
 Summary:        Wayland protocols used by Plasma
 License:        BSD-3-Clause AND LGPL-2.1-only AND LGPL-2.1-or-later AND MIT
