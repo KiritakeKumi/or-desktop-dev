@@ -92,20 +92,20 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %files -f %{name}.lang
 %doc %lang(en) %{_kf6_htmldir}/en/kinfocenter/
 %license LICENSES/*.txt
+%{_libexecdir}/kinfocenter-vulkan-helper
 %{_kf6_applicationsdir}/kcm_about-distro.desktop
-%{_kf6_applicationsdir}/kcm_energyinfo.desktop
 %{_kf6_applicationsdir}/org.kde.kinfocenter.desktop
 %{_kf6_appstreamdir}/org.kde.kinfocenter.appdata.xml
 %{_kf6_bindir}/kinfocenter
 %{_kf6_libdir}/libKInfoCenterInternal.so
 %{_kf6_plugindir}/plasma/kcms/kcm_about-distro.so
-%{_kf6_plugindir}/plasma/kcms/kcm_energyinfo.so
 %dir %{_kf6_plugindir}/plasma/kcms/kinfocenter/
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_audio_information.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_block_devices.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_cpu.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_edid.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_egl.so
+%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_energyinfo.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_firmware_security.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_glx.so
 %{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_interrupts.so
@@ -123,7 +123,13 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %{_kf6_qmldir}/org/kde/kinfocenter/
 %{_kf6_sharedir}/dbus-1/system-services/org.kde.kinfocenter.dmidecode.service
 %{_kf6_dbuspolicydir}/org.kde.kinfocenter.dmidecode.conf
-%{_kf6_sharedir}/kinfocenter/
+%dir %{_kf6_sharedir}/kinfocenter/
+%dir %{_kf6_sharedir}/kinfocenter/edid
+%dir %{_kf6_sharedir}/kinfocenter/network
+%{_kf6_sharedir}/kinfocenter/edid/edid.sh
+%{_kf6_sharedir}/kinfocenter/network/ip.sh
+%{_kf6_sharedir}/kinfocenter/categories/
+%{_kf6_sharedir}/kinfocenter/firmware_security/
 %{_kf6_sharedir}/polkit-1/actions/org.kde.kinfocenter.dmidecode.policy
 %{_kf6_libexecdir}/kauth/kinfocenter-dmidecode-helper
 %{_libexecdir}/kinfocenter-*-helper
