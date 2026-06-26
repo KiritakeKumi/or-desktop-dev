@@ -92,6 +92,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 
 %files -f %{name}.lang
 %license LICENSES/*
+%{_kf6_bindir}/ksysguard-identify
 %{_kf6_debugdir}/libksysguard.categories
 %{_kf6_knsrcfilesdir}/systemmonitor-faces.knsrc
 %{_kf6_knsrcfilesdir}/systemmonitor-presets.knsrc

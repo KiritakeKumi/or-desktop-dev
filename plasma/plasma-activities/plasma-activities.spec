@@ -60,7 +60,6 @@ Development files.
 %{_kf6_qmldir}/org/kde/activities/
 
 %files devel
-%doc %{_kf6_qchdir}/PlasmaActivities.*
 %{_kf6_cmakedir}/PlasmaActivities/
 %{_includedir}/PlasmaActivities/
 %{_kf6_libdir}/libPlasmaActivities.so
