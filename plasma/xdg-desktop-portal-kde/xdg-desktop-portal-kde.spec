@@ -16,7 +16,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           xdg-desktop-portal-kde
-Version:        6.7.0
+Version:        6.7.1
 Release:        %autorelease
 Summary:        QT/KF6 backend for xdg-desktop-portal
 License:        LGPL-2.1-or-later

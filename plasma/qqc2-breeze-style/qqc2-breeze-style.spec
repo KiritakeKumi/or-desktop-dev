@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           qqc2-breeze-style
-Version:        6.7.0
+Version:        6.7.1
 Release:        %autorelease
 Summary:        Breeze Style for Qt Quick
 License:        LGPL-2.1-or-later

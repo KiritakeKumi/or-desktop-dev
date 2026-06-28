@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           polkit-kde-agent-1
-Version:        6.7.0
+Version:        6.7.1
 Release:        %autorelease
 Summary:        PolicyKit authentication agent for Plasma
 License:        GPL-2.0-only AND LGPL-2.1-or-later

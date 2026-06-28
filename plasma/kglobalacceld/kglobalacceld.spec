@@ -13,7 +13,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           kglobalacceld
-Version:        6.7.0
+Version:        6.7.1
 Release:        %autorelease
 Summary:        Global keyboard shortcut daemon
 License:        LGPL-2.0-or-later

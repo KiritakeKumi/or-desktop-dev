@@ -14,7 +14,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           knighttime
-Version:        6.7.0
+Version:        6.7.1
 Release:        %autorelease
 Summary:        Day-night cycle helper library
 License:        LGPL-2.1-or-later

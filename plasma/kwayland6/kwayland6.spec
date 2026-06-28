@@ -10,7 +10,7 @@
 %define rname kwayland
 
 Name:           kwayland6
-Version:        6.7.0
+Version:        6.7.1
 Release:        %autorelease
 Summary:        KDE Wayland library
 License:        LGPL-2.1-or-later
