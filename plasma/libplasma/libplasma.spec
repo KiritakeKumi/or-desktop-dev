@@ -24,7 +24,6 @@ Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{na
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
-BuildOption(conf):  -DBUILD_QCH:BOOL=TRUE
 
 BuildRequires:  doxygen
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
@@ -64,6 +63,7 @@ BuildRequires:  qt6-linguist
 BuildRequires:  pkgconfig(egl)
 BuildRequires:  pkgconfig(gl)
 BuildRequires:  pkgconfig(wayland-client) >= 1.9
+BuildRequires:  pkgconfig(wayland-protocols) >= 1.46
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xcb)
 BuildRequires:  pkgconfig(xcb-composite)
@@ -71,6 +71,8 @@ BuildRequires:  pkgconfig(xcb-damage)
 BuildRequires:  pkgconfig(xcb-render)
 BuildRequires:  pkgconfig(xcb-shape)
 BuildRequires:  pkgconfig(xcb-xfixes)
+
+Obsoletes:      libplasma-doc < %{version}-%{release}
 
 %description
 Plasma library and runtime components based upon KF6 and Qt6
@@ -86,13 +88,6 @@ Conflicts:      plasma-framework-devel
 
 %description    devel
 Plasma library and runtime components based upon KF6 and Qt6
-
-%package        doc
-Summary:        Developer Documentation files for %{name}
-BuildArch:      noarch
-
-%description    doc
-Developer Documentation files for %{name} for use with KDevelop or QtCreator.
 
 %install -a
 # todo: fix the name error.
@@ -115,7 +110,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_datadir}/plasma/desktoptheme/
 
 %files devel
-%doc %{_kf6_qchdir}/Plasma.*
 %{_kf6_cmakedir}/Plasma/
 %{_kf6_cmakedir}/PlasmaQuick/
 %{_includedir}/Plasma/
@@ -123,10 +117,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_libdir}/libPlasma.so
 %{_kf6_libdir}/libPlasmaQuick.so
 %{_kf6_sharedir}/kdevappwizard/
-
-%files doc
-%{_kf6_qchdir}/*.qch
-%{_kf6_qchdir}/*.tags
 
 %changelog
 %autochangelog

@@ -177,6 +177,7 @@ This package provides development files.
 %{_kf6_applicationsdir}/kcm_kwinxwayland.desktop
 %{_kf6_applicationsdir}/kcm_virtualkeyboard.desktop
 %{_kf6_applicationsdir}/org.kde.kwin.killer.desktop
+%{_kf6_applicationsdir}/org.kde.kwin.dialoghelper.desktop
 %{_kf6_bindir}/kwin_wayland_wrapper
 %{_kf6_bindir}/kwindowprop
 %{_kf6_configkcfgdir}/*
@@ -193,7 +194,6 @@ This package provides development files.
 %{_kf6_libdir}/libkcmkwincommon.so.*
 %{_kf6_libdir}/libkwin.so.*
 %{_kf6_notificationsdir}/kwin.notifyrc
-%{_libdir}/qt6/plugins/kwin/plugins/screencast.so
 %dir %{_kf6_plugindir}/kwin
 %dir %{_kf6_plugindir}/kwin/effects
 %dir %{_kf6_plugindir}/kwin/effects/configs
@@ -241,6 +241,8 @@ This package provides development files.
 %{_libexecdir}/kwin_killer_helper
 %{_libexecdir}/kwin-applywindowdecoration
 %{_libexecdir}/kwin-tabbox-preview
+%{_libexecdir}/kwin_dialog_helper
+%{_libexecdir}/kwin_eis_prompter
 %{_userunitdir}/plasma-kwin_wayland.service
 %{_datadir}/locale/*/LC_MESSAGES/kwin*.mo
 %{_datadir}/locale/*/LC_MESSAGES/kcm*.mo

@@ -57,6 +57,7 @@ BuildRequires:  cmake(Qt6Quick) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Test) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Widgets) >= %{qt6_version}
 BuildRequires:  pkgconfig(wayland-client)
+BuildRequires:  pkgconfig(wayland-protocols) >= 1.46
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xcb)

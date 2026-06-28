@@ -28,6 +28,7 @@ BuildSystem:    cmake
 BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
+BuildRequires:  kf6-kitemmodels
 BuildRequires:  cmake(KF6KirigamiPlatform) >= %{kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
@@ -38,12 +39,14 @@ BuildRequires:  cmake(KF6DBusAddons) >= %{kf6_version}
 BuildRequires:  cmake(KF6GlobalAccel) >= %{kf6_version}
 BuildRequires:  cmake(KF6I18n) >= %{kf6_version}
 BuildRequires:  cmake(KF6IconThemes) >= %{kf6_version}
+BuildRequires:  cmake(KF6ImageFormats) >= %{kf6_version}
 BuildRequires:  cmake(KF6KCMUtils) >= %{kf6_version}
 BuildRequires:  cmake(KF6Screen) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(KF6Svg) >= %{kf6_version}
 BuildRequires:  cmake(KF6XmlGui) >= %{kf6_version}
 BuildRequires:  cmake(LayerShellQt) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(Plasma) >= %{_plasma6_bugfix}
+BuildRequires:  cmake(Plasma5Support) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaQuick) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(Qt6QuickControls2) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Sensors) >= %{qt6_version}

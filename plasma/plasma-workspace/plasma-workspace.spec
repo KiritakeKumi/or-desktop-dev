@@ -142,6 +142,7 @@ BuildRequires:  pkgconfig(xcb)
 BuildRequires:  pkgconfig(xcb-composite)
 BuildRequires:  pkgconfig(xcb-cursor)
 BuildRequires:  pkgconfig(xcb-damage)
+BuildRequires:  pkgconfig(xcb-icccm)
 BuildRequires:  pkgconfig(xcb-image)
 BuildRequires:  pkgconfig(xcb-randr)
 BuildRequires:  pkgconfig(xcb-shm)
@@ -482,7 +483,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_notificationsdir}/donationmessage.notifyrc
 %{_kf6_notificationsdir}/freespacenotifier.notifyrc
 %{_kf6_notificationsdir}/libnotificationmanager.notifyrc
-%{_kf6_notificationsdir}/oom-notifier.notifyrc
+%{_kf6_notificationsdir}/oom_notifier.notifyrc
 %{_kf6_plasmadir}/avatars/
 %{_kf6_plasmadir}/look-and-feel/
 %{_kf6_plasmadir}/plasmoids/
@@ -527,6 +528,8 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_sharedir}/timezonefiles/timezones.json
 %dir %{_kf6_sharedir}/xdg-desktop-portal/
 %{_kf6_sharedir}/xdg-desktop-portal/kde-portals.conf
+%dir %{_kf6_sharedir}/xdg-desktop-portal/portals/
+%{_kf6_sharedir}/xdg-desktop-portal/portals/plasmanotify.portal
 %{_libexecdir}/baloorunner
 %{_libexecdir}/ksecretprompter
 %{_kf6_libexecdir}/kauth/fontinst
@@ -541,6 +544,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_libexecdir}/plasma-fallback-session-restore
 %{_libexecdir}/plasma-fallback-session-save
 %{_libexecdir}/plasma-sourceenv.sh
+%{_libexecdir}/plasma-startup-sound
 %{_userunitdir}/plasma-baloorunner.service
 %{_userunitdir}/plasma-core.target
 %{_userunitdir}/plasma-gmenudbusmenuproxy.service
@@ -553,6 +557,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %dir %{_userunitdir}/plasma-plasmashell.service.d/
 %{_userunitdir}/plasma-plasmashell.service.d/waitforkded.conf
 %{_userunitdir}/plasma-restoresession.service
+%{_userunitdir}/plasma-startupsound.service
 %if %{with x11}
 %{_userunitdir}/plasma-workspace-{wayland,x11}.target
 %else

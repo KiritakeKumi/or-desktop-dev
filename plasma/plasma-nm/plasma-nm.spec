@@ -29,6 +29,7 @@ BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildOption(conf):  -DQT_QML_NO_CACHEGEN:BOOL=TRUE
 
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
+BuildRequires:  kirigami-addons
 BuildRequires:  pkgconfig
 BuildRequires:  cmake(KF6ColorScheme) >= %{kf6_version}
 BuildRequires:  cmake(KF6Completion) >= %{kf6_version}
@@ -42,6 +43,8 @@ BuildRequires:  cmake(KF6KirigamiPlatform) >= %{kf6_version}
 BuildRequires:  cmake(KF6ModemManagerQt) >= %{kf6_version}
 BuildRequires:  cmake(KF6NetworkManagerQt) >= %{kf6_version}
 BuildRequires:  cmake(KF6Notifications) >= %{kf6_version}
+BuildRequires:  cmake(KF6Prison) >= %{kf6_version}
+BuildRequires:  cmake(KF6QuickCharts) >= %{kf6_version}
 BuildRequires:  cmake(KF6Service) >= %{kf6_version}
 BuildRequires:  cmake(KF6Solid) >= %{kf6_version}
 BuildRequires:  cmake(KF6Svg) >= %{kf6_version}
@@ -55,14 +58,17 @@ BuildRequires:  cmake(Qca-qt6) >= 2.1.0
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Gui) >= %{qt6_version}
+BuildRequires:  cmake(Qt6Keychain)
 BuildRequires:  cmake(Qt6Network) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Quick) >= %{qt6_version}
 BuildRequires:  cmake(Qt6QuickWidgets) >= %{qt6_version}
 BuildRequires:  cmake(Qt6UiTools) >= %{qt6_version}
 BuildRequires:  cmake(Qt6WebEngineWidgets) >= %{qt6_version}
+BuildRequires:  pkgconfig(cups)
 BuildRequires:  pkgconfig(libnm) >= 1.4.0
 BuildRequires:  pkgconfig(mobile-broadband-provider-info)
 BuildRequires:  pkgconfig(openconnect) >= 5.2
+BuildRequires:  pkgconfig(openssl)
 
 Requires:       NetworkManager
 Requires:       kf6-kded
@@ -232,6 +238,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_applicationsdir}/kcm_networkmanagement.desktop
 %{_kf6_applicationsdir}/org.kde.vpnimport.desktop
 %{_kf6_debugdir}/plasma-nm.categories
+%{_kf6_libdir}/libplasmanm_cellular.so
 %{_kf6_libdir}/libplasmanm_editor.so
 %{_kf6_libdir}/libplasmanm_internal.so
 %{_kf6_notificationsdir}/networkmanagement.notifyrc

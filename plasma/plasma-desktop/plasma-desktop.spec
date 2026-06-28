@@ -256,7 +256,6 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %{_kf6_bindir}/tastenbrett
 %{_kf6_configdir}/autostart/kaccess.desktop
 %{_kf6_configkcfgdir}/*.kcfg
-%{_kf6_dbuspolicydir}/org.kde.kcontrol.kcmclock.conf
 %{_kf6_debugdir}/*.categories
 %{_kf6_knsrcfilesdir}/krunner.knsrc
 %{_kf6_knsrcfilesdir}/ksplash.knsrc
@@ -276,7 +275,6 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kicker.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kickoff.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kimpanel.so
-%{_kf6_plugindir}/plasma/applets/org.kde.plasma.marginsseparator.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.pager.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.showActivityManager.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.showdesktop.so
@@ -322,18 +320,17 @@ rm -rf $RPM_BUILD_ROOT%{_kf6_htmldir}/*@*
 %dir %{_kf6_sharedir}/accounts/services
 %dir %{_kf6_sharedir}/accounts/services/kde/
 %{_kf6_sharedir}/accounts/services/kde/opendesktop-rating.service
-%{_kf6_sharedir}/dbus-1/system-services/org.kde.kcontrol.kcmclock.service
 %{_kf6_sharedir}/kcm_recentFiles/
 %{_kf6_sharedir}/kcmkeys/
 %{_kf6_sharedir}/kcmsolidactions/
+%{_kf6_sharedir}/kconf_update/50-krunner-activate-typing.sh
+%{_kf6_sharedir}/kconf_update/50-krunner-activate-typing.upd
 %{_kf6_sharedir}/locale/sr/LC_SCRIPTS/kfontinst/kfontinst.js
-%{_kf6_sharedir}/polkit-1/actions/org.kde.kcontrol.kcmclock.policy
 %{_kf6_sharedir}/kglobalaccel/org.kde.touchpadshortcuts.desktop
 %dir %{_kf6_sharedir}/sddm
 %dir %{_kf6_sharedir}/sddm/themes
 %{_kf6_sharedir}/sddm/themes/breeze/
 %{_kf6_sharedir}/solid/
-%{_kf6_libexecdir}/kauth/kcmdatetimehelper
 %{_kf6_iconsdir}/hicolor/*/devices/input-touchpad.*
 %{_kf6_sharedir}/kcmmouse/
 %exclude %{_kf6_plasmadir}/emoji/

@@ -108,9 +108,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/*@*
 %{_kf6_plasmadir}/shells/org.kde.plasma.plasmoidviewershell/
 %dir %{_kf6_plugindir}/kf6/ktexteditor/
 %{_kf6_plugindir}/kf6/ktexteditor/iconexplorerplugin.so
-%dir %{_kf6_sharedir}/kpackage/
-%dir %{_kf6_sharedir}/kpackage/genericqml
-%{_kf6_sharedir}/kpackage/genericqml/org.kde.plasma.themeexplorer/
 %{_mandir}/man1/kqml.1%{?ext_man}
 %{_mandir}/man1/plasmaengineexplorer.1%{?ext_man}
 %{_mandir}/man1/plasmoidviewer.1%{?ext_man}
