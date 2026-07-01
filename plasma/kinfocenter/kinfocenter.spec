@@ -21,7 +21,7 @@ Summary:        Utility that provides information about a computer system
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kinfocenter.git
-#!RemoteAsset:  sha256:af5dee2e4767f24f7b01f7382911ef5def32ccbbc198e5543b4baf1c2ae419b5
+#!RemoteAsset:  sha256:1f1013dc7474072016082de4ab8389495c9179a83522a9e1115543b1a1a2cb00
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

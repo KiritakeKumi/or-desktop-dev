@@ -14,7 +14,7 @@ Summary:        Plasma service for monitoring disk health
 License:        GPL-2.0-only OR GPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-disks.git
-#!RemoteAsset:  sha256:70ecea48c41db2292091c60afe608facab7437fa336e942c77952838fe519751
+#!RemoteAsset:  sha256:2bbfa3dc968d90acb7facd9790df58edd17f59046691d116b7d54dd97e151daf
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
@@ -35,7 +35,7 @@ BuildRequires:  cmake(Qt6Gui) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Test) >= %{qt6_version}
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 
-Requires:       /usr/sbin/smartctl
+Requires:       smartmontools
 
 %description
 Monitors S.M.A.R.T. capable devices for imminent failure and informs the user.

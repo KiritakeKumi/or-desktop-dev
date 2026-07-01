@@ -17,7 +17,7 @@ Summary:        KDE's window decorations library
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kdecoration.git
-#!RemoteAsset:  sha256:7a772d1bb6c9dd488502ddc74ab3fd153419e0a7b95b1d2025fc324597c04d6b
+#!RemoteAsset:  sha256:a95140b760fcea8e7748e4025a70ad6a6e437a461c477355d262f2bf5599e718
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

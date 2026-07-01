@@ -18,7 +18,7 @@ Summary:        KDE Plasma Activities support
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-activities-stats
-#!RemoteAsset:  sha256:c6ecf27a7862bd1f0e77ee39947c1f4f884d7438312231219de714708418da2e
+#!RemoteAsset:  sha256:2edc329d0bd96e00a8b32ead6fb0bf797d53cc46995e7141a2e7ae2439317d0f
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

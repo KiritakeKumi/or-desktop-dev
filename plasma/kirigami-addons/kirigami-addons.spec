@@ -14,7 +14,7 @@ Summary:        Add-ons for the Kirigami framework
 License:        LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/libraries/kirigami-addons.git
-#!RemoteAsset:  sha256:c98f92bf7c452e12f6dc403404215413db3959fe904ad830ead0db6bb09b3d11
+#!RemoteAsset:  sha256:c543a493ce5875f405fb1c9ff6d531060ed082cc6d710e56d46ac42d164207bb
 Source:         https://download.kde.org/stable/%{name}/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 

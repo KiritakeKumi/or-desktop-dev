@@ -25,7 +25,7 @@ Summary:        The KDE Plasma Workspace Components
 License:        GPL-2.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-desktop.git
-#!RemoteAsset:  sha256:04a2268128f1bef4e75c9ba1c3c07d971237bb6581d880c2808fd13da680d4cd
+#!RemoteAsset:  sha256:ec264cbc67c7e16d646684082f971816c0d475d0be3b92443c4e4802c89f8eee
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

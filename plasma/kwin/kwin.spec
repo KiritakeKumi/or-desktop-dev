@@ -22,7 +22,7 @@ Summary:        KDE Window Manager
 License:        GPL-2.0-or-later AND GPL-3.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kwin.git
-#!RemoteAsset:  sha256:927c13c12b26f6359a95345317204e38a90c2ca0716b33d611779d7a074de4b7
+#!RemoteAsset:  sha256:caa7c25bf0c9c0d9c4ebeb9b67780a18f2dd7053fa702de512b655fa9deea219
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

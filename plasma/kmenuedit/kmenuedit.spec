@@ -19,7 +19,7 @@ Summary:        Provides the interface and basic tools for the KDE workspace
 License:        GPL-2.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kmenuedit.git
-#!RemoteAsset:  sha256:3f8a10e4978c4d2d61727a139cf2cf1858eac69d8b3325dfc44ea3ae419b24c3
+#!RemoteAsset:  sha256:7225f2d9a8ea683bf29eb4fd3bffea583a8d10e37fa1a2b4004c8bd3aff3cf28
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
