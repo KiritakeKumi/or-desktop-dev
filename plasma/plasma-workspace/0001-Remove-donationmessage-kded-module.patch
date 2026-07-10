@@ -1,0 +1,21 @@
+From: openRuyi Project Contributors
+Subject: [PATCH] Remove donationmessage kded module
+
+Drop the kded6 module that shows a yearly "Donate to KDE" popup
+notification every December. Removing the add_subdirectory() call
+excludes the plugin, its donationmessage.notifyrc and translations
+from the build entirely.
+---
+ CMakeLists.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -444,7 +444,6 @@ if(TARGET Qt6::Positioning)
+     add_subdirectory(geotimezoned)
+ endif()
+ add_subdirectory(menu)
+-add_subdirectory(donationmessage)
+
+ add_subdirectory(interactiveconsole)
+

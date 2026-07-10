@@ -30,6 +30,10 @@ VCS:            git:https://invent.kde.org/plasma/plasma-workspace.git
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 Source1:        sddm.conf
 Source2:        waitforkded.conf
+
+# Remove the yearly "Donate to KDE" popup notification (kded module)
+Patch0:         0001-Remove-donationmessage-kded-module.patch
+
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
@@ -480,7 +484,6 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_libdir}/libkfontinst.so.*
 %{_kf6_libdir}/libkfontinstui.so.*
 %{_kf6_notificationsdir}/devicenotifications.notifyrc
-%{_kf6_notificationsdir}/donationmessage.notifyrc
 %{_kf6_notificationsdir}/freespacenotifier.notifyrc
 %{_kf6_notificationsdir}/libnotificationmanager.notifyrc
 %{_kf6_notificationsdir}/oom_notifier.notifyrc
