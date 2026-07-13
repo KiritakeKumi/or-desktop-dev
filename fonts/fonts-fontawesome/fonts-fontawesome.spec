@@ -17,6 +17,7 @@ Source0:        https://github.com/FortAwesome/Font-Awesome/releases/download/%{
 Source1:        https://github.com/FortAwesome/Font-Awesome/releases/download/%{version}/fontawesome-free-%{version}-web.zip
 BuildArch:      noarch
 
+BuildRequires:  fonts-rpm-macros
 BuildRequires:  unzip
 
 %description
@@ -40,11 +41,8 @@ Web files for Font Awesome.
 %build
 
 %install
-install -m 0755 -d %{buildroot}%{_datadir}/fonts/opentype/fontawesome
-install -p -m 0644 */otfs/*.otf %{buildroot}%{_datadir}/fonts/opentype/fontawesome
-
-install -m 0755 -d %{buildroot}%{_datadir}/fonts/truetype/fontawesome
-install -p -m 0644 */webfonts/*.ttf %{buildroot}%{_datadir}/fonts/truetype/fontawesome
+%install_fonts */otfs/*.otf fontawesome
+%install_fonts */webfonts/*.ttf fontawesome
 
 install -m 0755 -d %{buildroot}%{_datadir}/webfonts/fontawesome
 install -p -m 0644 */webfonts/*.woff2 %{buildroot}%{_datadir}/webfonts/fontawesome
@@ -54,10 +52,7 @@ cp -pr */css */less */scss %{buildroot}%{_datadir}/fontawesome-web/
 
 %files
 %license fontawesome-free-%{version}-desktop/LICENSE.txt
-%dir %{_datadir}/fonts/opentype/fontawesome/
-%{_datadir}/fonts/opentype/fontawesome/*
-%dir %{_datadir}/fonts/truetype/fontawesome/
-%{_datadir}/fonts/truetype/fontawesome/*
+%font_files fontawesome ttf otf
 
 %files web
 %license fontawesome-free-%{version}-web/LICENSE.txt
