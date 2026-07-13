@@ -114,8 +114,8 @@
         typedir = rpm.expand("%{_font_opentypedir}") \
       end \
       if typedir then \
-        rpm.expand("%%dir " .. typedir .. "/" .. subdir .. "/\\n") \
-        rpm.expand(typedir .. "/" .. subdir .. "/*." .. ext .. "\\n") \
+        print(rpm.expand("%%dir " .. typedir .. "/" .. subdir .. "/")) \
+        print(typedir .. "/" .. subdir .. "/*." .. ext) \
       end \
     end \
   }
