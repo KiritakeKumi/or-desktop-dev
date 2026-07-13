@@ -30,14 +30,15 @@
 #   %install_font Foo.ttc
 
 %install_font() \
-  case "${1##*.}" in \
+  _font_src="%{1}" \
+  case "${_font_src##*.}" in \
     ttf|ttc) _font_dest="%{_font_truetypedir}" ;; \
     otf)     _font_dest="%{_font_opentypedir}" ;; \
-    *)       echo "%%install_font: unknown font extension: $1" >&2; exit 1 ;; \
+    *)       echo "%%install_font: unknown font extension: $_font_src" >&2; exit 1 ;; \
   esac \
-  [ -n "$2" ] && _font_dest="$_font_dest/$2" \
+  [ -n "%{2}" ] && _font_dest="$_font_dest/%{2}" \
   install -m 0755 -d "%{buildroot}$_font_dest" \
-  install -m 0644 -p "$1" "%{buildroot}$_font_dest/" \
+  install -m 0644 -p "$_font_src" "%{buildroot}$_font_dest/" \
   :
 
 # === %install_fonts ===
