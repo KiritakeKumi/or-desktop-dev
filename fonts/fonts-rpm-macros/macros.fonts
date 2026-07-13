@@ -88,6 +88,11 @@
 # Each extension gets a %%dir line and a glob line for the matching
 # type directory.
 #
+# Entries are joined with string.char(10) (a literal newline) because
+# rpm's lua print() emits no trailing newline — joining with "\n" is
+# ambiguous under rpm's backslash handling, and bare print()s collapse
+# onto a single %%files line.
+#
 # Examples:
 #   %font_files mypkg             -> dir + globs for ttf, otf, ttc
 #   %font_files mypkg ttf         -> dir + glob for ttf only
@@ -106,6 +111,7 @@
         exts[#exts+1] = e \
       end \
     end \
+    local lines = {} \
     for _, ext in ipairs(exts) do \
       local typedir \
       if ext == "ttf" or ext == "ttc" then \
@@ -114,8 +120,9 @@
         typedir = rpm.expand("%{_font_opentypedir}") \
       end \
       if typedir then \
-        print(rpm.expand("%%dir " .. typedir .. "/" .. subdir .. "/")) \
-        print(typedir .. "/" .. subdir .. "/*." .. ext) \
+        lines[#lines+1] = "%dir " .. typedir .. "/" .. subdir .. "/" \
+        lines[#lines+1] = typedir .. "/" .. subdir .. "/*." .. ext \
       end \
     end \
+    print(table.concat(lines, string.char(10))) \
   }
