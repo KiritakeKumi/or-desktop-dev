@@ -15,7 +15,7 @@ Summary:        All Google Noto Fonts except CJK and Emoji
 License:        OFL-1.1
 URL:            https://notofonts.github.io/
 VCS:            git:https://github.com/notofonts/notofonts.github.io
-#!RemoteAsset:  sha256:xxx
+#!RemoteAsset:  sha256:f1bec0dd722fcfcb0aa75c803530e3a8ae4e0dd59e5b93a52dd8f57d5494ef44
 Source0:        https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-%{hyear}.%{hmonth}.%{hday}.tar.gz
 BuildArch:      noarch
 
