@@ -11,9 +11,9 @@ Summary:        Iconic font set
 License:        OFL-1.1
 URL:            https://fontawesome.com/
 VCS:            git:https://github.com/FortAwesome/Font-Awesome.git
-#!RemoteAsset
+#!RemoteAsset:  sha256:xxx
 Source0:        https://github.com/FortAwesome/Font-Awesome/releases/download/%{version}/fontawesome-free-%{version}-desktop.zip
-#!RemoteAsset
+#!RemoteAsset:  sha256:xxx
 Source1:        https://github.com/FortAwesome/Font-Awesome/releases/download/%{version}/fontawesome-free-%{version}-web.zip
 BuildArch:      noarch
 
