@@ -24,7 +24,7 @@ jobs:
   build:
     runs-on: [ubuntu-latest]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - name: cache
@@ -42,11 +42,16 @@ jobs:
         echo "deb http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.04/ /" | sudo tee /etc/apt/sources.list.d/obs.list
         wget -qO - http://download.opensuse.org/repositories/openSUSE:/Tools/xUbuntu_24.04/Release.key | sudo apt-key add -
         sudo apt update && sudo apt install osc obs-build libwww-perl libxml-parser-perl -y
+    - name: apply pbuild patch
+      run: |
+        sudo patch --directory=/ --strip=1 -i $(pwd)/.github/build/pbuild.patch
     - name: Build package(s)
       run: |
         set -euo pipefail
-        rm -rf SPECS
+        # Drop stale package dirs, but keep the restored cache (.pbuild / _build.x86_64).
         mkdir -p SPECS
+        find SPECS -mindepth 1 -maxdepth 1 \
+          ! -name '.pbuild' ! -name '_build.x86_64' -exec rm -rf {} +
         while IFS= read -r dir; do
           cp -a "$dir" "SPECS/"
         done < <(find . \
@@ -55,7 +60,12 @@ jobs:
           -type f -name '*.spec' -printf '%h\n' | sed 's|^\./||' | sort -u)
         cp .github/build/* SPECS
         cd SPECS
-        sudo pbuild --vm-type=chroot --preset x86_64 --showlog --root=/tmp/b || (sudo pbuild --preset x86_64 --result && exit 1)
+        sudo pbuild --vm-type=chroot --preset x86_64 --showlog --root=/tmp/b || {
+          # Best effort: pbuild may have died before writing .pbuild/_result,
+          # in which case --result dies too and would mask the real exit status.
+          sudo pbuild --preset x86_64 --result || true
+          exit 1
+        }
     - uses: actions/upload-artifact@v4
       with:
        name: PR${{ github.event.pull_request.number || github.run_id }}-build-packages-results
