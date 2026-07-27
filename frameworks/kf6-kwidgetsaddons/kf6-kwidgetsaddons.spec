@@ -8,11 +8,11 @@
 
 %define rname kwidgetsaddons
 
-# Full KF6 version (e.g. 6.27.0)
+# Full KF6 version (e.g. 6.28.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kwidgetsaddons
-Version:        6.27.0
+Version:        6.28.0
 Release:        %autorelease
 Summary:        Large set of desktop widgets
 License:        LGPL-2.1-or-later

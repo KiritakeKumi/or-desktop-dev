@@ -12,7 +12,7 @@
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kcoreaddons
-Version:        6.27.0
+Version:        6.28.0
 Release:        %autorelease
 Summary:        Utilities for core application functionality and accessing the OS
 License:        LGPL-2.1-or-later
