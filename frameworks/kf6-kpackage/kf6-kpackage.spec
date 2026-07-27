@@ -18,7 +18,7 @@ License:        GPL-2.0-or-later AND LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kpackage
 #!RemoteAsset:  sha256:5fa4b07f729c3ff6b7f362d318374810fa55b13a922d2b240462eb8efc1045e8
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

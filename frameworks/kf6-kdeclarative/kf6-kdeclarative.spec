@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdeclarative.git
 #!RemoteAsset:  sha256:b14e81143aed25ee62413f9c2b3742c558f5b6a1da6c5b92ca9a95bb6341e964
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

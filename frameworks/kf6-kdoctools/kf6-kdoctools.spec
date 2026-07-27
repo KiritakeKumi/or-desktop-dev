@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later AND MIT
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdoctools
 #!RemoteAsset:  sha256:69026ef8607cb6257e4d1f0e46e451130ef7ba67994a83e4f9a6c46eefd5a3f3
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

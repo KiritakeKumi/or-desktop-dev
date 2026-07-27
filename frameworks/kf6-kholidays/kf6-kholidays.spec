@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kholidays.git
 #!RemoteAsset:  sha256:84ce2acd5565a9510d74945ea2311f8c099cb031393255d1c8d399665d57b914
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/krunner.git
 #!RemoteAsset:  sha256:46d06321bbccadb8f3fbb948ffaac5eff18dad9552fde677761ddddb9470202f
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

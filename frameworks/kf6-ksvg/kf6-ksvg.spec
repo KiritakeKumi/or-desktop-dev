@@ -18,7 +18,7 @@ License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ksvg
 #!RemoteAsset:  sha256:68d43f014639ae6097012cdd67bdbbefd5425b17d2322d94f55be2b138613e0a
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 Patch0:         0001-Revert-Support-for-fractional-scaling.patch

@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ktexteditor.git
 #!RemoteAsset:  sha256:2b737a61737e73650cd0b40d9e246a182dcccc6c8ae8121cfcb9415433ee41ae
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DENABLE_KAUTH:BOOL=FALSE

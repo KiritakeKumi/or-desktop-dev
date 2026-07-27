@@ -18,7 +18,7 @@ License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/qqc2-desktop-style.git
 #!RemoteAsset:  sha256:6c005f06c5f8c4ac349238abf14999bb917215a8f7b8c51364e2fdd12e9e6355
-Source:         https://download.kde.org/stable/frameworks/6.27/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
