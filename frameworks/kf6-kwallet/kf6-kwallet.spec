@@ -17,7 +17,7 @@ Summary:        Safe desktop-wide storage for passwords
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwallet
-#!RemoteAsset:  sha256:daa03acc40eec873bb450fd8116ae7c788b86a7ceebc9fa555b4a166feeb7983
+#!RemoteAsset:  sha256:e21130c86ffa0be49065648f4e753d63d3d786fab876f511d9d09da16480f691
 Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

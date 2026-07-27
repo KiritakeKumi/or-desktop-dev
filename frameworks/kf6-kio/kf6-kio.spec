@@ -17,7 +17,7 @@ Summary:        Network transparent access to files and data
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kio
-#!RemoteAsset:  sha256:fc201b02c277a35ce81414b1de7e6f851e46b0b5d43beb784936a4a6dc6167d0
+#!RemoteAsset:  sha256:158f47746806c3dd87a09091eaa46ffee286cd658f9e26b4422656b66176627a
 Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

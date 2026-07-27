@@ -17,7 +17,7 @@ Summary:        Plugins responsible for better integration of Qt applications in
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/frameworkintegration.git
-#!RemoteAsset:  sha256:55eefe8ebc67a040e64c75482276c29a69d0c5877b7b3674f4c7a40238c6d44c
+#!RemoteAsset:  sha256:7fdc1db8a5b4c41c7b7487e5e45bc68b0c56a45f182a6362d8bd55ae5f5cc474
 Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

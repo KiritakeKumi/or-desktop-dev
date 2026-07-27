@@ -14,7 +14,7 @@ Summary:        KDE Access to window manager
 License:        LGPL-2.1-or-later
 URL:            https://kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwindowsystem
-#!RemoteAsset:  sha256:401e5700ab36530a605410464268bf726c898da42c6f7d7bf05a9db00ccfe172
+#!RemoteAsset:  sha256:5adbdf9c82b1ecbb92bda6498ea1b8f88c08f9ec57dbff70d582e2453bf16b12
 Source0:        https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

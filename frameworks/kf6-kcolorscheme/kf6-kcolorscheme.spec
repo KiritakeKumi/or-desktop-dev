@@ -17,7 +17,7 @@ Summary:        Classes to read and interact with KColorScheme
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcolorscheme
-#!RemoteAsset:  sha256:574e12350ea1adf248c5263cf18d145476d368664a302514d1065aa2563e1efd
+#!RemoteAsset:  sha256:129c98fd9ba3428cafbd7263557a9ea47c0d4f157b8a5f56b209a95dc9815e6a
 Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

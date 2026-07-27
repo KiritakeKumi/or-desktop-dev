@@ -17,7 +17,7 @@ Summary:        KDE Text editing widgets
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ktextwidgets
-#!RemoteAsset:  sha256:03c35d8899559efc17b4f74e86eefd8358dafd7aa9311c89b9c09f7b35700756
+#!RemoteAsset:  sha256:b995613588aa68c20872e2e3c173083d6e8139e91852e0e7a29bd3ae7dee67e9
 Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

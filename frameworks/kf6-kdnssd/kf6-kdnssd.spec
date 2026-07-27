@@ -17,7 +17,7 @@ Summary:        Network service discovery using Zeroconf
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdnssd.git
-#!RemoteAsset:  sha256:a60746aca1ce6cfd2fbd20144bc4869d2b00d04b597aedab3dd37a345fb03bb4
+#!RemoteAsset:  sha256:f4fe731aad56ae010c2b42f2bd56d4499339bb0839ae2251035132f1a3708df2
 Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
