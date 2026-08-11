@@ -19,7 +19,7 @@ Summary:        Plasma SDK
 License:        GPL-2.0-only AND LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-sdk.git
-#!RemoteAsset:  sha256:3d5e8980ef066eb5405cb5be1e000e89e72e17da3a1124fffbaf022d3d3d0c14
+#!RemoteAsset:  sha256:84e447c525f80dba4678cb1cc8daa38554476bad967b3d33a5ecb20aedd2ba1e
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

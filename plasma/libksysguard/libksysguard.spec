@@ -19,7 +19,7 @@ Summary:        Task management and system monitoring library
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/libksysguard.git
-#!RemoteAsset:  sha256:e652a923c3a2d28ccb15e1a657fda5d6b37e12f09ccd72bd6097fb9c0bc62390
+#!RemoteAsset:  sha256:5e43a308bbe915e56c970e74c99ce53355447030c8062fce4bb6fa4bcb5fc9e8
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

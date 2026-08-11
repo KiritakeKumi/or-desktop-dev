@@ -17,7 +17,7 @@ Summary:        Software store for the KDE Plasma desktop
 License:        GPL-2.0-only AND GPL-3.0-only AND GPL-3.0-or-later
 URL:            https://apps.kde.org/discover/
 VCS:            git:https://invent.kde.org/plasma/discover.git
-#!RemoteAsset:  sha256:e9ea51658dbc14178bd8a6470c287c5259b6276e0012b4faff7ea781e76ba2ba
+#!RemoteAsset:  sha256:a8aaa02fa368a3565ea9cec8b9f4fe8e518a9525ed8450bfa79401bfb6a77613
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

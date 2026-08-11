@@ -21,7 +21,7 @@ Summary:        PipeWire integration for KDE Plasma
 License:        LGPL-2.0-only AND LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kpipewire.git
-#!RemoteAsset:  sha256:a29b6d8614683038e98fbc696f78dd5137cb642abcddb73781f8d0796fc4c014
+#!RemoteAsset:  sha256:a99137242eb508a4af9e75e5978bbee2516ef0cfe057d8188eb021940e381841
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
