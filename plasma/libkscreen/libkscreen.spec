@@ -15,7 +15,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           libkscreen
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        Plasma screen management library
 License:        GPL-2.0-or-later

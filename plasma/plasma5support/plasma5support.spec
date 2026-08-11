@@ -14,7 +14,7 @@
 %{!?_kf6_bugfix_version: %define _kf6_bugfix_version %(echo %{_kf6_version} | awk -F. '{print $1"."$2}')}
 
 Name:           plasma5support
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        KF6 Porting aid
 License:        LGPL-2.0-or-later

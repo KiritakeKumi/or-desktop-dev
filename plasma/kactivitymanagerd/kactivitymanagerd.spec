@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: MulanPSL-2.0
 
 Name:           kactivitymanagerd
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        KDE Plasma Activities support
 License:        GPL-2.0-or-later

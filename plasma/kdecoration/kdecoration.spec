@@ -11,7 +11,7 @@
 %global private_sover 2
 
 Name:           kdecoration
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        KDE's window decorations library
 License:        GPL-2.0-or-later

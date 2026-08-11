@@ -11,7 +11,7 @@
 %bcond flatpak 0
 
 Name:           discover
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        Software store for the KDE Plasma desktop
 License:        GPL-2.0-only AND GPL-3.0-only AND GPL-3.0-or-later

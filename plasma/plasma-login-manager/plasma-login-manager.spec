@@ -13,7 +13,7 @@
 %{!?_plasma6_version: %define _plasma6_version %(echo %{_plasma6_bugfix} | awk -F. '{print $1"."$2}')}
 
 Name:           plasma-login-manager
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        QML based login manager from KDE
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause AND CC0-1.0 AND (GPL-2.0-only OR GPL-3.0-only)

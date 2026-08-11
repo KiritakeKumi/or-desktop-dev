@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           kde-cli-tools
-Version:        6.7.1
+Version:        6.7.4
 Release:        %autorelease
 Summary:        Additional CLI tools for KDE applications
 License:        GPL-2.0-or-later
