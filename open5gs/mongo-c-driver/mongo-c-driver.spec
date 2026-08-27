@@ -12,7 +12,7 @@ License:        Apache-2.0
 URL:            https://www.mongodb.com/docs/drivers/c/
 VCS:            git:https://github.com/mongodb/mongo-c-driver
 #!RemoteAsset:  sha256:3ecf5ffe9c442cd05a79e0e9e7797a2bacd2977733a3d53555ba6fa54936f7b3
-Source:         https://github.com/mongodb/mongo-c-driver/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source:         https://codeload.github.com/mongodb/mongo-c-driver/tar.gz/refs/tags/%{version}#/%{name}-%{version}.tar.gz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DENABLE_MONGOC:BOOL=ON

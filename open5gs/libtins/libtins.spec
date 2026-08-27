@@ -12,7 +12,7 @@ License:        BSD-2-Clause
 URL:            https://libtins.github.io/
 VCS:            git:https://github.com/mfontanini/libtins
 #!RemoteAsset:  sha256:37a9cc407929c56c2081e717347cac455287ba354016bad5bad6243d1f0a4a7a
-Source:         https://github.com/mfontanini/libtins/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source:         https://codeload.github.com/mfontanini/libtins/tar.gz/refs/tags/v%{version}#/%{name}-%{version}.tar.gz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DLIBTINS_BUILD_SHARED:BOOL=ON

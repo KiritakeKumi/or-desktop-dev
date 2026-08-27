@@ -28,11 +28,11 @@ License:        AGPL-3.0-or-later AND BSD-3-Clause AND Apache-2.0
 URL:            https://open5gs.org
 VCS:            git:https://github.com/open5gs/open5gs
 #!RemoteAsset:  sha256:a04d66f66f6df62a376a2434a05a7268e08e4fc0cc1b9c56221467689a8b56ab
-Source0:        https://github.com/open5gs/open5gs/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        https://codeload.github.com/open5gs/open5gs/tar.gz/refs/tags/v%{version}#/%{name}-%{version}.tar.gz
 #!RemoteAsset:  sha256:7933b473661d8fd2f21a5956333643449801e34f930a60a1b36c96572282aa81
-Source1:        https://github.com/open5gs/freeDiameter/archive/%{fd_commit}.tar.gz#/freeDiameter-%{fd_commit}.tar.gz
+Source1:        https://codeload.github.com/open5gs/freeDiameter/tar.gz/%{fd_commit}#/freeDiameter-%{fd_commit}.tar.gz
 #!RemoteAsset:  sha256:240ccf3616a4b12fcb1f987f75aaab835264fb132360100b9f2b0581718dd349
-Source2:        https://github.com/open5gs/prometheus-client-c/archive/%{prom_commit}.tar.gz#/prometheus-client-c-%{prom_commit}.tar.gz
+Source2:        https://codeload.github.com/open5gs/prometheus-client-c/tar.gz/%{prom_commit}#/prometheus-client-c-%{prom_commit}.tar.gz
 Source3:        open5gs.sysusers
 BuildSystem:    meson
 
