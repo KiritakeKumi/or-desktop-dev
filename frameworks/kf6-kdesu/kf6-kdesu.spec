@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kdesu
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kdesu
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        User interface for running shell commands with root privileges
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdesu.git
 #!RemoteAsset:  sha256:9af5746db7e25e2aac69c19a9cc9758fc7e7b4cbbcf2b6b6a6c93bd7c642e80f
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

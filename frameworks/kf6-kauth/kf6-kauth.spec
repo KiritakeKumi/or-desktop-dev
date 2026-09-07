@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname   kauth
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kauth
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        Framework which lets applications perform actions as a privileged user
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kauth
 #!RemoteAsset:  sha256:fb4d90ee46a2f6202e53cdd5af8f77069c380955e3f340881f2f36ec8312079b
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

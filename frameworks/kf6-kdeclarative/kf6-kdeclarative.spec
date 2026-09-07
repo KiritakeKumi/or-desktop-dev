@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kdeclarative
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kdeclarative
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        Integration of QML and KDE workspaces
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdeclarative.git
 #!RemoteAsset:  sha256:988638fdf810d97d14144c2129655d9d0600006d7dcb06787b04c12d5269c969
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

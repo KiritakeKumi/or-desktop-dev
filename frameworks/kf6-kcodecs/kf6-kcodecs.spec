@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname   kcodecs
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kcodecs
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        Method collection to manipulate strings using various encodings
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcodecs
 #!RemoteAsset:  sha256:b0a9ae34b389c6460adad5323d21bb9e43638acb58da9685f8dc8d821c38a4d8
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname ktextwidgets
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-ktextwidgets
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        KDE Text editing widgets
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ktextwidgets
 #!RemoteAsset:  sha256:b995613588aa68c20872e2e3c173083d6e8139e91852e0e7a29bd3ae7dee67e9
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

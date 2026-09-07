@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname syndication
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-syndication
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        RSS/Atom parsing library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/syndication.git
 #!RemoteAsset:  sha256:24db750155b69e3f858997cad0655a2f230f85d587c1063166113bc7690fd7b8
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

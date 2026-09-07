@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kiconthemes
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kiconthemes
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        Icon GUI utilities
 License:        LGPL-2.1-or-later AND GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kiconthemes
 #!RemoteAsset:  sha256:edf83069f25f8edf759d07502a6f8302c8c064cd562651deedefe6393fefcace
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

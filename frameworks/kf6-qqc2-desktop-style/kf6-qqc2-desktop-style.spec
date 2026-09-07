@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname qqc2-desktop-style
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-qqc2-desktop-style
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        A Qt Quick Controls 2 Style for Desktop UIs
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/qqc2-desktop-style.git
 #!RemoteAsset:  sha256:8748d01f401cb16a34adbdf568b2bde2cc1820f82c38249fdec11b66d9da97d1
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

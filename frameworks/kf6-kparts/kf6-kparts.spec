@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kparts
-# Full KF6 version (e.g. 6.28.0)
+# Full KF6 version (e.g. 6.29.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kparts
-Version:        6.28.0
+Version:        6.29.0
 Release:        %autorelease
 Summary:        Plugin framework for user interface components
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kparts
 #!RemoteAsset:  sha256:fbdbab6dfdc16be97440a6e8032f30d1571eb72489c3d36801df6fb419dd4563
-Source:         https://download.kde.org/stable/frameworks/6.28/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
