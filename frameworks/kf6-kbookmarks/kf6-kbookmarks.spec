@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kbookmarks
-# Full KF6 version (e.g. 6.29.0)
+# Full KF6 version (e.g. 6.30.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kbookmarks
-Version:        6.29.0
+Version:        6.30.0
 Release:        %autorelease
 Summary:        Framework for manipulating bookmarks in XBEL format
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kbookmarks
 #!RemoteAsset:  sha256:9e9ec69110c2427a262c9afb0fc46a8bea7387a8386d7b51b80a9805b8327aa4
-Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

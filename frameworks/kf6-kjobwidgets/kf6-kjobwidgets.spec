@@ -8,18 +8,18 @@
 
 %define rname kjobwidgets
 
-# Full KF6 version (e.g. 6.29.0)
+# Full KF6 version (e.g. 6.30.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kjobwidgets
-Version:        6.29.0
+Version:        6.30.0
 Release:        %autorelease
 Summary:        Widgets for showing progress of asynchronous jobs
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kjobwidgets
 #!RemoteAsset:  sha256:062cdb2ed80ee1fdba5dddd3e267f90259460d1e91871d340da80c44ae458609
-Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

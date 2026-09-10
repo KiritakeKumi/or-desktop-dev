@@ -11,14 +11,14 @@
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-ki18n
-Version:        6.29.0
+Version:        6.30.0
 Release:        %autorelease
 Summary:        KDE Gettext-based UI text internationalization
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/ki18n
 #!RemoteAsset:  sha256:9037f3caa67768869f00ee257dbb35b81febe6ad600ed0bd3ffdf293c36252ba
-Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
