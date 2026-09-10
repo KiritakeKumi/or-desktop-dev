@@ -14,18 +14,18 @@
 %bcond jxl 1
 %bcond jp2 1
 
-# Full KF6 version (e.g. 6.29.0)
+# Full KF6 version (e.g. 6.30.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kimageformats
-Version:        6.29.0
+Version:        6.30.0
 Release:        %autorelease
 Summary:        Image format plugins for Qt
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kimageformats.git
-#!RemoteAsset:  sha256:91808c6de080ab5b506721c1f78ad5772bcb1f70bba7262c275ccd98de8b6b38
-Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
+#!RemoteAsset:  sha256:87014461a9a8ae8f110864a9ccd3002080fe395b5ff164b11f0c6ed01f1c426b
+Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -7,29 +7,32 @@
 %define qt6_version 6.8.0
 
 %define rname kfilemetadata
-# Full KF6 version (e.g. 6.29.0)
+# Full KF6 version (e.g. 6.30.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 %bcond ffmpeg 1
 
 Name:           kf6-kfilemetadata
-Version:        6.29.0
+Version:        6.30.0
 Release:        %autorelease
 Summary:        Library for extracting Metadata
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kfilemetadata.git
-#!RemoteAsset:  sha256:015be4aa6986642d3f13903b47c1aae7183d3218888dc4353afe1b1e9dd64c1e
-Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
+#!RemoteAsset:  sha256:c8a4bbbb3e6876caa9357a151afbd66e06336f7a4a27b54a94497cf4cafa96ac
+Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
+%if %{without ffmpeg}
+BuildOption(conf):  -DCMAKE_DISABLE_FIND_PACKAGE_FFmpeg=ON
+%endif
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
-BuildRequires:  attr-devel
-BuildRequires:  ebook-tools
+BuildRequires:  pkgconfig(libattr)
+BuildRequires:  ebook-tools-devel
 BuildRequires:  pkgconfig
-BuildRequires:  cmake(exiv2) >= 0.21
+BuildRequires:  pkgconfig(exiv2)
 BuildRequires:  cmake(KF6Archive) >= %{_kf6_version}
 BuildRequires:  cmake(KF6Codecs) >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}

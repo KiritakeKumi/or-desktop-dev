@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kwallet
-# Full KF6 version (e.g. 6.29.0)
+# Full KF6 version (e.g. 6.30.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kwallet
-Version:        6.29.0
+Version:        6.30.0
 Release:        %autorelease
 Summary:        Safe desktop-wide storage for passwords
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwallet
-#!RemoteAsset:  sha256:e21130c86ffa0be49065648f4e753d63d3d786fab876f511d9d09da16480f691
-Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
+#!RemoteAsset:  sha256:66a47fc170ea074cce8b916fa313f309d7c9497bd2132e0598d4b63bbad2ac88
+Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
