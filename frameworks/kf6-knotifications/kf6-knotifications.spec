@@ -79,7 +79,6 @@ The package contains the PySide6 bindings library for %{name}.
 %{_kf6_debugdir}/knotifications.categories
 %{_kf6_debugdir}/knotifications.renamecategories
 %{_kf6_libdir}/libKF6Notifications.so.*
-%{_datadir}/locale/*/LC_MESSAGES/knotifications6_qt.qm
 %{_kf6_qmldir}/org/kde/notification/
 
 %files devel

@@ -114,7 +114,6 @@ to provide additional image format plugins for QtGui.
 %endif
 %{_kf6_plugindir}/imageformats/kimg_kra.so
 %{_kf6_plugindir}/imageformats/kimg_iff.so
-%{_kf6_plugindir}/imageformats/kimg_ora.so
 %{_kf6_plugindir}/imageformats/kimg_pcx.so
 %{_kf6_plugindir}/imageformats/kimg_pfm.so
 %{_kf6_plugindir}/imageformats/kimg_pic.so
