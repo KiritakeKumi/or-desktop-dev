@@ -24,12 +24,15 @@ Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{versi
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
+%if %{without ffmpeg}
+BuildOption(conf):  -DCMAKE_DISABLE_FIND_PACKAGE_FFmpeg=ON
+%endif
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
-BuildRequires:  attr-devel
-BuildRequires:  ebook-tools
+BuildRequires:  pkgconfig(libattr)
+BuildRequires:  ebook-tools-devel
 BuildRequires:  pkgconfig
-BuildRequires:  cmake(exiv2) >= 0.21
+BuildRequires:  pkgconfig(exiv2)
 BuildRequires:  cmake(KF6Archive) >= %{_kf6_version}
 BuildRequires:  cmake(KF6Codecs) >= %{_kf6_version}
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}
