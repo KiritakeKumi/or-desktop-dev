@@ -17,7 +17,7 @@ Summary:        Method collection to manipulate strings using various encodings
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcodecs
-#!RemoteAsset:  sha256:b0a9ae34b389c6460adad5323d21bb9e43638acb58da9685f8dc8d821c38a4d8
+#!RemoteAsset:  sha256:0480fc5319346b0e24c6e363abce883a889735a7b71ad56d75eae2f7ae553d99
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

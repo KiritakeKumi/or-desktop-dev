@@ -10,7 +10,7 @@ Release:        %autorelease
 Summary:        A password store library for Qt6
 License:        BSD-3-Clause
 URL:            https://github.com/frankosterfeld/qtkeychain
-#!RemoteAsset:  sha256:f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22
+#!RemoteAsset:  sha256:3be26ec4ae30eecf0c2ff7572ba83799791b157c76e15a05ef35f23dc25e4054
 Source0:        https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/%{version}.tar.gz
 BuildSystem:    cmake
 

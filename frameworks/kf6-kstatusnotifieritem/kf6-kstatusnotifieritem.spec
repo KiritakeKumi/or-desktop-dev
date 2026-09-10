@@ -18,7 +18,7 @@ Summary:        Implementation of Status Notifier Items
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kstatusnotifieritem.git
-#!RemoteAsset:  sha256:595135e16456ed2e86ebdf6919b181426cea2e7449ed7d32905dac52050d22de
+#!RemoteAsset:  sha256:b2c9375edc219425b2ffc90b443e686fc48699a0ee0408b6a4e55a5f345dde2e
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

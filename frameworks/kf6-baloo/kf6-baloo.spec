@@ -17,7 +17,7 @@ Summary:        Framework for searching and managing metadata
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/baloo.git
-#!RemoteAsset:  sha256:9cc6ac9ab0605eab7f337b7ea1803348da4a71173b722d5047748c557ba22c0f
+#!RemoteAsset:  sha256:be0f85dc22ed8a6ffe06b2b260b739da15bbeed95064a4f663632701e3170ed0
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

@@ -17,7 +17,7 @@ Summary:        Tools to create documentation from DocBook
 License:        LGPL-2.1-or-later AND MIT
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdoctools
-#!RemoteAsset:  sha256:024914031fba7a9b79982d02736b21399d9a0d09ad81323d58e17d6b2216c7b0
+#!RemoteAsset:  sha256:1e1cb8bbf53e4f0482a916e1db9e202c8a8e8f4f2264dbcf98e837876ef83fae
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

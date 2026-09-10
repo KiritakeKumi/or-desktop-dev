@@ -17,7 +17,7 @@ Summary:        Widgets for configuration dialogs
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kconfigwidgets
-#!RemoteAsset:  sha256:f795386fb06b8922325075a8fa9f817c3d25e04bbfdcf60b13ad714c7c54e987
+#!RemoteAsset:  sha256:449d7b4df04209669b8ad00c74fbf7e0d14cb103fbfa12a642995057cc56b35d
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

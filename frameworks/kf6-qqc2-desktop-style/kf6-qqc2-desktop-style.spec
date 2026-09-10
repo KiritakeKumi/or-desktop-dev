@@ -17,7 +17,7 @@ Summary:        A Qt Quick Controls 2 Style for Desktop UIs
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/qqc2-desktop-style.git
-#!RemoteAsset:  sha256:8748d01f401cb16a34adbdf568b2bde2cc1820f82c38249fdec11b66d9da97d1
+#!RemoteAsset:  sha256:dfb815380b4297c28ef9e4bc8e3ab350b6fbf7b78e0677c3e2e3d4ca319ae336
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

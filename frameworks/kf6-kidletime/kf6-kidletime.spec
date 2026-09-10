@@ -17,7 +17,7 @@ Summary:        User and system idle time reporting singleton
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kidletime.git
-#!RemoteAsset:  sha256:0ada459a4ccdf75d17329bfa4ee42c2c6e7b3ead1ec4b427f82bed063b970ff5
+#!RemoteAsset:  sha256:484002b1da719c72e6b6859422cf0d4351fbb61665aab04c3c2451edc320946b
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

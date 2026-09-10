@@ -17,7 +17,7 @@ Summary:        Plugin framework for user interface components
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kparts
-#!RemoteAsset:  sha256:fbdbab6dfdc16be97440a6e8032f30d1571eb72489c3d36801df6fb419dd4563
+#!RemoteAsset:  sha256:379d6b0fa84eb9614f7677e93b43c5ff52481e19ac83a7a158233810a39e75a7
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

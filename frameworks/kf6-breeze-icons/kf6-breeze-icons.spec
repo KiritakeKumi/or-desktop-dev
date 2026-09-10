@@ -19,7 +19,7 @@ Summary:        Breeze icon theme
 License:        LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/breeze-icons
-#!RemoteAsset:  sha256:45de8138ead0f3ff24de886fbe61d588ecd7f66dde6f8cf6f2906279254d094d
+#!RemoteAsset:  sha256:2948a313ffe35895b846dde5a93302a1fcd587ad8dfb860b8757629209586fe4
 Source:         https://download.kde.org/stable/frameworks/6.29/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
