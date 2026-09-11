@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           falkon
-Version:        26.04.2
+Version:        26.08.1
 Release:        %autorelease
 Summary:        Modern web browser
 License:        GPL-3.0-or-later

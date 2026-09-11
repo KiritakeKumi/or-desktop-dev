@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           baloo-widgets
-Version:        26.04.2
+Version:        26.08.1
 Release:        %autorelease
 Summary:        Framework for searching and managing metadata
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only

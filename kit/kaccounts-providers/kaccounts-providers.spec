@@ -10,7 +10,7 @@
 %define qt6_version 6.9.0
 
 Name:           kaccounts-providers
-Version:        26.04.2
+Version:        26.08.1
 Release:        %autorelease
 Summary:        KDE Accounts Providers
 License:        GPL-2.0-or-later

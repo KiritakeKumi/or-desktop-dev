@@ -8,7 +8,7 @@
 %define qt6_version 6.9.0
 
 Name:           dolphin-plugins
-Version:        26.04.2
+Version:        26.08.1
 Release:        %autorelease
 Summary:        Version control plugins for Dolphin
 License:        GPL-2.0-or-later
