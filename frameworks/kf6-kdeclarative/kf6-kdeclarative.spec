@@ -17,7 +17,7 @@ Summary:        Integration of QML and KDE workspaces
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdeclarative.git
-#!RemoteAsset:  sha256:2051e7a9c357106617ae0c666d2c4331c59f3b07b54a55a1063e7af705d82100
+#!RemoteAsset:  sha256:7ec3583a2cf2cd7143e39936ffb39e22d20563f4c87a8462e0e9d12c59ea89a6
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

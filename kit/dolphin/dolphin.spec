@@ -15,7 +15,7 @@ Summary:        KDE File Manager
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/system/dolphin.git
-#!RemoteAsset:  sha256:c7e90beb8ce13aea091494ae7ddfabde999b1297986a596403828010bec59346
+#!RemoteAsset:  sha256:f5635feff84e7070d35342d6defb46e9b42ff1c44e3896635f4bd9f43da947c1
 Source0:        https://download.kde.org/stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 

@@ -15,7 +15,7 @@ Summary:        Additional KIO slaves for KDE applications
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/utilities/kio-extras.git
-#!RemoteAsset:  sha256:af4941af624f883891d33701aa0ce4216d6de114db3e4a250099c52d3d42acaa
+#!RemoteAsset:  sha256:8050c3dd33fed06a60dda8205f4e0134d3aac95f0647b1d9c05419845341397c
 Source0:        https://download.kde.org/stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 

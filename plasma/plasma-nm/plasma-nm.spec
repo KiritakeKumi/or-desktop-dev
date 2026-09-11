@@ -21,7 +21,7 @@ Summary:        Plasma applet written in QML for managing network connections
 License:        (GPL-2.0-only OR GPL-3.0-only) AND (LGPL-2.1-only OR LGPL-3.0-only)
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-nm.git
-#!RemoteAsset:  sha256:1845594f4b7979023d72f373730cd01451553b0d54a8f04981b92245d150265c
+#!RemoteAsset:  sha256:7fc94b5862d5ee7abf922712c19ffae054773e8b7d12f5d21ecd5161973027d9
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

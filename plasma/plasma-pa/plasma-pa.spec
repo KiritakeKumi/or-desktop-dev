@@ -19,7 +19,7 @@ Summary:        The Plasma Volume Manager
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-pa.git
-#!RemoteAsset:  sha256:c441f656bb690da8888abec7c37a461960ac3ed7254b2804c0ecc4d4eb83691b
+#!RemoteAsset:  sha256:808ecd07d00574f137d793e5f26ac2b953bcf538927b2fd2e592ea08447481db
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

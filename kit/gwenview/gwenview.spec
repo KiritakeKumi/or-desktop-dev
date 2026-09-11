@@ -15,7 +15,7 @@ Summary:        Image Viewer by KDE
 License:        GPL-2.0-or-later
 URL:            https://apps.kde.org/gwenview
 VCS:            git:https://invent.kde.org/graphics/gwenview.git
-#!RemoteAsset:  sha256:150b601741f1fcf3aae5e8fa6dbd28ae83afe3e0914a1e91c84efa55312d9a69
+#!RemoteAsset:  sha256:638a43a74e3a4d3881b846c167e8f42423558df314d124d1c82cef98d29d7ba1
 Source0:        https://download.kde.org/stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 

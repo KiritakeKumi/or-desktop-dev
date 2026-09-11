@@ -14,7 +14,7 @@ Summary:        KDE Terminal
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/utilities/konsole.git
-#!RemoteAsset:  sha256:d81a696d6a316d0c8fabe3cecd83783f656ee97c70ced89513b3fd16e9d216ac
+#!RemoteAsset:  sha256:64d8aaba741f4412ede26ffbbbe3824523e941b725d3046ec27f510fd42d82e6
 Source0:        https://download.kde.org/stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildSystem:    cmake
 
