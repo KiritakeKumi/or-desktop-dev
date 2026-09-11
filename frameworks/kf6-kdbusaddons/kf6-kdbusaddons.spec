@@ -17,7 +17,7 @@ Summary:        Convenience classes for QtDBus
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kdbusaddons
-#!RemoteAsset:  sha256:a3d2de669bfad5de3f86cc8c6448a02f7567e4ad04aa6099ccfaa2df5f07e8f8
+#!RemoteAsset:  sha256:063ef80460f76d86dc4b033ef04b65b69ba82ee0de410440fe609465e7f5a997
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

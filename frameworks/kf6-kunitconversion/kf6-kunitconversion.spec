@@ -18,7 +18,7 @@ Summary:        Tool for converting physical units
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kunitconversion.git
-#!RemoteAsset:  sha256:cfb2bc59a293dd4895dc07504b6b80ce29855222206fcc76d9c4ff8f4be5c5ec
+#!RemoteAsset:  sha256:3dcaa45875bab5a2dcadc34cf57cf06689b8d86ff40e20fee01ca2b18987175f
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

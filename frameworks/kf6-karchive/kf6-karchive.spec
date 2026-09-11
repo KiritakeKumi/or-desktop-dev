@@ -17,7 +17,7 @@ Summary:        Qt 6 addon providing access to numerous types of archives
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/karchive
-#!RemoteAsset:  sha256:3d66cd9d71fbbebc3cea68757111002666b366898b01178b6fa7203715574287
+#!RemoteAsset:  sha256:4cf89d91e429d2ece3110e78f7ef7011952b0412cb15011329516b46f21e98e2
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
