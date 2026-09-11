@@ -17,7 +17,7 @@ Summary:        Advanced configuration system
 License:        LGPL-2.1-or-later AND GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kconfig
-#!RemoteAsset:  sha256:0e98bac324cd716849202d4b246a948e363d6792a8eb09c78417cdde9559f56e
+#!RemoteAsset:  sha256:a0e902865763fd4cd1c86973c316069f210492923d7b8065d5052c539ae46b91
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

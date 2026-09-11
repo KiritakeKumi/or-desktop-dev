@@ -17,7 +17,7 @@ Summary:        Icon GUI utilities
 License:        LGPL-2.1-or-later AND GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kiconthemes
-#!RemoteAsset:  sha256:c0c684823d0e087f35168cd79f1053fd358bb8fb47b27996a11c7d7ee3da6f4d
+#!RemoteAsset:  sha256:233de4cd2fef5b7b4ce1e317196407d25300b767614a93e160b45ac34710223d
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

@@ -17,7 +17,7 @@ Summary:        Central daemon of KDE workspaces
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kded
-#!RemoteAsset:  sha256:0adf6e22300cee74d57e790b5db844f03a1366a4d6315edbaa49174b12bf1861
+#!RemoteAsset:  sha256:cb0d1ebc1e96cd90dbd6733e875e1f66e6d99fad9c40cbd3c41c5c3b3e11b882
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

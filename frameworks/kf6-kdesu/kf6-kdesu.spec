@@ -17,7 +17,7 @@ Summary:        User interface for running shell commands with root privileges
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kdesu.git
-#!RemoteAsset:  sha256:9bf244884b09ce38ad84d00e5879e798b02e1610ec8f3d9ee6c93e7502b356e2
+#!RemoteAsset:  sha256:9c128248f6259ed8f6be8ab9fd670ab10efa9ab6b500429b98f7df25d169c312
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

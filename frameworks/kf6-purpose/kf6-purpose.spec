@@ -20,7 +20,7 @@ Summary:        Framework to integrate services and actions in applications
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/purpose.git
-#!RemoteAsset:  sha256:4fda64d235927e3cc230416d5c9304f5d3e040dc2553b77b2c69bf54c6f04862
+#!RemoteAsset:  sha256:743445e6a1b3aee156aec6e84ac8d36161124784f9e5730b69b868fdd6fb79c2
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

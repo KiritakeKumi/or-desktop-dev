@@ -18,7 +18,7 @@ Summary:        KDE Desktop notifications
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/knotifications
-#!RemoteAsset:  sha256:09ad50570b26aada0408bb9ccfaabf629c56ec89a9972c8b0e155ab780f577cf
+#!RemoteAsset:  sha256:883e0139fcbc692070287e47de5368c78eb91c8bdbb52fb6f8398183f6aace8f
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

@@ -17,7 +17,7 @@ Summary:        Non-binary asset user-installable package managing framework
 License:        GPL-2.0-or-later AND LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kpackage
-#!RemoteAsset:  sha256:58939af0c553f24963652e10d248e2f8f2b2ca2b87dc26d3220675ed0cf33019
+#!RemoteAsset:  sha256:aee3405475bfed6187abc483df6baf48e89b2b2505ee0acc1c8d37728fb9c786
 Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
