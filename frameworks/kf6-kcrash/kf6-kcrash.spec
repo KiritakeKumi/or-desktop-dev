@@ -11,14 +11,14 @@
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kcrash
-Version:        6.30.0
+Version:        6.31.0
 Release:        %autorelease
 Summary:        An application crash handler
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcrash
 #!RemoteAsset:  sha256:b17f8242309e1502119c48b1ef5059a396a3068596a84fb79fdef6d9e2cd4f49
-Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -7,20 +7,20 @@
 %define qt6_version 6.8.0
 
 %define rname kfilemetadata
-# Full KF6 version (e.g. 6.30.0)
+# Full KF6 version (e.g. 6.31.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 %bcond ffmpeg 1
 
 Name:           kf6-kfilemetadata
-Version:        6.30.0
+Version:        6.31.0
 Release:        %autorelease
 Summary:        Library for extracting Metadata
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kfilemetadata.git
 #!RemoteAsset:  sha256:5e14cd8e395e927042cb3eb7cff47e0effda5e8bf2520cf18d1082a9403b2e62
-Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

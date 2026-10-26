@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kded
-# Full KF6 version (e.g. 6.30.0)
+# Full KF6 version (e.g. 6.31.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kded
-Version:        6.30.0
+Version:        6.31.0
 Release:        %autorelease
 Summary:        Central daemon of KDE workspaces
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kded
 #!RemoteAsset:  sha256:0adf6e22300cee74d57e790b5db844f03a1366a4d6315edbaa49174b12bf1861
-Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname ksvg
-# Full KF6 version (e.g. 6.30.0)
+# Full KF6 version (e.g. 6.31.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-ksvg
-Version:        6.30.0
+Version:        6.31.0
 Release:        %autorelease
 Summary:        Components for handling SVGs
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ksvg
 #!RemoteAsset:  sha256:7b7aba4e9baa88bfb303977e139e8a105b5cd243443029ee773954307b51eb91
-Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 Patch0:         0001-Revert-Support-for-fractional-scaling.patch

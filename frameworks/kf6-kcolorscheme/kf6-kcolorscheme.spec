@@ -7,18 +7,18 @@
 %define qt6_version 6.8.0
 
 %define rname kcolorscheme
-# Full KF6 version (e.g. 6.30.0)
+# Full KF6 version (e.g. 6.31.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kcolorscheme
-Version:        6.30.0
+Version:        6.31.0
 Release:        %autorelease
 Summary:        Classes to read and interact with KColorScheme
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcolorscheme
 #!RemoteAsset:  sha256:a4128e82e47cd474c777754c4dd8af28a00a57ecf388da1a62f8173d898890d0
-Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -12,14 +12,14 @@
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-kcoreaddons
-Version:        6.30.0
+Version:        6.31.0
 Release:        %autorelease
 Summary:        Utilities for core application functionality and accessing the OS
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kcoreaddons
 #!RemoteAsset:  sha256:cc68fe15beb0fca2036cff8742f468c1345406bf99793fffacbf8f2a3f89bc4b
-Source:         https://download.kde.org/stable/frameworks/6.30/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
