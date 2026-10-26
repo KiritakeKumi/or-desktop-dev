@@ -17,7 +17,7 @@ Summary:        Holiday calculation library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kholidays.git
-#!RemoteAsset:  sha256:02bfbc33296fe86b364491f6d5cad9d83360bb4fdd2923386a325b309eac0b9b
+#!RemoteAsset:  sha256:bdbbe8b1ae6ad6af2116e3ca2c986a317e00f215f58ad32000e2aae2b9d7d612
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

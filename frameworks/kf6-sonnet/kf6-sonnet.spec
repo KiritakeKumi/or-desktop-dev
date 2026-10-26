@@ -17,7 +17,7 @@ Summary:        KDE spell checking library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/sonnet
-#!RemoteAsset:  sha256:1574ef5c17f38e315de104b94580ccc1b7ec1db2650cb4bace2e14159bf61e10
+#!RemoteAsset:  sha256:8a0db04df7c8d9d386dddc2e5d94f1504b15c63b3dc091a4eeb2519788b5aec6
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

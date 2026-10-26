@@ -18,7 +18,7 @@ Summary:        Large set of desktop widgets
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kwidgetsaddons
-#!RemoteAsset:  sha256:ab1333c258678caa7562120a1c03bb71779f7232f1a0e75b9525d921dee3e0a3
+#!RemoteAsset:  sha256:94d1a1ba334a383c38b7f4238d93895ddd2b40f3d6511b16937bc951b542b5a5
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

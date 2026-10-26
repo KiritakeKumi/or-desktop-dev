@@ -17,7 +17,7 @@ Summary:        Framework for collecting feedback from application users
 License:        MIT
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kuserfeedback.git
-#!RemoteAsset:  sha256:c8a463c8e570f6d532cbe150732220575c6385df97c91399b6c84450691771ca
+#!RemoteAsset:  sha256:6a761f2eb1507110107b2ddf2a723bbe6fa205eac086ce04a4272fdfabb7c31a
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

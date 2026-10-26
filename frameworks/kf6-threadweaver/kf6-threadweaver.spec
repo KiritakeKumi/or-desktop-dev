@@ -17,7 +17,7 @@ Summary:        KDE Helper for multithreaded programming
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/threadweaver.git
-#!RemoteAsset:  sha256:e5400968a41820393e76190ab5dbb276c09513263d1b185d64b40f82dcd9b457
+#!RemoteAsset:  sha256:4a65944dcca12672ace6d54a48b3a993d4b46b6095106316c3a95ecae6af9906
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

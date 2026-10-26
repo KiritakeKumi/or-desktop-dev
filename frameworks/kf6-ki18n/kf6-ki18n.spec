@@ -17,7 +17,7 @@ Summary:        KDE Gettext-based UI text internationalization
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/ki18n
-#!RemoteAsset:  sha256:dfbfc8af89b3bc68810b094bf87746db87c3eeb35b75caeb1882681ebed563bd
+#!RemoteAsset:  sha256:9fa271c7a33b856451de1ed3ff105626c2763fbd3b11d3210b02cb30de43f2ba
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

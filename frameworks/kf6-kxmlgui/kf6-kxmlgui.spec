@@ -18,7 +18,7 @@ Summary:        Framework for managing menu and toolbar actions
 License:        LGPL-2.1-or-later AND GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kxmlgui
-#!RemoteAsset:  sha256:10fb8a0f7b874248ff60d9a8ee4e1f06a0efcf01b0d34d7635dfff86e848c352
+#!RemoteAsset:  sha256:048c2229a39ec717740a56b4e8b23dc2e68cefa36c4b6ab652104a0dc1a6fbd8
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

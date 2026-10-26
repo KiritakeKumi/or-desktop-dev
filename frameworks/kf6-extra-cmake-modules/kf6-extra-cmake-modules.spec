@@ -13,7 +13,7 @@ Summary:        CMake modules
 License:        BSD-3-Clause
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/extra-cmake-modules
-#!RemoteAsset:  sha256:bb5dbc92c372463ee54364e69fd881740df62de171703ef949b605213f8c2e5b
+#!RemoteAsset:  sha256:9faba5ab696c2341cccb1ccd231787b96b65f12491c1e8da94a13fb3d0c2499b
 Source0:        https://invent.kde.org/frameworks/extra-cmake-modules/-/archive/v%{version}/extra-cmake-modules-%{version}.tar.gz
 BuildArch:      noarch
 BuildSystem:    cmake

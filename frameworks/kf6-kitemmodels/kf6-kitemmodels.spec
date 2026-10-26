@@ -17,7 +17,7 @@ Summary:        Set of item models extending the Qt model-view framework
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kitemmodels.git
-#!RemoteAsset:  sha256:f807e5b37aa913d2563ee1a21b2bce7d34495f32f38c7f35f16262d736bdfd55
+#!RemoteAsset:  sha256:bcd5d95bd300c5b8b6400d087bfbf66efec34d3617aef90878e0c90407f6964c
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

@@ -17,7 +17,7 @@ Summary:        Components for handling SVGs
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/ksvg
-#!RemoteAsset:  sha256:7b7aba4e9baa88bfb303977e139e8a105b5cd243443029ee773954307b51eb91
+#!RemoteAsset:  sha256:1cacfe9660cdb564edc4c0bf69578776a54001b114ae6fb2a4fa77da25fca2d1
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

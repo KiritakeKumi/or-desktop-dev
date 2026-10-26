@@ -15,7 +15,7 @@ Summary:        KDE Desktop hardware abstraction
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/solid
-#!RemoteAsset:  sha256:bdbfdc9f26b87e12b951097825af2956f2dee3f14c701d780277b69701f2c74e
+#!RemoteAsset:  sha256:82950a3d19a8b3ccac11bbcc297e132b975921e25b386f462abe5727a78f1e35
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

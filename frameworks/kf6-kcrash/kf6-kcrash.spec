@@ -17,7 +17,7 @@ Summary:        An application crash handler
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcrash
-#!RemoteAsset:  sha256:b17f8242309e1502119c48b1ef5059a396a3068596a84fb79fdef6d9e2cd4f49
+#!RemoteAsset:  sha256:8883c740d5de9aea232060f10c7f3bfdc3f83914b2d91d757ce2c8ed535621a6
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

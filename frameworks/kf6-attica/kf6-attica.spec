@@ -17,7 +17,7 @@ Summary:        Open Collaboration Service client library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/attica.git
-#!RemoteAsset:  sha256:3eec8d2d9c77ad5f7cfd38e44e4b1492c5d0dec695b13f711c09f7d6187c276c
+#!RemoteAsset:  sha256:5699601e3a957e1eebf8fbe8b1f3d908df3c0a775919bc796b0830b34b59a67d
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

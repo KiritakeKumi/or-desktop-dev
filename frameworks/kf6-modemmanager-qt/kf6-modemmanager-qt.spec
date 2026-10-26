@@ -17,7 +17,7 @@ Summary:        Qt wrapper for ModemManager DBus API
 License:        LGPL-2.1-only OR LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/modemmanager-qtt.git
-#!RemoteAsset:  sha256:d7c4106dc130729fdfd435abaeaf85039a874fc18563a41755e14f7ea174ae21
+#!RemoteAsset:  sha256:e816565ce4b915fa885a6b039e582a477e84bb01bca3229df5f1b79dfa01b810
 Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
