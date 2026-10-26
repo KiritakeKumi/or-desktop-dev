@@ -63,6 +63,7 @@ uniform access to generation of barcodes with data.
 
 %files devel
 %{_kf6_cmakedir}/KF6Prison/
+%{_kf6_cmakedir}/KF6PrisonScanner/
 %{_kf6_includedir}/Prison/
 %{_kf6_includedir}/PrisonScanner/
 %{_kf6_libdir}/libKF6Prison.so

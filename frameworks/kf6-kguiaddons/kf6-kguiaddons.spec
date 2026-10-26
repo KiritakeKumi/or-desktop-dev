@@ -71,6 +71,7 @@ of colors, fonts, text, images, keyboard input. Development files.
 %files
 %doc README.md
 %license LICENSES/*
+%{_kf6_applicationsdir}/cartes-geo-handler.desktop
 %{_kf6_applicationsdir}/google-maps-geo-handler.desktop
 %{_kf6_applicationsdir}/openstreetmap-geo-handler.desktop
 %{_kf6_applicationsdir}/wheelmap-geo-handler.desktop
