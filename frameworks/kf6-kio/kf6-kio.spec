@@ -128,6 +128,7 @@ Development files.
 %{_kf6_libexecdir}/kioworker
 %{_kf6_plugindir}/designer/kio6widgets.so
 %{_kf6_plugindir}/kf6/kded/remotenotifier.so
+%{_kf6_plugindir}/kf6/kded/trashdirnotify.so
 %{_kf6_plugindir}/kf6/kio/kio_file.so
 %{_kf6_plugindir}/kf6/kio/kio_ftp.so
 %{_kf6_plugindir}/kf6/kio/kio_ghelp.so
