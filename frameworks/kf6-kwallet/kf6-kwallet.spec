@@ -96,6 +96,7 @@ Development files.
 
 %files -n kwalletd6
 %{_kf6_applicationsdir}/org.kde.ksecretd.desktop
+%{_kf6_applicationsdir}/org.kde.kwalletd.desktop
 %{_kf6_bindir}/ksecretd
 %{_kf6_bindir}/kwalletd6
 %{_kf6_notificationsdir}/ksecretd.notifyrc
