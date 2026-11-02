@@ -11,7 +11,7 @@ Summary:        Library to easily use clients based on wlr-layer-shell
 License:        BSD-3-Clause AND CC0-1.0 AND LGPL-3.0-or-later AND MIT
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/layer-shell-qt.git
-#!RemoteAsset:  sha256:24a4eca7499bc9db9c7a5be45dba6edf0766d685030e71ab65ae2c66dcfbd5f5
+#!RemoteAsset:  sha256:d146c43058b9172ab1746a9b0670dbc08e11d1c1844ea2ad9f1d640a6dd232c5
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

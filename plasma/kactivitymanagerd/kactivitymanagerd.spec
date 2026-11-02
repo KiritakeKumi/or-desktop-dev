@@ -11,7 +11,7 @@ Summary:        KDE Plasma Activities support
 License:        GPL-2.0-or-later
 URL:            https://invent.kde.org/plasma/kactivitymanagerd
 VCS:            git:https://invent.kde.org/plasma/kactivitymanagerd.git
-#!RemoteAsset:  sha256:b3a50ee919b0f2168ca6c12f97c6582e54b4964517f0c3707e0d4aeafb96cfe1
+#!RemoteAsset:  sha256:02d673126f849b1240c70a109a04555e5f51dc048b354bc0a72f516d8ebeb340
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

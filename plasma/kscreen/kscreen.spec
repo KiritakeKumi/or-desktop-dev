@@ -21,7 +21,7 @@ Summary:        Screen management software by KDE
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kscreen.git
-#!RemoteAsset:  sha256:9a4bf3aa089b57db7727948a86a22678605f7e1c90e3774478b7bb2753a2ee7b
+#!RemoteAsset:  sha256:05b11c23dcc3ccd13f1b1c481ec3217ba691411aad10982a2efa86f260d2c680
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

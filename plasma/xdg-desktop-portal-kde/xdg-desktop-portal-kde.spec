@@ -22,7 +22,7 @@ Summary:        QT/KF6 backend for xdg-desktop-portal
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/xdg-desktop-portal-kde.git
-#!RemoteAsset:  sha256:027790dfdbbd8fa643fd48287cc169bce247e9cacf39e509f9403150c69c2d77
+#!RemoteAsset:  sha256:4ea894067327dd7d07927646ce0647feba7f5b305e6cca6f791387cb0c10b3a8
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

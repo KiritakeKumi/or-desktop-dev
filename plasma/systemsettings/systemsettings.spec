@@ -21,7 +21,7 @@ Summary:        KDE's control center
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/systemsettings.git
-#!RemoteAsset:  sha256:e01d55f0d8111138fca480b9839ba5440abdf3ca3c42e5f671a4133d80f3bda1
+#!RemoteAsset:  sha256:1bd6244eadb964ab389b81e8965bcd1eb69284b7b1dba71410a615f458bc6e68
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

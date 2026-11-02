@@ -19,7 +19,7 @@ Summary:        Global keyboard shortcut daemon
 License:        LGPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/kglobalacceld.git
-#!RemoteAsset:  sha256:ea0562004a938e8125830a8889cf205d02906db7bc0b8cdff463a543c41320b2
+#!RemoteAsset:  sha256:95ca2f8ec9537d145a233955b46e81188da6aebbe3f96d81131c97e73cf38779
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 

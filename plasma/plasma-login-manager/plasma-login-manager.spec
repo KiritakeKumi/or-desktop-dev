@@ -19,7 +19,7 @@ Summary:        QML based login manager from KDE
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause AND CC0-1.0 AND (GPL-2.0-only OR GPL-3.0-only)
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/plasma/plasma-login-manager.git
-#!RemoteAsset:  sha256:8f90804eab0952792d7eb1e6f8cf75205084835b9db8ff485acecf68d8aad6a3
+#!RemoteAsset:  sha256:2022c5da0edb4160202bf33e239b6bbd450ae1acadfe1104624db74439fb731c
 Source:         https://invent.kde.org/plasma/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 BuildSystem:    cmake
 
