@@ -67,7 +67,7 @@ KSystemStats is a daemon that collects statistics about the running system.
 %dir %{_kf6_plugindir}/ksystemstats/
 %{_kf6_plugindir}/ksystemstats/ksystemstats_plugin_{cpu,disk,gpu,lmsensors,memory,network,osinfo,power,pressure}.so
 %{_kf6_sharedir}/dbus-1/services/org.kde.ksystemstats1.service
-%{_libexecdir}/ksystemstats_intel_helper
+%{_libexecdir}/ksystemstats_*_helper
 %{_userunitdir}/plasma-ksystemstats.service
 
 %changelog

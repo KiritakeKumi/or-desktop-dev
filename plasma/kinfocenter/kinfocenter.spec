@@ -41,10 +41,13 @@ BuildRequires:  cmake(KF6KIO) >= %{kf6_version}
 BuildRequires:  cmake(KF6Service) >= %{kf6_version}
 BuildRequires:  cmake(KF6Solid) >= %{kf6_version}
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
+BuildRequires:  cmake(Qt6Graphs) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Gui) >= %{qt6_version}
+BuildRequires:  cmake(Qt6Qml) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Widgets) >= %{qt6_version}
 BuildRequires:  pkgconfig(libudev)
 BuildRequires:  pkgconfig(libusb-1.0)
+BuildRequires:  pkgconfig(egl)
 BuildRequires:  pkgconfig(libdrm)
 BuildRequires:  docbook-xsl
 BuildRequires:  docbook-dtds
@@ -95,26 +98,7 @@ KDE Utility that provides information about a computer system.
 %{_kf6_libdir}/libKInfoCenterInternal.so
 %{_kf6_plugindir}/plasma/kcms/kcm_about-distro.so
 %dir %{_kf6_plugindir}/plasma/kcms/kinfocenter/
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_audio_information.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_block_devices.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_cpu.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_edid.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_egl.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_energyinfo.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_firmware_security.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_glx.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_interrupts.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_kwinsupportinfo.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_memory.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_network.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_opencl.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_pci.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_samba.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_sensors.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_usb.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_vulkan.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_wayland.so
-%{_kf6_plugindir}/plasma/kcms/kinfocenter/kcm_xserver.so
+%{_kf6_plugindir}/plasma/kcms/kinfocenter/*.so
 %{_kf6_qmldir}/org/kde/kinfocenter/
 %{_kf6_sharedir}/dbus-1/system-services/org.kde.kinfocenter.dmidecode.service
 %{_kf6_dbuspolicydir}/org.kde.kinfocenter.dmidecode.conf

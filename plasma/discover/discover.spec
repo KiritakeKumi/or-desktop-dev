@@ -129,14 +129,21 @@ rm %{buildroot}%{_kf6_applicationsdir}/org.kde.discover.snap.desktop
 %license LICENSES/*
 %dir %{_kf6_plugindir}/discover/
 %{_kf6_applicationsdir}/org.kde.discover.desktop
+%{_kf6_applicationsdir}/org.kde.discover.appstreampreview.desktop
 %{_kf6_applicationsdir}/org.kde.discover.urlhandler.desktop
 %{_kf6_appstreamdir}/org.kde.discover.appdata.xml
+%{_kf6_appstreamdir}/org.kde.discover.appstreampreview.metainfo.xml
 %{_kf6_bindir}/plasma-discover
+%{_kf6_configkcfgdir}/discover-appstream-settings.kcfg
+%{_kf6_configkcfgdir}/discover-updates.kcfg
+%{_kf6_configkcfgdir}/discoversettings-kcm.kcfg
+%{_kf6_configkcfgdir}/discoversettings.kcfg
 %{_kf6_debugdir}/discover.categories
 %{_kf6_iconsdir}/hicolor/*/apps/plasmadiscover.*
 %{_kf6_kxmlguidir}/plasmadiscover/
 %{_kf6_libdir}/plasma-discover/
 %{_kf6_notificationsdir}/discoverabstractnotifier.notifyrc
+%{_kf6_plugindir}/discover/appstream-preview-backend.so
 %{_kf6_plugindir}/discover/kns-backend.so
 %dir %{_kf6_sharedir}/libdiscover
 %dir %{_kf6_sharedir}/libdiscover/categories

@@ -66,6 +66,7 @@ process information and other system resources.
 %{_kf6_applicationsdir}/org.kde.plasma-systemmonitor.desktop
 %{_kf6_appstreamdir}/org.kde.plasma-systemmonitor.metainfo.xml
 %{_kf6_bindir}/plasma-systemmonitor
+%{_kf6_configkcfgdir}/systemmonitor.kcfg
 %{_kf6_knsrcfilesdir}/plasma-systemmonitor.knsrc
 # FIXME result of 105cb99d & bb8d4048
 %{_kf6_libdir}/libPlasmaSystemMonitorPage.so

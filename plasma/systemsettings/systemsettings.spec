@@ -75,6 +75,7 @@ applications by KDE.
 %{_kf6_applicationsdir}/systemsettings.desktop
 %{_kf6_appstreamdir}/org.kde.systemsettings.metainfo.xml
 %{_kf6_bindir}/systemsettings
+%{_kf6_configkcfgdir}/systemsettings-config.kcfg
 %{_kf6_debugdir}/systemsettings.categories
 %dir %{_kf6_plugindir}/kf6/krunner
 %{_kf6_plugindir}/kf6/krunner/krunner_systemsettings.so

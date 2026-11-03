@@ -100,6 +100,8 @@ Plasma library and runtime components based upon KF6 and Qt6
 %{_kf6_debugdir}/plasma-framework.renamecategories
 %{_kf6_libdir}/libPlasma.so.*
 %{_kf6_libdir}/libPlasmaQuick.so.*
+%{_kf6_libdir}/qt6/metatypes/qt6plasma_metatypes.json
+%{_kf6_libdir}/qt6/metatypes/qt6plasmaquick_metatypes.json
 %{_kf6_plugindir}/kf6/kirigami/
 %{_kf6_plugindir}/kf6/packagestructure/
 %{_kf6_qmldir}/org/kde/kirigami/
