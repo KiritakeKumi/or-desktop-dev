@@ -129,6 +129,7 @@ BuildRequires:  cmake(Qt6WaylandClient) >= %{qt6_version}
 BuildRequires:  cmake(Qt6WaylandCompositor) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Widgets) >= %{qt6_version}
 BuildRequires:  cmake(ScreenSaverDBusInterface) >= %{_plasma6_bugfix}
+BuildRequires:  cmake(Union) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(packagekitqt6)
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(icu-i18n)
