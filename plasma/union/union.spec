@@ -64,7 +64,6 @@ applications that use Union.
 %{_kf6_libdir}/libUnion.so.*
 %{_kf6_libdir}/libUnionQuickImpl.so.*
 %{_kf6_libdir}/libUnionQuickStyle.so.*
-%{_kf6_libdir}/qt6/metatypes/qt6union*_metatypes.json
 %{_kf6_qmldir}/org/kde/union/
 %{_kf6_qmldir}/org/kde/kirigami/styles/org.kde.union/
 %{_kf6_plugindir}/union/
