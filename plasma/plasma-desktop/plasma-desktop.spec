@@ -198,9 +198,6 @@ Plasma Input Method Backend for SCIM (Smart Chinese/Common Input Method) support
 %endif
 
 %install -a
-# no devel files needed here
-rm -rv %{buildroot}%{_kf6_sharedir}/dbus-1/interfaces/
-
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --with-html --generate-subpackages
 
