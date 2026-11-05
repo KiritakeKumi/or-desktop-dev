@@ -238,6 +238,7 @@ This package provides development files.
 %{_kf6_qmldir}/org/kde/kwin/private/
 %{_kf6_sharedir}/kconf_update/kwin.upd
 %{_kf6_sharedir}/krunner/dbusplugins/kwin-runner-windows.desktop
+%{_kf6_sharedir}/kwin/
 %{_libexecdir}/kwin_killer_helper
 %{_libexecdir}/kwin-applywindowdecoration
 %{_libexecdir}/kwin-tabbox-preview
