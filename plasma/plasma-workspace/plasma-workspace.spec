@@ -106,7 +106,7 @@ BuildRequires:  cmake(Plasma5Support) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaActivities) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaActivitiesStats) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaQuick) >= %{_plasma6_bugfix}
-BuildRequires:  cmake(PlasmaWaylandProtocols) >= 1.6
+BuildRequires:  cmake(PlasmaWaylandProtocols) >= 1.22.0
 BuildRequires:  cmake(PolkitQt6-1)
 BuildRequires:  cmake(QCoro6)
 BuildRequires:  cmake(Qt6Concurrent) >= %{qt6_version}
@@ -318,8 +318,6 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 
 %post
 %systemd_user_post plasma-gmenudbusmenuproxy.service
-%systemd_user_post plasma-kcminit-phase1.service
-%systemd_user_post plasma-kcminit.service
 %systemd_user_post plasma-krunner.service
 %systemd_user_post plasma-ksmserver.service
 %systemd_user_post plasma-plasmashell.service
@@ -332,8 +330,6 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 
 %preun
 %systemd_user_preun plasma-gmenudbusmenuproxy.service
-%systemd_user_preun plasma-kcminit-phase1.service
-%systemd_user_preun plasma-kcminit.service
 %systemd_user_preun plasma-krunner.service
 %systemd_user_preun plasma-ksmserver.service
 %systemd_user_preun plasma-plasmashell.service
@@ -346,8 +342,6 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 
 %postun
 %systemd_user_postun plasma-gmenudbusmenuproxy.service
-%systemd_user_postun plasma-kcminit-phase1.service
-%systemd_user_postun plasma-kcminit.service
 %systemd_user_postun plasma-krunner.service
 %systemd_user_postun plasma-ksmserver.service
 %systemd_user_postun plasma-plasmashell.service
@@ -411,8 +405,6 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_applicationsdir}/org.kde.plasmashell.desktop
 %{_kf6_applicationsdir}/org.kde.plasmawindowed.desktop
 %{_kf6_bindir}/gmenudbusmenuproxy
-%{_kf6_bindir}/kcminit
-%{_kf6_bindir}/kcminit_startup
 %{_kf6_bindir}/kcolorschemeeditor
 %{_kf6_bindir}/kde-systemd-start-condition
 %{_kf6_bindir}/kfontinst
@@ -442,15 +434,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %if %{with x11}
 %{_kf6_configdir}/autostart/xembedsniproxy.desktop
 %endif
-%{_kf6_configkcfgdir}/colorssettings.kcfg
-%{_kf6_configkcfgdir}/cursorthemesettings.kcfg
-%{_kf6_configkcfgdir}/feedbacksettings.kcfg
-%{_kf6_configkcfgdir}/fontssettings.kcfg
-%{_kf6_configkcfgdir}/freespacenotifier.kcfg
-%{_kf6_configkcfgdir}/iconssettingsbase.kcfg
-%{_kf6_configkcfgdir}/launchfeedbacksettings.kcfg
-%{_kf6_configkcfgdir}/lookandfeelsettings.kcfg
-%{_kf6_configkcfgdir}/stylesettings.kcfg
+%{_kf6_configkcfgdir}/*.kcfg
 %{_kf6_debugdir}/*.categories
 %{_kf6_iconsdir}/hicolor/*/apps/kfontview.png
 %{_kf6_iconsdir}/hicolor/*/mimetypes/fonts-package.png
@@ -473,6 +457,7 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_libdir}/kconf_update_bin/plasma6.0-remove-old-shortcuts
 %{_kf6_libdir}/kconf_update_bin/plasma6.3-update-clipboard-database-2-to-3
 %{_kf6_libdir}/kconf_update_bin/plasma6.4-migrate-fullscreen-notifications-to-dnd
+%{_kf6_libdir}/kconf_update_bin/plasma6.8-remove-action-menu-shortcut
 %{_kf6_libdir}/kconf_update_bin/plasmashell-6.0-keep-custom-position-of-panels
 %{_kf6_libdir}/kconf_update_bin/plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
 %{_kf6_libdir}/kconf_update_bin/plasmashell-6.5-remove-stop-activity-shortcut
@@ -541,13 +526,12 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_libexecdir}/plasma-dbus-run-session-if-needed
 %{_libexecdir}/plasma-fallback-session-restore
 %{_libexecdir}/plasma-fallback-session-save
+%{_libexecdir}/plasma-setup-xwayland
 %{_libexecdir}/plasma-sourceenv.sh
 %{_libexecdir}/plasma-startup-sound
 %{_userunitdir}/plasma-baloorunner.service
 %{_userunitdir}/plasma-core.target
 %{_userunitdir}/plasma-gmenudbusmenuproxy.service
-%{_userunitdir}/plasma-kcminit-phase1.service
-%{_userunitdir}/plasma-kcminit.service
 %{_userunitdir}/plasma-krunner.service
 %{_userunitdir}/plasma-ksmserver.service
 %{_userunitdir}/plasma-ksplash.service
@@ -572,7 +556,6 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %{_kf6_libdir}/libklipper.so.*
 %{_kf6_libdir}/libklookandfeel.so.*
 %{_kf6_libdir}/libkmpris.so.*
-%{_kf6_libdir}/libkrdb.so
 %{_kf6_libdir}/libkworkspace6.so.*
 %{_kf6_libdir}/libnotificationmanager.so.*
 %{_kf6_libdir}/libtaskmanager.so.*
@@ -580,11 +563,9 @@ install -Dm 0644 %{SOURCE2} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %files devel
 %license LICENSES/*
 %{_includedir}/klookandfeel/
-%{_includedir}/krdb/
 %{_includedir}/kworkspace6/
 %{_includedir}/notificationmanager/
 %{_includedir}/taskmanager/
-%{_kf6_libdir}/cmake/Krdb/
 %{_kf6_libdir}/cmake/KRunnerAppDBusInterface/
 %{_kf6_libdir}/cmake/KSMServerDBusInterface/
 %{_kf6_libdir}/cmake/LibKLookAndFeel/

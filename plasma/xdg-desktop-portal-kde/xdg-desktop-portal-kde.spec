@@ -45,6 +45,7 @@ BuildRequires:  cmake(KF6Notifications) >= %{kf6_version}
 BuildRequires:  cmake(KF6StatusNotifierItem) >= %{kf6_version}
 BuildRequires:  cmake(KF6WidgetsAddons) >= %{kf6_version}
 BuildRequires:  cmake(KF6WindowSystem) >= %{kf6_version}
+BuildRequires:  cmake(KPipeWire) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(KWayland) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaWaylandProtocols) >= 1.7.0
 BuildRequires:  cmake(Qt6Concurrent) >= %{qt6_version}

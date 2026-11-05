@@ -49,7 +49,6 @@ BuildRequires:  cmake(KF6Solid) >= %{kf6_version}
 BuildRequires:  cmake(KF6Svg) >= %{kf6_version}
 BuildRequires:  cmake(KF6WindowSystem) >= %{kf6_version}
 BuildRequires:  cmake(KF6XmlGui) >= %{kf6_version}
-BuildRequires:  cmake(KWayland) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(LayerShellQt) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaQuick) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
@@ -94,11 +93,13 @@ install -D -m0644 %{SOURCE3} %{buildroot}%{_pam_confdir}/kde-smartcard
 %files -f %{name}.lang
 %license LICENSES/*
 %{_kf6_applicationsdir}/kcm_screenlocker.desktop
+%{_kf6_configkcfgdir}/kscreenlockersettings.kcfg
 %{_kf6_debugdir}/kscreenlocker.categories
 %{_kf6_notificationsdir}/ksmserver.notifyrc
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_screenlocker.so
-%{_kf6_sharedir}/ksmserver/
+%{_kf6_qmldir}/org/kde/kscreenlocker/
 %{_libexecdir}/kscreenlocker_greet
+%{_libexecdir}/kscreenlocker_worker
 %{_pam_confdir}/kde
 %{_pam_confdir}/kde-fingerprint
 %{_pam_confdir}/kde-smartcard

@@ -238,7 +238,7 @@ rm -rv %{buildroot}%{_kf6_sharedir}/dbus-1/interfaces/
 %{_kf6_applicationsdir}/kcm_tablet.desktop
 %{_kf6_applicationsdir}/kcm_touchscreen.desktop
 %{_kf6_applicationsdir}/kcm_workspace.desktop
-%{_kf6_applicationsdir}/kcmspellchecking.desktop
+%{_kf6_applicationsdir}/kcm_spellchecking.desktop
 %{_kf6_applicationsdir}/kde-mimeapps.list
 %{_kf6_applicationsdir}/org.kde.knetattach.desktop
 %{_kf6_applicationsdir}/kcm_mouse.desktop
@@ -262,8 +262,7 @@ rm -rv %{buildroot}%{_kf6_sharedir}/dbus-1/interfaces/
 %{_kf6_plasmadir}/shells/
 %{_kf6_plugindir}/attica_kde.so
 %{_kf6_plugindir}/kf6/kded/device_automounter.so
-%{_kf6_plugindir}/kf6/kded/keyboard.so
-%{_kf6_plugindir}/kf6/kded/kded_touchpad.so
+%{_kf6_plugindir}/kf6/kded/screenreader.so
 %{_kf6_plugindir}/kf6/krunner/
 %{_kf6_plugindir}/plasma/applets/org.kde.panel.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.keyboardlayout.so
@@ -285,9 +284,6 @@ rm -rv %{buildroot}%{_kf6_sharedir}/dbus-1/interfaces/
 %if %{have_gamecontroller_kcm}
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_gamecontroller.so
 %endif
-%dir %{_kf6_plugindir}/plasma/kcminit
-%{_kf6_plugindir}/plasma/kcminit/kcm_mouse_init.so
-%{_kf6_plugindir}/plasma/kcminit/kcm_touchpad_init.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_mouse.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_touchpad.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings/kcm_kded.so
@@ -305,7 +301,7 @@ rm -rv %{buildroot}%{_kf6_sharedir}/dbus-1/interfaces/
 %{_kf6_plugindir}/plasma/kcms/systemsettings_qwidgets/kcm_qtquicksettings.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings_qwidgets/kcm_recentFiles.so
 %{_kf6_plugindir}/plasma/kcms/systemsettings_qwidgets/kcm_solid_actions.so
-%{_kf6_plugindir}/plasma/kcms/systemsettings_qwidgets/kcmspellchecking.so
+%{_kf6_plugindir}/plasma/kcms/systemsettings_qwidgets/kcm_spellchecking.so
 %{_kf6_qmldir}/org/kde/plasma/
 %{_kf6_qmldir}/org/kde/private/
 %dir %{_kf6_sharedir}/accounts/
@@ -321,6 +317,7 @@ rm -rv %{buildroot}%{_kf6_sharedir}/dbus-1/interfaces/
 %{_kf6_sharedir}/kconf_update/50-krunner-activate-typing.sh
 %{_kf6_sharedir}/kconf_update/50-krunner-activate-typing.upd
 %{_kf6_sharedir}/locale/sr/LC_SCRIPTS/kfontinst/kfontinst.js
+%{_kf6_sharedir}/kglobalaccel/org.kde.screenreader.desktop
 %{_kf6_sharedir}/kglobalaccel/org.kde.touchpadshortcuts.desktop
 %dir %{_kf6_sharedir}/sddm
 %dir %{_kf6_sharedir}/sddm/themes

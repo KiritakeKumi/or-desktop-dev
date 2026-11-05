@@ -69,6 +69,7 @@ A volume manager plasmoid superseding kmix.
 %doc %{_kf6_htmldir}/en/kcontrol/
 %license LICENSES/*
 %{_kf6_applicationsdir}/kcm_pulseaudio.desktop
+%{_kf6_configkcfgdir}/plasmapa.kcfg
 %{_kf6_debugdir}/plasmapa.categories
 %{_kf6_libdir}/libplasma-volume.so.*
 %{_kf6_plugindir}/kf6/kded/audioshortcutsservice.so

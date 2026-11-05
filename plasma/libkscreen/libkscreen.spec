@@ -34,8 +34,7 @@ BuildRequires:  pkgconfig
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 BuildRequires:  qt6-qtwayland-devel >= %{qt6_version}
 BuildRequires:  cmake(KF6Config) >= %{kf6_version}
-BuildRequires:  cmake(KWayland) >= %{_plasma6_bugfix}
-BuildRequires:  cmake(PlasmaWaylandProtocols) >= 1.10.0
+BuildRequires:  cmake(PlasmaWaylandProtocols) >= 1.22.0
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Gui) >= %{qt6_version}
@@ -47,9 +46,7 @@ BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  python
-BuildRequires:  pkgconfig(wayland-client) >= 1.9
-BuildRequires:  pkgconfig(xcb)
-BuildRequires:  pkgconfig(xcb-randr)
+BuildRequires:  pkgconfig(wayland-client) >= 1.24
 
 %description
 Dynamic display management library for KDE
@@ -75,15 +72,6 @@ Development files belonging to libkscreen, dynamic display management in Plasma
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%post plugin
-%systemd_user_post plasma-kscreen.service
-
-%preun plugin
-%systemd_user_preun plasma-kscreen.service
-
-%postun plugin
-%systemd_user_postun plasma-kscreen.service
-
 %files -f %{name}.lang
 %doc README.md
 %license LICENSES/*
@@ -94,11 +82,7 @@ Development files belonging to libkscreen, dynamic display management in Plasma
 
 %files plugin
 %{_kf6_bindir}/kscreen-doctor
-%{_kf6_plugindir}/kf6/kscreen/
-%{_kf6_libexecdir}/kscreen_backend_launcher
-%{_kf6_sharedir}/dbus-1/services/org.kde.kscreen.service
 %{_kf6_debugdir}/libkscreen.categories
-%{_userunitdir}/plasma-kscreen.service
 %dir %{_datadir}/zsh
 %dir %{_datadir}/zsh/site-functions
 %{_datadir}/zsh/site-functions/_kscreen-doctor

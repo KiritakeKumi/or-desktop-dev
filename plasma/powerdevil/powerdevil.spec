@@ -52,7 +52,7 @@ BuildRequires:  cmake(KF6Solid) >= %{kf6_version}
 BuildRequires:  cmake(KF6XmlGui) >= %{kf6_version}
 BuildRequires:  cmake(LibKWorkspace) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaActivities) >= %{_plasma6_bugfix}
-BuildRequires:  cmake(PlasmaWaylandProtocols)
+BuildRequires:  cmake(PlasmaWaylandProtocols) >= 1.22.0
 BuildRequires:  cmake(QCoro6)
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
 BuildRequires:  cmake(Qt6WaylandClient) >= %{qt6_version}

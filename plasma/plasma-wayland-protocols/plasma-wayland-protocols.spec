@@ -18,6 +18,7 @@ BuildSystem:    cmake
 BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules
+BuildRequires:  qt6-qtbase-devel
 BuildRequires:  pkgconfig(wayland-scanner)
 
 %description

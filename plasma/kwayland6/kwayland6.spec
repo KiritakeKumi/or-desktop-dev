@@ -38,9 +38,9 @@ BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
 BuildRequires:  cmake(Qt6WaylandClient) >= %{qt6_version}
 BuildRequires:  cmake(Qt6WaylandGlobalPrivate) >= %{qt6_version}
 BuildRequires:  pkgconfig(egl)
-BuildRequires:  pkgconfig(wayland-client) >= 1.15.0
+BuildRequires:  pkgconfig(wayland-client) >= 1.26.0
 BuildRequires:  pkgconfig(wayland-protocols) >= 1.15.0
-BuildRequires:  pkgconfig(wayland-server) >= 1.15.0
+BuildRequires:  pkgconfig(wayland-server) >= 1.26.0
 
 %description
 KWayland provides a Qt-style Client and Server library wrapper for the Wayland

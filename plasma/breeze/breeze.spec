@@ -127,6 +127,7 @@ EOF
 %license LICENSES/*
 %{_kf6_applicationsdir}/breezestyleconfig.desktop
 %{_kf6_bindir}/breeze-settings6
+%{_kf6_configkcfgdir}/breeze.kcfg
 %{_kf6_iconsdir}/hicolor/scalable/apps/breeze-settings.svgz
 %dir %{_kf6_plugindir}/kstyle_config
 %{_kf6_plugindir}/kstyle_config/breezestyleconfig.so
@@ -150,6 +151,7 @@ EOF
 %files -n breeze-decoration
 %license LICENSES/*
 %{_kf6_applicationsdir}/kcm_breezedecoration.desktop
+%{_kf6_configkcfgdir}/breeze-decoration.kcfg
 %dir %{_kf6_plugindir}/org.kde.kdecoration3.kcm
 %{_kf6_plugindir}/org.kde.kdecoration3.kcm/kcm_breezedecoration.so
 %dir %{_kf6_plugindir}/org.kde.kdecoration3

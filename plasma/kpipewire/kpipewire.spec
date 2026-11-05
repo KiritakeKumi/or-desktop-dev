@@ -32,7 +32,6 @@ BuildRequires:  pkgconfig
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}
 BuildRequires:  cmake(KF6CoreAddons) >= %{kf6_version}
 BuildRequires:  cmake(KF6I18n) >= %{kf6_version}
-BuildRequires:  cmake(KWayland) >= %{_plasma6_bugfix}
 BuildRequires:  cmake(PlasmaWaylandProtocols)
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
 BuildRequires:  cmake(Qt6OpenGL) >= %{qt6_version}
@@ -81,6 +80,7 @@ which use KPipeWire.
 %{_kf6_libdir}/libKPipeWireRecord.so.*
 %{_kf6_debugdir}/kpipewirerecord.categories
 %{_kf6_libdir}/libKPipeWireDmaBuf.so.*
+%{_kf6_libdir}/libKPipeWireMonitor.so.*
 %{_kf6_qmldir}/org/kde/pipewire/
 
 %files devel
@@ -89,6 +89,7 @@ which use KPipeWire.
 %{_kf6_libdir}/libKPipeWire.so
 %{_kf6_libdir}/libKPipeWireRecord.so
 %{_kf6_libdir}/libKPipeWireDmaBuf.so
+%{_kf6_libdir}/libKPipeWireMonitor.so
 
 %changelog
 %autochangelog
