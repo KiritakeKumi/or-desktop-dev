@@ -263,6 +263,7 @@ Plasma Input Method Backend for SCIM (Smart Chinese/Common Input Method) support
 %{_kf6_plugindir}/kf6/kded/screenreader.so
 %{_kf6_plugindir}/kf6/krunner/
 %{_kf6_plugindir}/plasma/applets/org.kde.panel.so
+%{_kf6_plugindir}/plasma/applets/org.kde.plasma.dwellclicker.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.keyboardlayout.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kicker.so
 %{_kf6_plugindir}/plasma/applets/org.kde.plasma.kickoff.so
@@ -315,6 +316,9 @@ Plasma Input Method Backend for SCIM (Smart Chinese/Common Input Method) support
 %{_kf6_sharedir}/kconf_update/50-krunner-activate-typing.sh
 %{_kf6_sharedir}/kconf_update/50-krunner-activate-typing.upd
 %{_kf6_sharedir}/locale/sr/LC_SCRIPTS/kfontinst/kfontinst.js
+%{_kf6_sharedir}/locale/sr@ijekavian/LC_SCRIPTS/kfontinst/kfontinst.js
+%{_kf6_sharedir}/locale/sr@ijekavianlatin/LC_SCRIPTS/kfontinst/kfontinst.js
+%{_kf6_sharedir}/locale/sr@latin/LC_SCRIPTS/kfontinst/kfontinst.js
 %{_kf6_sharedir}/kglobalaccel/org.kde.screenreader.desktop
 %{_kf6_sharedir}/kglobalaccel/org.kde.touchpadshortcuts.desktop
 %dir %{_kf6_sharedir}/sddm
