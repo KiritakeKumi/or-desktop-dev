@@ -30,6 +30,9 @@ BuildRequires:  cmake(Qt6Network) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Qml) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Test) >= %{qt6_version}
 BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
+BuildRequires:  qt6-qttools
+BuildRequires:  qt6-doctools
+BuildRequires:  qt6-linguist
 
 %description
 Async Bluez wrapper library.
