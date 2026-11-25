@@ -7,13 +7,13 @@
 %define qt6_version 6.8.0
 
 %define rname breeze-icons
-# Full KF6 version (e.g. 6.31.0)
+# Full KF6 version (e.g. 6.32.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 %define _lto_cflags %{nil}
 
 Name:           kf6-breeze-icons
-Version:        6.31.0
+Version:        6.32.0
 Release:        %autorelease
 Summary:        Breeze icon theme
 License:        LGPL-3.0-only

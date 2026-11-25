@@ -11,7 +11,7 @@
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-ki18n
-Version:        6.31.0
+Version:        6.32.0
 Release:        %autorelease
 Summary:        KDE Gettext-based UI text internationalization
 License:        LGPL-2.1-or-later

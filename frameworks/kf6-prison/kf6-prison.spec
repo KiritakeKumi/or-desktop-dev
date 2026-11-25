@@ -7,11 +7,11 @@
 %define qt6_version 6.8.0
 
 %define rname prison
-# Full KF6 version (e.g. 6.31.0)
+# Full KF6 version (e.g. 6.32.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-prison
-Version:        6.31.0
+Version:        6.32.0
 Release:        %autorelease
 Summary:        Barcode abstraction layer library
 License:        MIT

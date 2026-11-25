@@ -8,12 +8,12 @@
 
 %define rname kguiaddons
 
-# Full KF6 version (e.g. 6.31.0)
+# Full KF6 version (e.g. 6.32.0)
 # %%{!?_kf6_version: %%global _kf6_version %%{version}}
-%global _kf6_version 6.31.0
+%global _kf6_version 6.32.0
 
 Name:           kf6-kguiaddons
-Version:        6.31.0
+Version:        6.32.0
 Release:        %autorelease
 Summary:        Utilities for graphical user interfaces
 License:        LGPL-2.1-or-later

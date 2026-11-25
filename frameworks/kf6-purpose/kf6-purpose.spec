@@ -10,11 +10,11 @@
 %define qt6_version 6.8.0
 
 %define rname purpose
-# Full KF6 version (e.g. 6.31.0)
+# Full KF6 version (e.g. 6.32.0)
 %{!?_kf6_version: %global _kf6_version %{version}}
 
 Name:           kf6-purpose
-Version:        6.31.0
+Version:        6.32.0
 Release:        %autorelease
 Summary:        Framework to integrate services and actions in applications
 License:        LGPL-2.1-or-later
