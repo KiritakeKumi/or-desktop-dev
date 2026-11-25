@@ -18,7 +18,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kidletime.git
 #!RemoteAsset:  sha256:88a2933f0d32196ce050f1cf0a931174bd0c0149aa7fa58cafb8012d9b780643
-Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

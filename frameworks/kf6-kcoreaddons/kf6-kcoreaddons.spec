@@ -19,7 +19,7 @@ License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            https://invent.kde.org/frameworks/kcoreaddons
 #!RemoteAsset:  sha256:d3a843249177a6e51714a7211c73829cb071dbebe4f30404423bbbc57ca5ee95
-Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

@@ -18,7 +18,7 @@ License:        LGPL-2.1-only OR LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/networkmanager-qt.git
 #!RemoteAsset:  sha256:b045f7430f66f16c7bb9ee8c254fe6d3631a74260c1b9be6b4c9ab1873ec9f5e
-Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF

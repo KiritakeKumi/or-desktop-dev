@@ -19,7 +19,7 @@ License:        LGPL-2.1-or-later AND GPL-2.0-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kxmlgui
 #!RemoteAsset:  sha256:048c2229a39ec717740a56b4e8b23dc2e68cefa36c4b6ab652104a0dc1a6fbd8
-Source:         https://download.kde.org/stable/frameworks/6.31/%{rname}-%{version}.tar.xz
+Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
 BuildOption(conf):  -DBUILD_TESTING=OFF
