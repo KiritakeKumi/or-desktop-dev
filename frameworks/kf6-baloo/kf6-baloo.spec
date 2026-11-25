@@ -91,13 +91,13 @@ package contains aditional command line utilities. Development files.
 %find_lang %{name} --with-qt --all-name --generate-subpackages
 
 %post file
-%systemd_user_post kde-baloo.service
+%systemd_user_post kde-baloo.service kde-baloo-idle-monitor.service
 
 %preun file
-%systemd_user_preun kde-baloo.service
+%systemd_user_preun kde-baloo.service kde-baloo-idle-monitor.service
 
 %postun file
-%systemd_user_postun kde-baloo.service
+%systemd_user_postun kde-baloo.service kde-baloo-idle-monitor.service
 
 %files -f %{name}.lang
 %license LICENSES/*
@@ -113,7 +113,11 @@ package contains aditional command line utilities. Development files.
 %{_kf6_debugdir}/baloo.renamecategories
 %{_kf6_libexecdir}/baloo_file
 %{_kf6_libexecdir}/baloo_file_extractor
+%{_kf6_libexecdir}/baloo_idle_monitor
 %{_userunitdir}/kde-baloo.service
+%{_userunitdir}/kde-baloo-idle-monitor.service
+%{_kf6_sharedir}/dbus-1/services/org.kde.baloo.service
+%{_kf6_sharedir}/dbus-1/services/org.kde.baloo_idle_monitor.service
 
 %files kioslaves
 %{_kf6_plugindir}/kf6/kded/baloosearchmodule.so
