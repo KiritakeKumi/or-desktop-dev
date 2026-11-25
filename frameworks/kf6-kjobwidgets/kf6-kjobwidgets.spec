@@ -18,7 +18,7 @@ Summary:        Widgets for showing progress of asynchronous jobs
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kjobwidgets
-#!RemoteAsset:  sha256:b734186ed41e8cc84c2a5f9ba61b46075dacf076450dcb78d37a5d01dcd8c69e
+#!RemoteAsset:  sha256:98eaee2846181b82b357067db00ac65e3bcf02c11322bb636aa6021a6eb65dd2
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

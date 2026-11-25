@@ -24,7 +24,7 @@ Summary:        Image format plugins for Qt
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kimageformats.git
-#!RemoteAsset:  sha256:62a0a92b6b7e117256c0ad115f1c7cc8ef343bb3b80b721cc9240cfa76657c8c
+#!RemoteAsset:  sha256:298069eab84d34b909fc271d818b0762c6c63cc8490f2d8b0fe48dc0d8804b5c
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

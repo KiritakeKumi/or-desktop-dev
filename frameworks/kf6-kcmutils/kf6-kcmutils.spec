@@ -20,7 +20,7 @@ Summary:        Classes to work with KCModules
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kcmutils
-#!RemoteAsset:  sha256:e7c96296f2cc31b68c323559890df1e197dcb9c663822682dc97737c1b811610
+#!RemoteAsset:  sha256:473395787e6921d37298e191cc1718f8818f630b98bdf312583ad25606f6a09e
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

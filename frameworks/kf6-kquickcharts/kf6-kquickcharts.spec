@@ -17,7 +17,7 @@ Summary:        Set of charts for QtQuick applications
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kquickcharts.git
-#!RemoteAsset:  sha256:2c2c18c1eb1ea1c8d9df0dc084bd2770b0099dc10cc0cb6827c7dc6bd5d3c21d
+#!RemoteAsset:  sha256:9f676e504f73fa43e394833e514522baac3f3ca2b8c63908eef7f6bdf1053046
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

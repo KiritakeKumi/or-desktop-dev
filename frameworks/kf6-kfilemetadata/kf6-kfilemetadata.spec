@@ -19,7 +19,7 @@ Summary:        Library for extracting Metadata
 License:        GPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kfilemetadata.git
-#!RemoteAsset:  sha256:9c9dd8d4a3d0dfc97c8177a391b8276638402fe0f55e5ff8b4332e1ab214da58
+#!RemoteAsset:  sha256:f74fcb857e52613095d9b264ac6e8ddf0eca326c884e8c83fd536e70b111241a
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

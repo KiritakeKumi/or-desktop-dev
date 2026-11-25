@@ -17,7 +17,7 @@ Summary:        Framework for manipulating bookmarks in XBEL format
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kbookmarks
-#!RemoteAsset:  sha256:2d2c53c07fbc813e891bbc95a3ff4828c9e8e348e84a0d94fc2b69adf5897f55
+#!RemoteAsset:  sha256:a796db0d6f91bd8795ef3319f85f75074d76be315119335c339cf37c1552a472
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

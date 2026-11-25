@@ -17,7 +17,7 @@ Summary:        Set of QtQuick components
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kirigami
-#!RemoteAsset:  sha256:811a8a150e636216269c0346e62470997fa282113a39e32b2d332bd5969926f0
+#!RemoteAsset:  sha256:1cb13ef3ad1885726c383bcd1a35c494db3e9c2cf87b49398ea34d63129cf6d7
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

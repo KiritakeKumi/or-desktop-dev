@@ -17,7 +17,7 @@ Summary:        Framework which lets applications perform actions as a privilege
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/kauth
-#!RemoteAsset:  sha256:6fb4e3d1de3364bab82453bd635387e845f227764c4d75ad505348ba3a2e34f8
+#!RemoteAsset:  sha256:5bcdb298a2ee84bca93a989247fd6d6e34a1e1029caae17705a85b8ac4dbe837
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

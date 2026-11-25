@@ -17,7 +17,7 @@ Summary:        Async Bluez wrapper library
 License:        LGPL-2.1-or-later
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/bluez-qt
-#!RemoteAsset:  sha256:22b25448c6b5372ee4fba15bb938e698a599cec0d69816ceb0405451c879c827
+#!RemoteAsset:  sha256:53f9705366f1e142e921f3ec314d673d51341bd20d358c33ebe8fe4218d2cd6b
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 

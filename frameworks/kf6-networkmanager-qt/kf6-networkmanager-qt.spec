@@ -17,7 +17,7 @@ Summary:        A Qt wrapper for NetworkManager DBus API
 License:        LGPL-2.1-only OR LGPL-3.0-only
 URL:            https://www.kde.org
 VCS:            git:https://invent.kde.org/frameworks/networkmanager-qt.git
-#!RemoteAsset:  sha256:b045f7430f66f16c7bb9ee8c254fe6d3631a74260c1b9be6b4c9ab1873ec9f5e
+#!RemoteAsset:  sha256:028134ebcb8aba0394377775a15741c8dc3fc33af9651508a6d819ac1e7f31a0
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
