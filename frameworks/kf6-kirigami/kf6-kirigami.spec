@@ -81,7 +81,6 @@ Development files.
 %{_kf6_libdir}/libKirigamiPlatform.so.*
 %{_kf6_libdir}/qt6/metatypes/qt6kirigamiplatform_metatypes.json
 %{_kf6_libdir}/libKirigamiPrimitives.so.*
-%{_kf6_libdir}/libKirigamiPolyfill.so.*
 %{_kf6_libdir}/libKirigamiTemplates.so.*
 
 %files devel
@@ -103,7 +102,6 @@ Development files.
 %{_kf6_libdir}/libKirigamiPlatform.so
 %{_kf6_libdir}/libKirigamiPrimitives.so
 %{_kf6_libdir}/libKirigamiPrivate.so
-%{_kf6_libdir}/libKirigamiPolyfill.so
 %{_kf6_libdir}/libKirigamiTemplates.so
 %{_kf6_sharedir}/kdevappwizard/templates/kirigami6.tar.bz2
 

@@ -73,6 +73,7 @@ Development files.
 %files devel
 %{_kf6_includedir}/KI18n/
 %{_kf6_includedir}/KI18nLocaleData/
+%{_kf6_includedir}/KI18nQml/
 %{_kf6_cmakedir}/KF6I18n/
 %{_kf6_libdir}/libKF6I18n.so
 %{_kf6_libdir}/libKF6I18nLocaleData.so
