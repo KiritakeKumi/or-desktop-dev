@@ -23,7 +23,7 @@ VCS:            git:https://invent.kde.org/frameworks/kfilemetadata.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^(extractorcoveragetest|odfextractortest)$'
+BuildOption(check):  -E '^(extractorcoveragetest|odfextractortest)$'
 
 %if %{without ffmpeg}
 BuildOption(conf):  -DCMAKE_DISABLE_FIND_PACKAGE_FFmpeg=ON

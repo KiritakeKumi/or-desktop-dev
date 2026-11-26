@@ -21,7 +21,7 @@ VCS:            git:https://github.com/KDE/knewstuff.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^knewstuff-atticaprovidertest$'
+BuildOption(check):  -E '^knewstuff-atticaprovidertest$'
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Archive) >= %{_kf6_version}

@@ -22,7 +22,7 @@ VCS:            git:https://invent.kde.org/frameworks/kxmlgui
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^ktoolbar_unittest$'
+BuildOption(check):  -E '^ktoolbar_unittest$'
 
 BuildOption(conf):  -DBUILD_PYTHON_BINDINGS=OFF
 

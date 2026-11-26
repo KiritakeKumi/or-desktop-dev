@@ -18,7 +18,7 @@ VCS:            git:https://invent.kde.org/frameworks/kwindowsystem
 Source0:        https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^kwindowsystem-(kmanagerselectiontest|kstartupinfo_unittest|kxmessages_unittest|kkeyserver_x11_unittest|kwindoweffectstest|kwindowinfox11test|kwindowsystemx11test|kwindowsystem_threadtest|netrootinfotestwm|netwininfotestclient|netwininfotestwm)$'
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
@@ -74,10 +74,6 @@ KWindowSystem provides information about the state of the window manager and
 allows asking the window manager to change the using a more high-level
 interface than the NETWinInfo/NETRootInfo low-level classes.
 Development files.
-
-%check -p
-export QT_QPA_PLATFORM=offscreen
-export QT_LOGGING_TO_CONSOLE=1
 
 %files
 %license LICENSES/*

@@ -21,7 +21,7 @@ VCS:            https://invent.kde.org/frameworks/ki18n
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^(kcatalogtest|kcountrytest|kcountrysubdivisiontest|ktimezonetest)$'
+BuildOption(check):  -E '^(kcatalogtest|kcountrytest|kcountrysubdivisiontest|ktimezonetest)$'
 
 BuildRequires:  gettext-runtime
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}

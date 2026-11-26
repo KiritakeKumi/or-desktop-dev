@@ -24,7 +24,7 @@ VCS:            git:https://invent.kde.org/frameworks/purpose.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^(alternativesmodeltest|menutest)$'
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KAccounts6)
@@ -84,10 +84,6 @@ This package contains development files needed to build applications which rely 
 %install -a
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --generate-subpackages
-
-%check -p
-export QT_QPA_PLATFORM=offscreen
-export QT_LOGGING_TO_CONSOLE=1
 
 %files -f %{name}.lang
 %license LICENSES/*

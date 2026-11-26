@@ -21,7 +21,7 @@ VCS:            git:https://invent.kde.org/frameworks/kconfigwidgets
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^kstandardactiontest$'
+BuildOption(check):  -E '^kstandardactiontest$'
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  qt6-qtbase-private-devel >= %{qt6_version}

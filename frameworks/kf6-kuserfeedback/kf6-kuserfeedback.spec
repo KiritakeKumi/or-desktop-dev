@@ -21,7 +21,7 @@ VCS:            git:https://invent.kde.org/frameworks/kuserfeedback.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^openglinfosourcetest$'
+BuildOption(check):  -E '^openglinfosourcetest$'
 
 BuildOption(conf):  -DQT_MAJOR_VERSION:STRING=6
 BuildOption(conf):  -DENABLE_DOCS:BOOL=FALSE

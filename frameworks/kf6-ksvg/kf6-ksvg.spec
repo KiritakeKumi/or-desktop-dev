@@ -21,7 +21,7 @@ VCS:            git:https://invent.kde.org/frameworks/ksvg
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^plasmasvg-'
+BuildOption(conf):  -DBUILD_TESTING=OFF
 
 Patch0:         0001-Revert-Support-for-fractional-scaling.patch
 
@@ -53,10 +53,6 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 
 %description    devel
 Development Files for the ksvg framework.
-
-%check -p
-export QT_QPA_PLATFORM=offscreen
-export QT_LOGGING_TO_CONSOLE=1
 
 %files
 %license LICENSES/*

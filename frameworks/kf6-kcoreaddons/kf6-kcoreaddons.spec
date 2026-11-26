@@ -22,7 +22,7 @@ VCS:            https://invent.kde.org/frameworks/kcoreaddons
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(check):  '^kdirwatch_(stat|qfswatch)_unittest$'
+BuildOption(check):  -E '^kdirwatch_(stat|qfswatch)_unittest$'
 
 BuildOption(conf):  -DENABLE_PCH:BOOL=FALSE
 BuildOption(conf):  -DBUILD_PYTHON_BINDINGS:BOOL=OFF
