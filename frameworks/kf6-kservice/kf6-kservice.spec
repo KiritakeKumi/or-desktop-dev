@@ -56,11 +56,6 @@ application specific code. Development files
 %prep
 %autosetup -p1 -n %{rname}-%{version}
 
-%build
-%cmake_kf6
-
-%kf6_build
-
 %install -a
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --generate-subpackages

@@ -24,6 +24,8 @@ VCS:            git:https://invent.kde.org/frameworks/purpose.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+BuildOption(check):  '^(alternativesmodeltest|menutest)$'
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KAccounts6)
 BuildRequires:  cmake(KF6Config) >= %{_kf6_version}

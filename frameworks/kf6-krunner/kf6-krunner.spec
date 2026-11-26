@@ -33,6 +33,7 @@ BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
+BuildRequires:  dbus-tools
 
 %description
 KDE Framework for providing different actions given a string query.
@@ -47,9 +48,10 @@ Requires:       cmake(Qt6Gui) >= %{qt6_version}
 %description    devel
 Files needed for developing custom runners or frontends.
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- sh -c '%{ctest}'
 
 %files
 %doc README.md

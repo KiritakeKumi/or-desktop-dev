@@ -34,6 +34,7 @@ BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  cmake(Qt6Xml) >= %{qt6_version}
 BuildRequires:  cmake(Qt6CorePrivate) >= %{qt6_version}
+BuildRequires:  dbus-tools
 
 Provides:       kf6-kconfig-imports = %{version}-%{release}
 Obsoletes:      kf6-kconfig-imports < %{version}-%{release}
@@ -77,9 +78,10 @@ KConfigGui provides a way to hook widgets to the configuration so that they are
 automatically initialized from the configuration and automatically propagate
 their changes to their respective configuration files. Development files.
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- sh -c '%{ctest}'
 
 %files
 %license LICENSES/*

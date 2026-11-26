@@ -35,6 +35,7 @@ BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  pkgconfig(libcanberra)
+BuildRequires:  cmake(KF6Notifications) >= %{_kf6_version}
 
 %description
 KNotifyConfig provides a configuration dialog for desktop notifications which

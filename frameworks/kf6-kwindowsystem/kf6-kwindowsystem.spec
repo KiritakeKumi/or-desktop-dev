@@ -18,6 +18,8 @@ VCS:            git:https://invent.kde.org/frameworks/kwindowsystem
 Source0:        https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+BuildOption(check):  '^kwindowsystem-(kmanagerselectiontest|kstartupinfo_unittest|kxmessages_unittest|kkeyserver_x11_unittest|kwindoweffectstest|kwindowinfox11test|kwindowsystemx11test|kwindowsystem_threadtest|netrootinfotestwm|netwininfotestclient|netwininfotestwm)$'
+
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  cmake

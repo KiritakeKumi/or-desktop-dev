@@ -31,6 +31,7 @@ BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  pkgconfig(ModemManager) >= 1.0.0
+BuildRequires:  dbus-tools
 
 %description
 Qt wrapper for ModemManager DBus API.
@@ -43,9 +44,10 @@ Requires:       pkgconfig(ModemManager) >= 1.0.0
 %description    devel
 Qt wrapper for ModemManager DBus API. Development files.
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- sh -c '%{ctest}'
 
 %files
 %doc README.md

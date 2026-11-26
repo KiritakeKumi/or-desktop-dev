@@ -33,6 +33,7 @@ BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
 BuildRequires:  pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(libnm) >= 1.4.0
+BuildRequires:  dbus-tools
 
 %description
 NetworkManagerQt provides access to all NetworkManager features
@@ -54,9 +55,10 @@ exposed on DBus. It allows you to manage your connections and control
 your network devices and also provides a library for parsing connection
 settings which are used in DBus communication. Development files.
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- sh -c '%{ctest}'
 
 %files
 %doc README.md

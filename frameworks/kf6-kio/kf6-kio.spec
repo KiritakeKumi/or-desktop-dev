@@ -68,6 +68,7 @@ BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  docbook-xsl
 BuildRequires:  docbook-dtds
+BuildRequires:  dbus-tools
 Requires:       kf6-kded >= %{_kf6_version}
 # For discrete GPU discovery
 Recommends:     switcheroo-control
@@ -110,9 +111,10 @@ Development files.
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --generate-subpackages
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- sh -c '%{ctest}'
 
 %files -f %{name}.lang
 %license LICENSES/*

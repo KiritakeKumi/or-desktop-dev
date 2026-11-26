@@ -44,6 +44,7 @@ BuildRequires:  cmake(Qt6Widgets) >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
+BuildRequires:  dbus-tools
 
 %description
 Baloo is a framework for searching and managing metadata.
@@ -97,9 +98,10 @@ package contains aditional command line utilities. Development files.
 %postun file
 %systemd_user_postun kde-baloo.service kde-baloo-idle-monitor.service
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- sh -c '%{ctest}'
 
 %files -f %{name}.lang
 %license LICENSES/*
