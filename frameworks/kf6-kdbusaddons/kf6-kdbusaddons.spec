@@ -58,7 +58,7 @@ create KDED modules. Development files.
 %check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
-dbus-run-session -- %ctest
+dbus-run-session -- sh -c '%{ctest}'
 
 %files
 %license LICENSES/*
