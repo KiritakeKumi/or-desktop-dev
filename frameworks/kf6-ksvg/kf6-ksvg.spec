@@ -23,8 +23,6 @@ BuildSystem:    cmake
 
 Patch0:         0001-Revert-Support-for-fractional-scaling.patch
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(KF6Archive) >= %{_kf6_version}
 BuildRequires:  cmake(KF6ColorScheme) >= %{_kf6_version}

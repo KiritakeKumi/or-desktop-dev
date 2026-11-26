@@ -22,8 +22,6 @@ Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{versi
 BuildSystem:    cmake
 
 BuildOption(conf):  -DENABLE_KAUTH:BOOL=FALSE
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  cmake(EditorConfig)

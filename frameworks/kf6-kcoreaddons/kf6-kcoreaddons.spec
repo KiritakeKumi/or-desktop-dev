@@ -22,7 +22,6 @@ VCS:            https://invent.kde.org/frameworks/kcoreaddons
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildOption(conf):  -DENABLE_PCH:BOOL=FALSE
 BuildOption(conf):  -DBUILD_PYTHON_BINDINGS:BOOL=OFF
 BuildOption(conf):  -DBUILD_QCH:BOOL=OFF

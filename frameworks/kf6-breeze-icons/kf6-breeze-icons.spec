@@ -23,7 +23,6 @@ VCS:            git:https://invent.kde.org/frameworks/breeze-icons
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildOption(conf):  -DBINARY_ICONS_RESOURCE:BOOL=TRUE
 BuildOption(conf):  -DWITH_ICON_GENERATION:BOOL=FALSE
 

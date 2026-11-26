@@ -21,8 +21,6 @@ VCS:            git:https://invent.kde.org/frameworks/kdoctools
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  docbook-xsl
 BuildRequires:  docbook-dtds
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}

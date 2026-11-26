@@ -23,8 +23,6 @@ BuildSystem:    cmake
 
 BuildOption(conf):  -DQT_MAJOR_VERSION:STRING=6
 BuildOption(conf):  -DENABLE_DOCS:BOOL=FALSE
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  bison
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  flex

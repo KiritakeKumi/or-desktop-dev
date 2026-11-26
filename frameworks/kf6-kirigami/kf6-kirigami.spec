@@ -21,7 +21,6 @@ VCS:            git:https://invent.kde.org/frameworks/kirigami
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildOption(conf):  -DQT_QML_NO_CACHEGEN:BOOL=TRUE
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}

@@ -24,8 +24,6 @@ VCS:            git:https://invent.kde.org/frameworks/kcmutils
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  kf6-kirigami >= %{_kf6_version}
 BuildRequires:  cmake(KF6ConfigWidgets) >= %{_kf6_version}

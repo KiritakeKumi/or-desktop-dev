@@ -21,8 +21,6 @@ VCS:            git:https://invent.kde.org/frameworks/kdnssd.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  avahi-devel
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}

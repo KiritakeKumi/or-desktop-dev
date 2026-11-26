@@ -18,8 +18,6 @@ VCS:            git:https://invent.kde.org/frameworks/kwindowsystem
 Source0:        https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
-
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  cmake

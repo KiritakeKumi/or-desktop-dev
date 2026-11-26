@@ -28,7 +28,6 @@ VCS:            git:https://invent.kde.org/frameworks/kimageformats.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
 %if %{with avif}
 BuildOption(conf):  -DKIMAGEFORMATS_AVIF:BOOL=TRUE
 %else

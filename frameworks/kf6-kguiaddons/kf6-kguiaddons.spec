@@ -23,7 +23,6 @@ VCS:            git:https://invent.kde.org/frameworks/kguiaddons
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
-BuildOption(conf):  -DBUILD_TESTING=OFF
 BuildOption(conf):  -DBUILD_PYTHON_BINDINGS=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
