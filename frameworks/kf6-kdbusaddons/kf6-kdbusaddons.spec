@@ -31,7 +31,7 @@ BuildRequires:  cmake(Qt6Gui) >= %{qt6_version}
 BuildRequires:  cmake(Qt6GuiPrivate) >= %{qt6_version}
 BuildRequires:  cmake(Qt6LinguistTools) >= %{qt6_version}
 BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
-BuildRequires:  /usr/bin/dbus-run-session
+BuildRequires:  dbus-tools
 
 %description
 KDBusAddons provides convenience classes on top of QtDBus, as well as an API to
