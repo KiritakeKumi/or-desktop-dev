@@ -48,6 +48,10 @@ Requires:       cmake(Qt6Core) >= %{qt6_version}
 %description    devel
 Development files for the KF6 ThreadWeaver library.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

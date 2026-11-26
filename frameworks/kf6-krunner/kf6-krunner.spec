@@ -47,6 +47,10 @@ Requires:       cmake(Qt6Gui) >= %{qt6_version}
 %description    devel
 Files needed for developing custom runners or frontends.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

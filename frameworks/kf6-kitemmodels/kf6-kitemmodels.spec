@@ -40,6 +40,10 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 KItemModels provides a set of item models extending the Qt model-view framework.
 Development files.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %{_kf6_libdir}/libKF6ItemModels.so.*

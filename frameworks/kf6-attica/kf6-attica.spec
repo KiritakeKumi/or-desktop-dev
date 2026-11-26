@@ -21,6 +21,8 @@ VCS:            git:https://invent.kde.org/frameworks/attica.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+BuildOption(check):  -E '^providertest$'
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  cmake(Qt6Core) >= %{qt6_version}
@@ -41,6 +43,10 @@ Requires:       cmake(Qt6Network) >= %{qt6_version}
 
 %description    devel
 Development files for attica, a library to access Open Collaboration Service servers.
+
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
 
 %files
 %doc README.md

@@ -52,6 +52,10 @@ Requires:       cmake(Qt6Widgets) >= %{qt6_version}
 KJobWIdgets provides widgets for showing progress of asynchronous jobs.
 Development files.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %doc README.md

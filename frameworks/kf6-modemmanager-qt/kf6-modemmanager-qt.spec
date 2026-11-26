@@ -43,6 +43,10 @@ Requires:       pkgconfig(ModemManager) >= 1.0.0
 %description    devel
 Qt wrapper for ModemManager DBus API. Development files.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

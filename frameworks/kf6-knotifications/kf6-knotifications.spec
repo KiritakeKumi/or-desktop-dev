@@ -72,6 +72,10 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 %description -n python-%{name}
 The package contains the PySide6 bindings library for %{name}.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %doc README.md

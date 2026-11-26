@@ -97,6 +97,10 @@ package contains aditional command line utilities. Development files.
 %postun file
 %systemd_user_postun kde-baloo.service kde-baloo-idle-monitor.service
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files -f %{name}.lang
 %license LICENSES/*
 %{_kf6_configkcfgdir}/baloosettings.kcfg

@@ -48,6 +48,10 @@ Requires:       cmake(Qt6Gui) >= %{qt6_version}
 Development files for prison, a barcode abstraction layer library providing
 uniform access to generation of barcodes with data.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

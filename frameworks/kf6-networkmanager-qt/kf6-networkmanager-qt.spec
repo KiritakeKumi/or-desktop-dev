@@ -54,6 +54,10 @@ exposed on DBus. It allows you to manage your connections and control
 your network devices and also provides a library for parsing connection
 settings which are used in DBus communication. Development files.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

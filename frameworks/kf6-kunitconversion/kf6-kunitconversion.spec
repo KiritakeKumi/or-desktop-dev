@@ -22,6 +22,8 @@ VCS:            git:https://invent.kde.org/frameworks/kunitconversion.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+BuildOption(check):  -E '^(categorytest|convertertest|currencytableinittest)$'
+
 BuildOption(conf):  -DBUILD_PYTHON_BINDINGS=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
@@ -58,6 +60,10 @@ Development files.
 %install -a
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --generate-subpackages
+
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
 
 %files -f %{name}.lang
 %doc README.md

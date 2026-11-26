@@ -55,6 +55,10 @@ the Breeze icons are available at build time.
 # yast2-theme uses these, but it got renamed in 5.55.0
 ln -s yast-software-group.svg %{buildroot}%{_kf6_iconsdir}/breeze/preferences/32/yast-software.svg
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license COPYING*
 %ghost %{_kf6_iconsdir}/breeze/icon-theme.cache

@@ -43,6 +43,10 @@ KF6Syndication is an RSS/Atom parsing library, which
 also provides an API to fetch feeds from the network. This
 package contains development headers.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

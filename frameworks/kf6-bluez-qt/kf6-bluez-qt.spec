@@ -44,6 +44,10 @@ Requires:       cmake(Qt6DBus) >= %{qt6_version}
 %description    devel
 Development files for QBluez Async Bluez wrapper library.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %doc README.md

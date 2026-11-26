@@ -62,6 +62,10 @@ elaborate widgets with a user-interface defined in terms of actions
 # Use langpacks macro to auto-split translations
 %find_lang %{name} --with-qt --all-name --generate-subpackages
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files -f %{name}.lang
 %license LICENSES/*
 %doc README.md

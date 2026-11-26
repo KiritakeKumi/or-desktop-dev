@@ -48,6 +48,7 @@ BuildRequires:  python3dist(wheel)
 BuildRequires:  clang-devel
 BuildRequires:  cmake(Shiboken6)
 BuildRequires:  cmake(PySide6)
+BuildRequires:  cmake(Qt6CorePrivate) >= %{qt6_version}
 
 Requires:       shared-mime-info >= 1.8
 
@@ -75,6 +76,10 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 
 %description -n python-%{name}
 The package contains the PySide6 bindings library for %{name}.
+
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
 
 %files
 %license LICENSES/*

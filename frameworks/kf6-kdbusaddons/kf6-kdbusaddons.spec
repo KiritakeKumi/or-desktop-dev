@@ -31,6 +31,7 @@ BuildRequires:  cmake(Qt6Gui) >= %{qt6_version}
 BuildRequires:  cmake(Qt6GuiPrivate) >= %{qt6_version}
 BuildRequires:  cmake(Qt6LinguistTools) >= %{qt6_version}
 BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
+BuildRequires:  /usr/bin/dbus-run-session
 
 %description
 KDBusAddons provides convenience classes on top of QtDBus, as well as an API to
@@ -53,6 +54,11 @@ Requires:       cmake(Qt6DBus) >= %{qt6_version}
 %description    devel
 KDBusAddons provides convenience classes on top of QtDBus, as well as an API to
 create KDED modules. Development files.
+
+%check
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+dbus-run-session -- %ctest
 
 %files
 %license LICENSES/*

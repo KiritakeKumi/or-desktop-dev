@@ -74,6 +74,10 @@ cp -r src/server %{buildroot}%{_kf6_sharedir}/php/kuserfeedback6
 # CMakeLists.txt is not needed there and will trigger a rpmlint warning
 rm %{buildroot}%{_kf6_sharedir}/php/kuserfeedback6/CMakeLists.txt
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files -f %{name}.lang
 %license LICENSES/*
 %doc README.md

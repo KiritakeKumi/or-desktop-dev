@@ -21,6 +21,8 @@ VCS:            git:https://invent.kde.org/frameworks/kcrash
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+BuildOption(check):  -E '^kcrashtest$'
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  pkgconfig
 BuildRequires:  cmake(KF6CoreAddons) >= %{_kf6_version}
@@ -45,6 +47,10 @@ Requires:       cmake(Qt6Core) >= %{qt6_version}
 %description    devel
 KCrash provides support for intercepting and handling application crashes.
 Development files.
+
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
 
 %files
 %license LICENSES/*

@@ -62,6 +62,10 @@ information on idle time. It is useful not only for finding out about
 the current idle time of the PC, but also for getting notified upon
 idle time events, such as custom timeouts, or user activity.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

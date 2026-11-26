@@ -31,6 +31,7 @@ BuildRequires:  cmake(Qt6Widgets) >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
 BuildRequires:  qt6-linguist
+BuildRequires:  iso-codes-devel
 
 %description
 KI18n provides functionality for internationalizing user interface text
@@ -53,6 +54,10 @@ in applications, based on the GNU Gettext translation system.
 It wraps the standard Gettext functionality, so that the programmers
 and translators can use the familiar Gettext tools and workflows.
 Development files.
+
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
 
 %files
 %license LICENSES/*

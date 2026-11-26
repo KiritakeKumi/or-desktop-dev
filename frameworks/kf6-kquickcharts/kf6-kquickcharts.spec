@@ -51,6 +51,10 @@ Requires:       kf6-kquickcharts >= %{version}
 Development files for KQuickCharts, a set of charts that can be used from QtQuick
 applications.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*

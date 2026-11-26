@@ -73,6 +73,10 @@ allows asking the window manager to change the using a more high-level
 interface than the NETWinInfo/NETRootInfo low-level classes.
 Development files.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %doc README.md

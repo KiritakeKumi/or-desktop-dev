@@ -60,6 +60,10 @@ Development files.
 %postun
 %systemd_user_postun plasma-kded6.service
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %doc README.md

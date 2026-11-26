@@ -89,6 +89,10 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 This package contains development files for kimageformats, a framework
 to provide additional image format plugins for QtGui.
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %license LICENSES/*
 %dir %{_kf6_plugindir}/imageformats

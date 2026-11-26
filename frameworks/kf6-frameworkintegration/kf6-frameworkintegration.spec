@@ -72,6 +72,10 @@ KDE Plasma workspace.
 
 Applications do not need to link to this directly. Development files
 
+%check -p
+export QT_QPA_PLATFORM=offscreen
+export QT_LOGGING_TO_CONSOLE=1
+
 %files
 %doc README.md
 %license LICENSES/*
