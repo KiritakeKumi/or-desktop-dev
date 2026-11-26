@@ -1,0 +1,59 @@
+From: openRuyi Project Contributors
+Subject: [PATCH] engine: retry with a smaller DB mmap when address space is too small
+
+Baloo unconditionally maps 256 GByte for the LMDB environment on 64-bit
+systems. On riscv64 machines using Sv39 paging the whole user address
+space is only 256 GByte, so mmap() always fails with ENOMEM and
+Database::open() returns InternalError: indexing does not work at all and
+the querytest/writetransactiontest autotests fail.
+
+Halve the map size and retry when mdb_env_open() fails with ENOMEM, down
+to 1 GByte. Systems with a large enough address space are unaffected.
+---
+ src/engine/database.cpp | 27 +++++++++++++++++++++++----
+ 1 file changed, 23 insertions(+), 4 deletions(-)
+
+diff --git a/src/engine/database.cpp b/src/engine/database.cpp
+--- a/src/engine/database.cpp
++++ b/src/engine/database.cpp
+@@ -124,9 +124,6 @@
+         sizeInGByte = 40;
+         qCWarning(ENGINE) << "Valgrind detected, limiting DB mmap to" << sizeInGByte << "GByte";
+     }
+-    const size_t maximalSizeInBytes = sizeInGByte * size_t(1024) * size_t(1024) * size_t(1024);
+-    mdb_env_set_mapsize(env, maximalSizeInBytes);
+-
+     // Set MDB environment flags
+     auto mdbEnvFlags = MDB_NOSUBDIR | MDB_NOMEMINIT;
+     if (mode == ReadOnlyDatabase) {
+@@ -135,7 +132,29 @@
+ 
+     // The directory needs to be created before opening the environment
+     QByteArray arr = QFile::encodeName(indexInfo.absoluteFilePath());
+-    rc = mdb_env_open(env, arr.constData(), mdbEnvFlags, 0664);
++    for (;;) {
++        const size_t maximalSizeInBytes = sizeInGByte * size_t(1024) * size_t(1024) * size_t(1024);
++        mdb_env_set_mapsize(env, maximalSizeInBytes);
++        rc = mdb_env_open(env, arr.constData(), mdbEnvFlags, 0664);
++        if (rc != ENOMEM || sizeInGByte <= 1) {
++            break;
++        }
++        /**
++         * The mmap does not fit into the available virtual address space,
++         * e.g. riscv64 with Sv39 paging only has 256 GByte of user address
++         * space in total. Retry with half the size.
++         * mdb_env_close must be called when mdb_env_open fails, so the
++         * environment has to be recreated.
++         */
++        mdb_env_close(env);
++        sizeInGByte /= 2;
++        qCWarning(ENGINE) << "Not enough address space for DB mmap, retrying with" << sizeInGByte << "GByte";
++        rc = mdb_env_create(&env);
++        if (rc) {
++            return OpenResult::InternalError;
++        }
++        mdb_env_set_maxdbs(env, 12);
++    }
+     if (rc) {
+         // mdb_env_close must be called when mdb_env_open fails
+         mdb_env_close(env);

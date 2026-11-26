@@ -21,6 +21,9 @@ VCS:            git:https://invent.kde.org/frameworks/baloo.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+# Fall back to a smaller LMDB mmap when 256 GByte does not fit (riscv64 Sv39)
+Patch0:         0001-engine-retry-with-smaller-mmap-on-ENOMEM.patch
+
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
 BuildRequires:  attr-devel
 BuildRequires:  lmdb-devel
