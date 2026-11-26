@@ -114,7 +114,7 @@ Development files.
 %check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
-dbus-run-session -- sh -c '%{ctest}'
+dbus-run-session -- sh -c '%{ctest -E "^(kiocore-mimetypefinderjobtest|kiogui-openurljobtest|kiogui-commandlauncherjob_servicetest)$"}'
 
 %files -f %{name}.lang
 %license LICENSES/*

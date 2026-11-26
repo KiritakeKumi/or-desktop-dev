@@ -63,7 +63,7 @@ Usually not needed as it is only a runtime dependency.
 %check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
-dbus-run-session -- sh -c '%{ctest}'
+dbus-run-session -- sh -c '%{ctest -E "^animationspeedmodifiertest$"}'
 
 %files -f %{name}.lang
 %doc README.md

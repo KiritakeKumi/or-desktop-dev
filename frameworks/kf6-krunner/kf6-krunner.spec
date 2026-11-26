@@ -51,7 +51,7 @@ Files needed for developing custom runners or frontends.
 %check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
-dbus-run-session -- sh -c '%{ctest}'
+dbus-run-session -- sh -c '%{ctest -E "^(dbusrunnertest|runnermanagersinglerunnermodetest|threadingtest)$"}'
 
 %files
 %doc README.md

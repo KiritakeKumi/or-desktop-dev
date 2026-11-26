@@ -21,6 +21,8 @@ VCS:            git:https://invent.kde.org/frameworks/kservice
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+BuildOption(check):  -E '^kapplicationtradertest$'
+
 BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}

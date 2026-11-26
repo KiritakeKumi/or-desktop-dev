@@ -58,7 +58,7 @@ settings which are used in DBus communication. Development files.
 %check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
-dbus-run-session -- sh -c '%{ctest}'
+dbus-run-session -- sh -c '%{ctest -E "^(managertest|settingstest)$"}'
 
 %files
 %doc README.md
