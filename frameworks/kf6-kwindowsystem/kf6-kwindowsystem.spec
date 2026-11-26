@@ -18,6 +18,7 @@ VCS:            git:https://invent.kde.org/frameworks/kwindowsystem
 Source0:        https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+# Tests disabled: almost all autotests require a running X11 server (no Xvfb in openRuyi build env)
 BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  gcc

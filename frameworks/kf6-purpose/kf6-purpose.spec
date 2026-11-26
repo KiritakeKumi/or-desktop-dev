@@ -24,6 +24,7 @@ VCS:            git:https://invent.kde.org/frameworks/purpose.git
 Source:         https://download.kde.org/stable/frameworks/6.32/%{rname}-%{version}.tar.xz
 BuildSystem:    cmake
 
+# Tests disabled: all autotests need network access (http://kde.org), unavailable in OBS builds
 BuildOption(conf):  -DBUILD_TESTING=OFF
 
 BuildRequires:  kf6-extra-cmake-modules >= %{_kf6_version}
