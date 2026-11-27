@@ -27,6 +27,7 @@ BuildRequires:  cmake(Qt6DBus) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Network) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Qml) >= %{qt6_version}
 BuildRequires:  cmake(Qt6Test) >= %{qt6_version}
+BuildRequires:  dbus-tools
 BuildRequires:  cmake(Qt6ToolsTools) >= %{qt6_version}
 BuildRequires:  qt6-qttools
 BuildRequires:  qt6-doctools
@@ -44,9 +45,11 @@ Requires:       cmake(Qt6DBus) >= %{qt6_version}
 %description    devel
 Development files for QBluez Async Bluez wrapper library.
 
-%check -p
+%check
 export QT_QPA_PLATFORM=offscreen
 export QT_LOGGING_TO_CONSOLE=1
+# fakebluez registers org.kde.bluezqt.test on the session bus
+dbus-run-session -- sh -c '%{ctest}'
 
 %files
 %license LICENSES/*
